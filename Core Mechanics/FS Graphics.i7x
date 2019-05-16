@@ -166,6 +166,7 @@ Figure of Carl_Eric_sofa_fuck_1_icon is the file "Carl_Eric_sofa_fuck_1.jpg".
 Figure of Carl_Eric_sofa_fuck_2_icon is the file "Carl_Eric_sofa_fuck_2.jpg".
 Figure of Carl_Eric_sofa_fuck_3_icon is the file "Carl_Eric_sofa_fuck_3.jpg".
 Figure of Carl_Eric_sofa_fuck_4_icon is the file "Carl_Eric_sofa_fuck_4.jpg".
+Figure of Chase_face_icon is the file "Chase_face.jpg".
 Figure of Chris_clothed_icon is the file "Chris_clothed.jpg".
 Figure of Chris_naked_icon is the file "Chris_naked.jpg".
 Figure of Chris_face_icon is the file "Chris_face.jpg".
@@ -327,6 +328,8 @@ Figure of Spike_face_icon is the file "Spike_face.jpg".
 Figure of Spike_naked_icon is the file "Spike_naked.jpg".
 Figure of Stella_icon is the file "Stella_ig.jpg".
 Figure of Susan_face_icon is the file "Susan_face.jpg".
+Figure of Sven_naked_icon is the file "Sven_naked.jpg".
+Figure of Sven_tail_icon is the file "Sven_tail.jpg".
 Figure of Tehuantl_Male_Face_icon is the file "Tehuantl_Male_Face.jpg".
 Figure of Tehuantl_Female_Face_icon is the file "Tehuantl_Female_Face.jpg".
 Figure of Timothy_icon is the file "Timothy.jpg".
@@ -359,7 +362,7 @@ Figure of Zoe_face_icon is the file "Zoe_face.jpg".
 [scene icons]
 Figure of BrutusFuckingDavid_icon is the file "Brutus&David1.jpg". [Brutus fucking David]
 Figure of BT_Trapped_icon is the file "Bottlenose_Trapped_ig.jpg". [Encased by Bottlenose Toy]
-Figure of Christyend_icon is the file "christyend_ig.jpg". [for 'Tourist Attraction' ending only.]
+Figure of Christyend_icon is the file "Christyend_ig.jpg". [for 'Tourist Attraction' ending only.]
 Figure of Corbin_Felinoid_icon is the file "Corbin_Felinoid.jpg". [riding the cat]
 Figure of DukeShawnFuck_icon is the file "Duke&Shawn.jpg". [Shawn topping Duke scene.]
 Figure of DUP_FloorShow_icon is the file "DUP_FloorShow_ig.jpg". [The Down Under Pub's floor show.]
@@ -423,7 +426,7 @@ Figure of emap_mall_atrium_icon is the file "emap_mall_atrium.png".
 Figure of emap_mall_bodyshop_icon is the file "emap_mall_bodyshop.png".
 Figure of emap_mall_bransonpartner_icon is the file "emap_mall_bransonpartner.png".
 Figure of emap_mall_brookstonebooks_icon is the file "emap_mall_brookstonebooks.png".
-Figure of emap_mall_christmasvillage_icon is the file "emap_mall_christmasvillage.png".
+Figure of emap_mall_Christmasvillage_icon is the file "emap_mall_Christmasvillage.png".
 Figure of emap_mall_eastwing_icon is the file "emap_mall_eastwing.png".
 Figure of emap_mall_foodcourt_icon is the file "emap_mall_foodcourt.png".
 Figure of emap_mall_foyer_icon is the file "emap_mall_foyer.png".
@@ -455,7 +458,7 @@ before examining a thing (called t):
 	if graphics is true and NewGraphics is false:
 		repeat with y running from 1 to number of filled rows in table of game art:
 			choose row y in table of game art;
-			if icon entry is x and artist entry is not listed in BlockList of player:
+			if icon entry is x and artist entry is not listed in BlockList of Player:
 				display x;
 				break;]
 
@@ -464,7 +467,7 @@ to inline_project (x - a figure name):
 	if graphics is true:
 		repeat with y running from 1 to number of filled rows in table of game art:
 			choose row y in table of game art;
-			if icon entry is x and artist entry is not listed in BlockList of player:
+			if icon entry is x and artist entry is not listed in BlockList of Player:
 				display x;
 				now ngraphics_currentartist is artist entry; [graphics processing]
 				update the status line;
@@ -475,7 +478,7 @@ to project (x - a figure name):
 	if graphics is true and NewGraphics is true:
 		repeat with y running from 1 to number of filled rows in table of game art:
 			choose row y in table of game art;
-			if icon entry is x and artist entry is not listed in BlockList of player:
+			if icon entry is x and artist entry is not listed in BlockList of Player:
 				if formatrule entry is "normal":
 					if NewGraphicsDebugMode is true:
 						say "Graphics Debug - Normal Mode";
@@ -504,7 +507,7 @@ to project (x - a figure name):
 	else if graphics is true and NewGraphics is false: [legacy fallback (new disabled)]
 		repeat with y running from 1 to number of filled rows in table of game art:
 			choose row y in table of game art;
-			if icon entry is x and artist entry is not listed in BlockList of player:
+			if icon entry is x and artist entry is not listed in BlockList of Player:
 				display x;
 				now ngraphics_currentartist is artist entry; [graphics processing]
 				update the status line;
@@ -514,7 +517,7 @@ to project (x - a figure name):
 			if graphics is true and NewGraphics is true:
 				repeat with y running from 1 to number of filled rows in table of game art:
 					choose row y in table of game art;
-					if icon entry is x and artist entry is not listed in BlockList of player:
+					if icon entry is x and artist entry is not listed in BlockList of Player:
 						[blank window to backgroundcolor entry;]
 						now graphics background color is backgroundcolor entry;
 						if NewGraphicsDebugMode is true: [inline debug report toggled by "graphics_debug"]
@@ -528,7 +531,7 @@ to project (x - a figure name):
 							if graphics is true and NewGraphics is false:
 								repeat with y running from 1 to number of filled rows in table of game art:
 									choose row y in table of game art;
-									if icon entry is x and artist entry is not listed in BlockList of player:
+									if icon entry is x and artist entry is not listed in BlockList of Player:
 										display x;
 										break;]
 
@@ -537,14 +540,14 @@ to project (x - a figure name):
 	if graphics is true and NewGraphics is true:
 		repeat with y running from 1 to number of filled rows in table of game art:
 			choose row y in table of game art;
-			if icon entry is x and artist entry is not listed in BlockList of player:
+			if icon entry is x and artist entry is not listed in BlockList of Player:
 				follow the ngraphics_open rule;
 				now the currently shown picture is x;
 				follow the current graphics drawing rule;
 	if graphics is true and NewGraphics is false:
 		repeat with y running from 1 to number of filled rows in table of game art:
 			choose row y in table of game art;
-			if icon entry is x and artist entry is not listed in BlockList of player:
+			if icon entry is x and artist entry is not listed in BlockList of Player:
 				display x;
 				break;]
 
@@ -567,7 +570,7 @@ title	icon(figure name)	artist	backgroundcolor	formatrule
 "Alexandra_naked_frown"	Figure of Alexandra_naked_frown_icon	"Lyttathebug"	g-black	"normal"
 "Alexandra_naked"	Figure of Alexandra_naked_icon	"Lyttathebug"	g-black	"normal"
 "Alex"	Figure of Alex_icon	"canned"	g-black	"normal"
-"Alpha Husky"	Figure of AlphaHusky_icon	"Anymouse1968"	g-white	"normal"
+"Husky Alpha"	Figure of AlphaHusky_icon	"Anymouse1968"	g-white	"normal"
 "Amazonian"	Figure of Amazon_icon	"Waxraven/WXRVN"	g-white	"normal"
 "Amy"	Figure of Amy_icon	"Sususmiles"	g-white	"normal"
 "Amy_face"	Figure of Amy_face_icon	"Sususmiles"	g-white	"normal"
@@ -622,6 +625,7 @@ title	icon(figure name)	artist	backgroundcolor	formatrule
 "Carl_Eric_sofa_fuck_4"	Figure of Carl_Eric_sofa_fuck_4_icon	"Lyttathebug"	g-black	"normal"
 "Catgirl"	Figure of Fiona_icon	"Valen"	g-white	"normal"
 "Cerberus"	Figure of Cerberus_icon	"Anonymous"	g-white	"normal"
+"Chase_face"	Figure of Chase_face_icon	"SineAlas"	g-black	"normal"
 "Cheetah Woman"	Figure of CheetahWoman_icon	"Waxraven/WXRVN"	g-white	"normal"
 "Chocolate Lab"	Figure of ChocoLab_icon	"SparklePens"	g-white	"normal"
 "Chris_clothed"	Figure of Chris_clothed_icon	"Kupo Klein"	g-white	"normal"
@@ -704,7 +708,7 @@ title	icon(figure name)	artist	backgroundcolor	formatrule
 "Hayato"	Figure of Hayato_icon	"Darian821"	g-black	"normal"
 "Helen"	Figure of Helen_naked_icon	"Waxraven/WXRVN"	g-white	"normal"
 "Helot"	Figure of Helot_icon	"Obieblu"	g-white	"normal"
-"Hermaphrodite Gryphon"	Figure of BlueGryphon_icon	"dbd"	g-black	"normal"
+"Blue Gryphon Herm"	Figure of BlueGryphon_icon	"dbd"	g-black	"normal"
 "Hermaphrodite Gryphon Face"	Figure of BlueGryphon_face_icon	"dbd"	g-black	"normal"
 "Hermaphrodite Latex Vixen"	Figure of LatexVixen_icon	"Anymouse1968"	g-white	"normal"
 "Herm Hyena"	Figure of Herm_Hyena_clothed_icon	"Vashaa"	g-White	"normal"
@@ -845,7 +849,7 @@ title	icon(figure name)	artist	backgroundcolor	formatrule
 "Septus_face"	Figure of Septus_face_icon	"Cirrusthecloud"	g-black	"normal"
 "SgtMarks"	Figure of SgtMarks_icon	"Anyare"	g-white	"normal"
 "Shadow Beast"	Figure of ShadowBeast_icon	"Hioshiru"	g-white	"normal"
-"Shemale Smooth Collie"	Figure of SSCollie_icon	"Anymouse1968"	g-white	"normal"
+"Smooth Collie Shemale"	Figure of SSCollie_icon	"Anymouse1968"	g-white	"normal"
 "Shy_vixen"	Figure of Shy_Vixen_icon	"Watsup"	g-white	"normal"
 "Siamese Cat"	Figure of SiameseCat_icon	"RedCoatCat"	g-white	"normal"
 "Sidney_wusky"	Figure of Sidney_wusky_Icon	"Anymouse1968"	g-white	"normal"
@@ -869,6 +873,8 @@ title	icon(figure name)	artist	backgroundcolor	formatrule
 "Spike_naked"	Figure of Spike_naked_icon	"Lyttathebug"	g-black	"normal"
 "Succubus"	Figure of Succubus_clothed_icon	"Kupo Klein"	g-white	"normal"
 "Susan_face"	Figure of Susan_face_icon	"SineAlas"	g-black	"normal"
+"Sven_naked"	Figure of Sven_naked_icon	"Brun69"	g-black	"normal"
+"Sven_tail"	Figure of Sven_tail_icon	"Brun69"	g-black	"normal"
 "Talov_Kerr_Barrel"	Figure of Talov_Kerr_Barrel_icon	"Kupo Klein"	g-black	"normal"
 "Talov_Kerr_Party"	Figure of Talov_Kerr_Party_icon	"Kupo Klein"	g-black	"normal"
 "Tehuantl_Male_face"	Figure of Tehuantl_Male_face_icon	"Vashaa"	g-black	"normal"
@@ -919,7 +925,7 @@ title	icon(figure name)	artist	backgroundcolor	formatrule
 "Navigation - Mall - Bodyshop"	Figure of emap_mall_bodyshop_icon	"executaball"	g-black	"normal"
 "Navigation - Mall - Branson & Partner"	Figure of emap_mall_bransonpartner_icon	"executaball"	g-black	"normal"
 "Navigation - Mall - Brookstone Books"	Figure of emap_mall_brookstonebooks_icon	"executaball"	g-black	"normal"
-"Navigation - Mall - Christmas Village"	Figure of emap_mall_christmasvillage_icon	"executaball"	g-black	"normal"
+"Navigation - Mall - Christmas Village"	Figure of emap_mall_Christmasvillage_icon	"executaball"	g-black	"normal"
 "Navigation - Mall - East Wing"	Figure of emap_mall_eastwing_icon	"executaball"	g-black	"normal"
 "Navigation - Mall - FoodCourt"	Figure of emap_mall_foodcourt_icon	"executaball"	g-black	"normal"
 "Navigation - Mall - Foyer"	Figure of emap_mall_foyer_icon	"executaball"	g-black	"normal"
@@ -1086,6 +1092,7 @@ carry out artistcredits:
 	say "     Candy by uniformvixen @ furaffinity.net[line break]";
 	say "     Carl by Hufnaar @ furaffinity.net[line break]";
 	say "     Carl + Eric by Lyttathebug @ https://lyttathebug.deviantart.com/[line break]";
+	say "     Chase by SineAlas @ https://www.furaffinity.net/user/SineAlas/[line break]";
 	say "     Chris by Kupo Klein @ http://kupo-klein.tumblr.com/[line break]";
 	say "     Christy by Anymouse1968 @ furaffinity.net[line break]";
 	say "     Colleen (face) by SineAlas @ https://www.furaffinity.net/user/SineAlas/[line break]";
@@ -1189,6 +1196,7 @@ carry out artistcredits:
 	say "     Spike Body by Lyttathebug @ https://lyttathebug.deviantart.com/[line break]";
 	say "     Spike Headshot by SineAlas @ https://www.furaffinity.net/user/SineAlas/[line break]";
 	say "     Susan (face) by SineAlas @ https://www.furaffinity.net/user/SineAlas/[line break]";
+	say "     Sven by Brun69 @ https://www.furaffinity.net/user/brun69/[line break]";
 	say "     Tehuantl by Vashaa @ https://www.furaffinity.net/user/vashaa/[line break]";
 	say "     Thomas by Inkydemon @ https://www.furaffinity.net/user/inkydemon/[line break]";
 	say "     Tiger Shark Warrior by Zealot @ https://www.furaffinity.net/user/Drakosacerdos/[line break]";
@@ -1249,7 +1257,7 @@ carry out ArtistBanning:
 	artistbanmenu;
 
 to artistbanmenu: [more compact version]
-	let artistlist be {"Abelsword", "Anonymous", "Anyare", "Anymouse1968", "Aosuka", "Astro", "AugurMew", "Bix707", "Bludwing", "Boo3", "BushyCat", "Caltroplay", "Candy", "canned", "Catmonkshiro", "catnamedfish", "Cirrusthecloud", "ConnyChiwa", "Cooper", "CrashBurnDraw", "Damdidoo", "Darian821", "dbd", "Demon-Man", "dhstein", "Dolphpup", "Dragonpunk", "Eevachu", "Familliar", "FaroreNightclaw", "Feralise", "Furball", "FsMaverick", "Geir", "Genelightfoot", "Goncalo", "HBruton", "Hioshiru", "Hufnaar", "Inkydemon", "JaxxBlackFox", "Kadel", "Kattzie", "Keitaro87", "Kien-Biu", "Kikeri-arts", "Kupo Klein", "KV1NN4", "Lay", "Laylo", "lionsilverwolf", "Waxraven/WXRVN", "Luneth", "Lyttathebug", "MadTurtle", "MoT", "Nokturnalkittie", "Obieblu", "o-kemono", "Padunk", "Purplepardus", "Rastear", "RedCoatCat", "Redragon", "Rosali", "Rukis", "SandySchreiber", "Seija", "Sharei", "SineAlas", "Soryane", "SparklePens", "Strype", "Sususmiles", "The_Negative", "TheRedAngel", "TheWhiteWolfen", "TwilightMaster", "TylerAz", "Uniformvixen", "Unknown", "valdericblackstag", "Valen", "Vashaa", "Watsup", "Wemd", "Xenotropos"};
+	let artistlist be {"Abelsword", "Anonymous", "Anyare", "Anymouse1968", "Aosuka", "Astro", "AugurMew", "Bix707", "Bludwing", "Boo3", "Brun69", "BushyCat", "Caltroplay", "Candy", "canned", "Catmonkshiro", "catnamedfish", "Cirrusthecloud", "ConnyChiwa", "Cooper", "CrashBurnDraw", "Damdidoo", "Darian821", "dbd", "Demon-Man", "dhstein", "Dolphpup", "Dragonpunk", "Eevachu", "Familliar", "FaroreNightclaw", "Feralise", "Furball", "FsMaverick", "Geir", "Genelightfoot", "Goncalo", "HBruton", "Hioshiru", "Hufnaar", "Inkydemon", "JaxxBlackFox", "Kadel", "Kattzie", "Keitaro87", "Kien-Biu", "Kikeri-arts", "Kupo Klein", "KV1NN4", "Lay", "Laylo", "lionsilverwolf", "Waxraven/WXRVN", "Luneth", "Lyttathebug", "MadTurtle", "MoT", "Nokturnalkittie", "Obieblu", "o-kemono", "Padunk", "Purplepardus", "Rastear", "RedCoatCat", "Redragon", "Rosali", "Rukis", "SandySchreiber", "Seija", "Sharei", "SineAlas", "Soryane", "SparklePens", "Strype", "Sususmiles", "The_Negative", "TheRedAngel", "TheWhiteWolfen", "TwilightMaster", "TylerAz", "Uniformvixen", "Unknown", "valdericblackstag", "Valen", "Vashaa", "Watsup", "Wemd", "Xenotropos"};
 	now calcnumber is -1;
 	let countnumber be 1;
 	let abmexit be 0;
@@ -1276,17 +1284,17 @@ to artistbanmenu: [more compact version]
 			artistbanswitch entry calcnumber of artistlist;
 
 to BlockCheck (x - text):
-	if x is not listed in BlockList of player:
+	if x is not listed in BlockList of Player:
 		say "[bold type][special-style-1]On  [roman type]";
 	else:
 		say "[bold type][special-style-2]Off  [roman type]";
 
 to artistbanswitch (name - text):
-	if name is not listed in BlockList of player:
-		add name to Blocklist of player;
+	if name is not listed in BlockList of Player:
+		add name to Blocklist of Player;
 		say "[name] Blocked!";
-	else if name is listed in Blocklist of player:
-		remove name from Blocklist of player;
+	else if name is listed in Blocklist of Player:
+		remove name from Blocklist of Player;
 		say "[name] Unblocked!";
 
 
