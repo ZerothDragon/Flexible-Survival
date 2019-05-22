@@ -307,7 +307,7 @@ to say Medeaadjustments:
 			now sortorder entry is 7;
 			now description entry is "Talk to you about egg-laying";
 		[]
-		if Medeaub is true and playercanub is false and gestation of child is 0:
+		if Medeaub is true and playercanub is false and gestation of Child is 0:
 			choose a blank row in table of fucking options;
 			now title entry is "Gain unbirthing ability";
 			now sortorder entry is 8;
@@ -346,7 +346,7 @@ to say Medeaadjustments:
 				let nam be title entry;
 				now sextablerun is 1;
 				if nam is "Check for pregnancy":
-					say "     Doctor Medea takes out a machine and places it against your [bodyname of Player] abdomen. It buzzes, and she looks at the results. She ";
+					say "     Doctor Medea takes out a machine and places it against your [BodySpeciesName of Player] abdomen. It buzzes, and she looks at the results. She ";
 					if the gestation of the child > 0:
 						[Checking for visible tails]
 						let ShowTail be false;
@@ -356,17 +356,17 @@ to say Medeaadjustments:
 							if Tail Description entry is not "":
 								now ShowTail is true;
 						say "smiles. 'Congratulations, you are pregnant. ";
-						if HeadName of Child is TorsoName of Child:
-							if HeadName of Child is BackName of Child:
-								if HeadName of Child is ArmsName of Child:
-									if HeadName of Child is LegsName of Child:
-										if HeadName of Child is AssName of Child:
-											if HeadName of Child is TailName of Child:
+						if HeadSpeciesName of Child is TorsoSpeciesName of Child:
+							if HeadSpeciesName of Child is BackSpeciesName of Child:
+								if HeadSpeciesName of Child is ArmsSpeciesName of Child:
+									if HeadSpeciesName of Child is LegsSpeciesName of Child:
+										if HeadSpeciesName of Child is AssSpeciesName of Child:
+											if HeadSpeciesName of Child is TailSpeciesName of Child:
 												now Pureblood is true;
 						if Pureblood is true:
-							say "According to these readings, your child is a pureblood [Headname of Child]";
+							say "According to these readings, your child is a pureblood [HeadSpeciesName of Child]";
 						else:
-							say "According to these readings, it currently has a [Headname of Child] head, [TorsoName of Child] front and [BackName of Child] back. Your child has [ArmsName of Child] arms, [LegsName of Child] legs[if ShowTail is false] and a [AssName of Child] behind[else], a [AssName of Child] behind and a [TailName of Child] tail[end if]";
+							say "According to these readings, it currently has a [HeadSpeciesName of Child] head, [TorsoSpeciesName of Child] front and [BackSpeciesName of Child] back. Your child has [ArmsSpeciesName of Child] arms, [LegsSpeciesName of Child] legs[if ShowTail is false] and a [AssSpeciesName of Child] behind[else], a [AssSpeciesName of Child] behind and a [TailSpeciesName of Child] tail[end if]";
 						if "They Have Your Eyes" is listed in feats of Player:
 							say ". Things do still seem to be in flux a bit though, from what I can see. Seems like your body is trying to make the child come out as a specific form, and I can't quite guarantee that it will still look like this when it is born.'";
 						else:
@@ -398,8 +398,8 @@ to say Medeaadjustments:
 					say "     The lizard doctor pokes and prods at you with a few instruments, throwing in the (mis)use of a few fingers in there as well[if inheat is true]. By the time she's done, you're left panting and moaning, much to her obvious delight[else]. By the time she's done, you aren't quite sure if you want it to continue or are glad it's over[end if]. She checks her data quickly and runs a couple of quick tests.";
 					let defaultheat be true;
 					choose row 1 in table of infection heat;
-					if cockname of Player is a infect name listed in Table of infection heat:	[check name of heat]
-						choose a row with a infect name of (cockname of Player) in Table of infection heat;
+					if CockName of Player is a infect name listed in Table of infection heat:	[check name of heat]
+						choose a row with a infect name of (CockName of Player) in Table of infection heat;
 						if Player is female and fheat entry is false:	[no female heat for that form]
 							choose row 1 in table of infection heat;
 						else if Player is not female and mpregheat entry is false:		[no mpreg-heat for that form]
@@ -411,7 +411,7 @@ to say Medeaadjustments:
 					if animal heat is false:
 						say "     'Currently, you are not being subject to any form of heat cycle due to [if Player is impreg_now]your pregnancy[else if Player is not impreg_able]your inability to become pregnant at the present[else]some change your body's undergone[end if].'";
 					else if inheat is true:
-						say "     'Well, you're currently in a heightened period of estrus. It is marked by increase arousal and a higher fertility rate[if defaultheat is false]. In your particular case, you are going through a [cockname of Player] heat[else]. In your particular case, you are going through a fairly common version of the heat cycle the infected go through[end if]. ";
+						say "     'Well, you're currently in a heightened period of estrus. It is marked by increase arousal and a higher fertility rate[if defaultheat is false]. In your particular case, you are going through a [CockName of Player] heat[else]. In your particular case, you are going through a fairly common version of the heat cycle the infected go through[end if]. ";
 						if heat cycle entry is heat duration entry:
 							say "This particular heat is ongoing and so will not end until you become pregnant.'";
 						else if turns in heat >= heat cycle entry or turns in heat < (heat cycle entry - heat duration entry) * 8:
@@ -425,7 +425,7 @@ to say Medeaadjustments:
 							guesstimate time at num;
 							say ".'";
 					else:
-						say "     'You are not currently in heat, though you are on an active estrus cycle,' she says with a hint of disappointment. 'When it starts up again, it will be marked by increased arousal and a higher fertility rate.' Saying this does seem to perk her back up a little[if defaultheat is false]. In your particular case, you are on a [cockname of Player] heat cycle[else]. In your particular case, you are on a fairly common version of the heat cycle the infected go through[end if] which should reach estrus ";
+						say "     'You are not currently in heat, though you are on an active estrus cycle,' she says with a hint of disappointment. 'When it starts up again, it will be marked by increased arousal and a higher fertility rate.' Saying this does seem to perk her back up a little[if defaultheat is false]. In your particular case, you are on a [CockName of Player] heat cycle[else]. In your particular case, you are on a fairly common version of the heat cycle the infected go through[end if] which should reach estrus ";
 						if heat cycle entry is heat duration entry:
 							say "at any moment. It will then be ongoing and so will not end until you become pregnant.'";
 						else if turns in heat >= heat cycle entry:		[cycle to force restart]
@@ -482,7 +482,7 @@ to say Medeaadjustments:
 						say "     ([link]N[as]n[end link]) - No thanks.";
 						if Player consents:
 							LineBreak;
-							if gestation of child is 0:
+							if gestation of Child is 0:
 								say "     Dr. Medea seems particularly pleased with your decision and performs the procedure with pleasure. Your womb is altered to form eggs when you become pregnant. 'I've made you into an egg-breeder, able to be filled with eggs from any and all creatures you mate with, regardless of their infection. Now, should you get cold feet,' she adds, 'you should be able to curb your egg-laying abilities by concentrating upon it for a while. I hope you have an enjoyable and productive time,' she adds, tidying up her instruments.";
 								say "     [bracket]Use the [bold type][link]adjust ovi[end link][roman type] command or Trixie's setting menu to adjust your preferences for oviposition.[close bracket]";
 								now ovipregalways is true;
@@ -496,10 +496,9 @@ to say Medeaadjustments:
 						say "     'I hope you're enjoying the ability to lay eggs,' the lizard doctor says as she rubs over your tummy with a smile. 'Such a special way to have one's children, I think. Remember, if you want to [if ovipreglevel is 3]curb your egg-laying and revert to live births[else]get yourself laying more eggs[end if], concentrate and you should be able to take control of your change.'";
 						say "     [bracket]Use the [bold type][link]adjust ovi[end link][roman type] command or Trixie's setting menu to adjust your preferences for oviposition.[close bracket]";
 				else if nam is "Gain unbirthing ability":
-					choose row MonsterID from the Table of Random Critters;
 					say "     Dr. Medea gets a perverse grin on her reptilian face, clearly excited to undertake her twisted experiment. She eagerly gets you up onto the examination table and does a cursory exam before getting started. 'I've prepared a dose of the chemicals, which are to be applied to your reproductive system, triggering the alterations in your digestive system to spread there as well. I'm glad you're willing to go through with this procedure. Unfortunately, while I don't believe this alone would be enough to induce the same results in others, it does provide a starting point to understanding this rare ability. Well, enough waiting, let's get to it,' she says with glee.";
 					say "     Rather than provide you with a concoction to drink or an injection, she instead starts to smear some oily cream across your pussy. She starts slow and keeps her touch professional at first, but as you start to feel a warm tingle at the mouth of your vagina and it begins to stretch, her fingers become more playful, teasing you to arousal. She pauses from time to time to scoop up more of the cream and work it deeper into your cunny, getting it to spread further and wider as the lotion is absorbed into your vaginal walls.";
-					say "     Soon she's working her [if Cunt Length of Player < 12]whole hand[else if Cunt Length of Player < 24]forearm[else]whole arm[end if] into your squeezing, tugging cunt and smearing the slick goo at your very depths. As your cervix starts to relax, she pushes another handful of the body-altering cream right into your womb. It takes a lot of effort from her to be able to pull her arm free after that, grunting with the effort to resist the strong inward motion of your vaginal muscles.";
+					say "     Soon she's working her [if Cunt Depth of Player < 12]whole hand[else if Cunt Depth of Player < 24]forearm[else]whole arm[end if] into your squeezing, tugging cunt and smearing the slick goo at your very depths. As your cervix starts to relax, she pushes another handful of the body-altering cream right into your womb. It takes a lot of effort from her to be able to pull her arm free after that, grunting with the effort to resist the strong inward motion of your vaginal muscles.";
 					WaitLineBreak;
 					say "     As the cream inside your uterus starts to react, you become increasingly aware of the empty feeling of your unfertilized womb and you want to do something about it. Noticing your attention focusing on her, the reptilian doctor stops fingering herself and rushes you outside, that sense of emptiness to be filled growing with every step. Catching sight of another creature wandering nearby, she pushes you off in its direction and moves back to observe the results, her medical ethics forgotten in her desire to observe your altered reproductive system in action.";
 					if girl is not banned:
@@ -511,8 +510,21 @@ to say Medeaadjustments:
 						say "     The canine girl tries to struggle, but she is quite confused and is likely overwhelmed by the taste and scent of your rampant arousal, making her attempts unfocused and weak. As you grip her arms to her sides to keep her pinned, you drop to your knees, forcing yourself down over her ample bosom and taking in most of her torso. Your belly bulges as more squirming husky is squished into it with a deliciously juicy slurp. With your cervix spread open and her partially inside your womb, your urge to have her inside you only grows rather than feeling sated in any way.";
 						say "     You undergo another moaning orgasm as your vaginal walls tug her even further into you. With so much of her inside you, you can no longer see what's going on, but you can feel every delightful inch of her fluffy body being pulled into yours. Giving another loud moan, you feel her hips making their way along your impossibly stretched vaginal tunnel. With only her legs and tail left to go, the rest is easier, giving you an opportunity to enjoy the pleasant sensations without the distraction of the effort involved. Glancing over, you see Dr. Medea watching intently, a hand under her skirt, pumping her fingers into her juicy cunt as creamy white goo leaks from it. Any medical ethics forgotten as the transformed obstetrician perversely watches her patient's pussy completely devour a helpless victim.";
 						say "     Sitting back, dazed, you feel the form of the husky sliding around inside your womb, your belly now bulging out with your massive pregnancy. There is a brief period where she struggles, paws pressing against your uterine walls as she seeks exit before settling down. With a quiver of pleasure, the nanites in your body throw your gestation process into overdrive. You can't help but moan in satisfaction as you feel [if ovipreglevel is 3]an eggshell forming around your prey[else]a placenta form to connect you to your prey[end if]. Soon enough, she's drifted off into slumber and you are in late-term pregnancy. Crossing the [if ovipreglevel is 3]egg membrane[else]placental barrier[end if], you share nanites with one another, further bonding you and your new [']child['] with one another. You are filled with contentment as this happens, as if you've fulfilled some deep purpose in your infected body. You are helped back to your feet by Dr. Medea, who eagerly examines you, confirming what your body's already told you.";
+						now HeadName of Child is "Husky Bitch";
+						now TorsoName of Child is "Husky Bitch";
+						now BackName of Child is "Husky Bitch";
+						now ArmsName of Child is "Husky Bitch";
+						now LegsName of Child is "Husky Bitch";
+						now AssName of Child is "Husky Bitch";
+						now TailName of Child is "Husky Bitch";
+						now HeadSpeciesName of Child is "Husky";
+						now TorsoSpeciesName of Child is "Husky";
+						now BackSpeciesName of Child is "Husky";
+						now ArmsSpeciesName of Child is "Husky";
+						now LegsSpeciesName of Child is "Husky";
+						now AssSpeciesName of Child is "Husky";
+						now TailSpeciesName of Child is "Husky";
 					else:
-						setmonster "Latex Fox";
 						say "     As you approach the rummaging creature, part of you can't help but be pleased to see that it is a latex fox. That small part of you which is still able to reason can't help but think it appropriate. Given how your first meal was also one of these rubbery guys, there is a certain symmetry to that. He seems pleased to see you as well, smelling your arousal and sniffing his way towards your crotch. Making no effort to dissuade him, you seem like a willing playmate and he approaches with eager caution.";
 						say "     When he brings his muzzle in to lick at your leaking pussy, your body is struck with another throbbing sense of the void inside you. You look down at the cute fox with new, maternally longing instincts, feeling that he'd be perfect to fill it. Before you can even think about it, you grab the fox by the head and yank it forward, driving his muzzle into your hot, needy cunny. Your pussy stretches as you continue to pull him in, stretching around his vulpine head with an orgasmic effort that has you moaning. Your juices soak his head and shoulders, making it easier for your tugging inner walls to start pulling them in as well.";
 						say "     Having succumbed to this instinctual drive, you are unable to control yourself, your body acting of its own volition to satisfy that inner need. Even with the foreknowledge of what would happen, what's happening would still be quite disturbing and shocking were it not for the extreme pleasure the act provides. There is considerable effort to doing it, your vaginal muscles having to stretch and pull in unnatural ways to drag your prey deeper and deeper into you.";
@@ -520,26 +532,33 @@ to say Medeaadjustments:
 						say "     The vulpine guy tries to struggle, but he is quite confused and is likely overwhelmed by the taste and scent of your rampant arousal, making his attempts unfocused and weak. As you grip his arms to his sides to keep him pinned, you drop to your knees, forcing yourself down over his chest and taking in most of his torso. Your belly bulges as more squirming fox is squished into it with a deliciously juicy slurp. With your cervix spread open and him partially inside your womb, your urge to have him inside you only grows rather than feeling sated in any way.";
 						say "     You undergo another moaning orgasm as your vaginal walls tug him even further into you. With so much of him inside you, you can no longer see what's going on, but you can feel every delightful inch of his smooth body being pulled into yours. Giving another loud moan, you feel his hips making their way along your impossibly stretched vaginal tunnel. With only his legs and tail left to go, the rest is easier, giving you an opportunity to enjoy the pleasant sensations without the distraction of the effort involved. Glancing over, you see Dr. Medea watching intently, a hand under her skirt, pumping her fingers into her juicy cunt as creamy white goo leaks from it. Any medical ethics forgotten as the transformed obstetrician perversely watches her patient's pussy completely devour a helpless victim.";
 						say "     Sitting back, dazed, you feel the form of the fox sliding around inside your womb, your belly now bulging out with your massive pregnancy. There is a brief period where he struggles, paws pressing against your uterine walls as he seeks exit before settling down. With a quiver of pleasure, the nanites in your body throw your gestation process into overdrive. You can't help but moan in satisfaction as you feel [if ovipreglevel is 3]an eggshell forming around your prey[else]a placenta form to connect you to your prey[end if]. Soon enough, he's drifted off into slumber and you are in late-term pregnancy. Crossing the [if ovipreglevel is 3]egg membrane[else]placental barrier[end if], you share nanites with one another, further bonding you and your new [']child['] with one another. You are filled with contentment as this happens, as if you've fulfilled some deep purpose in your infected body. You are helped back to your feet by Dr. Medea, who eagerly examines you, confirming what your body's already told you.";
+						[All Child parts are the unbirthed creature - might be overwritten by the player having "They have your Eyes" during birth]
+						now HeadName of Child is "Latex Fox";
+						now TorsoName of Child is "Latex Fox";
+						now BackName of Child is "Latex Fox";
+						now ArmsName of Child is "Latex Fox";
+						now LegsName of Child is "Latex Fox";
+						now AssName of Child is "Latex Fox";
+						now TailName of Child is "Latex Fox";
+						now HeadSpeciesName of Child is "Latex Fox";
+						now TorsoSpeciesName of Child is "Latex Fox";
+						now BackSpeciesName of Child is "Latex Fox";
+						now ArmsSpeciesName of Child is "Latex Fox";
+						now LegsSpeciesName of Child is "Latex Fox";
+						now AssSpeciesName of Child is "Latex Fox";
+						now TailSpeciesName of Child is "Latex Fox";
 					now playercanub is true;
 					add "UB Pred" to feats of Player;
 					now ubcount is 1;
 					decrease humanity of Player by 3;
 					say "     You have the [bold type]UB Predator[roman type] feat, granting you the ability to unbirth fallen foes. If you're not pregnant, there is a chance your body will want to use your enemy to fill your womb. You may adjust some vore related settings via the [bold type]vore menu[roman type].";
-					now gestation of child is a random number between 8 and 16;
+					now gestation of Child is a random number between 8 and 16;
 					now ubpreg is Name entry;
 					now pregtype is 1;
 					if "Safe Appetite" is not listed in feats of Player:
 						now researchbypass is 1;
 						infect;
 						now researchbypass is 0;
-					[All Child parts are the unbirthed creature - might be overwritten by the player having "They have your Eyes" during birth]
-					now HeadName of child is Name entry;
-					now TorsoName of child is Name entry;
-					now BackName of child is Name entry;
-					now ArmsName of child is Name entry;
-					now LegsName of child is Name entry;
-					now AssName of child is Name entry;
-					now TailName of child is Name entry;
 				else if nam is "Pills":		[First time asking about cunt pills]
 					say "     When you inquire Medea about what she meant by her work on pills earlier, the lizard doctor asks, 'Did I accidentally let that slip? Well, that's alright. You did bring me the supplies that I needed, after all. To answer your question, I have been researching the nanites and have developed a concoction that will allow users without the proper anatomy to experience pregnancy without flooding their bodies with estrogen. In layman terms, it will give them a cunt. While the medicine hasn't been fully developed, it is safe enough to consume, and I am willing to share it with you, for a price. They are not exactly easy to produce, and I need medkits and healing boosters to continue my research, as well as using them to treat any patients who come here. Bring me either item, and I will trade you a pill in return.'";
 					now Medeapill is true;
@@ -830,14 +849,14 @@ to say cunt pill use:
 	say "You pop the pill into your mouth and swallow it without any trouble.";
 	if Player is not female:
 		now Cunt Count of Player is 1;
-		now Cunt Length of Player is 5;
+		now Cunt Depth of Player is 5;
 		now Cunt Tightness of Player is 3;
 		say "A wave of pleasure washes over your crotch area as a cunt emerges from the once bare spot, dripping with arousal. The enjoyable sensations continue as your insides churn to make room for a womb, ready to accept a male's seed in the hopes of producing a child.";
 	else if a random chance of 1 in 5 succeeds:
 		say "You are wracked with pleasure when your crotch heats up as your [if Cunt Count of Player > 1]cunts shift[else]cunt shifts[end if] to the side to make room for a new pussy.";
 		increase Cunt Count of Player by 1;
 	else:
-		increase Cunt Length of Player by a random number from 1 to 2;
+		increase Cunt Depth of Player by a random number from 1 to 2;
 		increase Cunt Tightness of Player by a random number from 1 to 2;
 		Follow the cunt descr rule;
 		say "A tingling sensation floods your [if Cunt Count of Player > 1]cunts before they grow[else]cunt before it grows[end if] in size, ready to take in bigger loads to inseminate you.";

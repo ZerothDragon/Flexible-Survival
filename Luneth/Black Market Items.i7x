@@ -19,7 +19,7 @@ to say bitch breaker gel use:
 		say "     You [SelfStripCrotch], then slowly smear the red goo over your cock[smn] making sure that it is completely coated. After applying the spicy-scented, slime you start to feel your dick[smn] heat up, leaving you feeling hot and aroused, your libido climbing rapidly. ";
 		increase Cock Length of Player by a random number from 2 to 4;
 		Follow the cock descr rule;
-		say "You groan as you gain more male meat, leaving you with [if Cock Count of Player < 2]a[end if] [cock size desc of Player] [cock of Player] cock[smn].";
+		say "You groan as you gain more male meat, leaving you with [if Cock Count of Player < 2]a[end if] [cock size desc of Player] [Cock of Player] cock[smn].";
 		LibidoBoost 10;
 		if debugactive is 1:
 			say "DEBUG -> After-Use: Cock Count of Player: [Cock Count of Player]; Cock Length of Player: [Cock Length of Player][line break]";
@@ -96,7 +96,7 @@ to say sissifier gel use:
 		else if Cock Length of Player > 2:
 			decrease Cock Length of Player by 2;
 			Follow the cock descr rule;
-			say "You groan as your prick[smn] [if Cock Count of Player > 1]decrease in size, leaving you with[else]decreases in size, leaving you with a[end if] [cock size desc of Player] [cock of Player] cock[smn]";
+			say "You groan as your prick[smn] [if Cock Count of Player > 1]decrease in size, leaving you with[else]decreases in size, leaving you with a[end if] [cock size desc of Player] [Cock of Player] cock[smn]";
 		else:
 			say "Weirdly enough, nothing else seems to happen. Apparently, the gel can't make your prick[smn] any smaller.";
 			LibidoBoost 10;
@@ -175,15 +175,15 @@ the usedesc of cock holster upgrade is "[cock holster upgrade use]".
 
 to say cock holster upgrade use:
 	if debugactive is 1:
-		say "DEBUG -> Pre-Use: Cunt Count of Player: [Cunt Count of Player]; Cunt Length of Player: [Cunt Length of Player][line break]";
+		say "DEBUG -> Pre-Use: Cunt Count of Player: [Cunt Count of Player]; Cunt Depth of Player: [Cunt Depth of Player][line break]";
 	if Player is female:
 		say "     You [SelfStripCrotch], then pop the tip off of the device and ready yourself to use it. Spreading your legs slightly, you stick the cylinder inside of your vagina, but then not really sure what to do next. Apparently, the small device has some sort of timer since it starts to spew out the gel inside of your body, filling you to capacity. ";
-		increase Cunt Length of Player by a random number from 2 to 4;
+		increase Cunt Depth of Player by a random number from 2 to 4;
 		Follow the cunt descr rule;
 		say "You groan as your cunt grows deeper, leaving you with a [cunt size desc of Player] pussy.";
 		LibidoBoost 10;
 		if debugactive is 1:
-			say "DEBUG -> After-Use: Cunt Count of Player: [Cunt Count of Player]; Cunt Length of Player: [Cunt Length of Player][line break]";
+			say "DEBUG -> After-Use: Cunt Count of Player: [Cunt Count of Player]; Cunt Depth of Player: [Cunt Depth of Player][line break]";
 	else:
 		say "     You [SelfStripCrotch], then pop the tip off of the device and ready yourself to use it. But of course, as you are not a female, you don't exactly have a pussy to insert the cylinder into. While still trying to decide if sticking it up your ass would be a good idea, the small device activates, spewing out gel and covering the ground beneath with it. You can't help but feel frustrated over the wasted purchase.";
 		LibidoLoss 20;
@@ -252,18 +252,18 @@ the usedesc of cervix smasher upgrade is "[cervix smasher upgrade use]".
 
 to say cervix smasher upgrade use:
 	if debugactive is 1:
-		say "DEBUG -> Pre-Use: Cunt Count of Player: [Cunt Count of Player]; Cunt Length of Player: [Cunt Length of Player][line break]";
+		say "DEBUG -> Pre-Use: Cunt Count of Player: [Cunt Count of Player]; Cunt Depth of Player: [Cunt Depth of Player][line break]";
 	if Player is female:
 		say "     You [SelfStripCrotch], then pop the tip off of the device and ready yourself to use it. Spreading your legs slightly, you stick the cylinder inside of your vagina, but you're not really sure what to do next, so you just wait. Apparently, the small device has some sort of timer since it starts to spew out the gel inside of your body, filling you to capacity. ";
-		if Cunt Length of Player > 2:
-			decrease Cunt Length of Player by 1;
+		if Cunt Depth of Player > 2:
+			decrease Cunt Depth of Player by 1;
 		else:
-			decrease Cunt Length of Player by 2;
+			decrease Cunt Depth of Player by 2;
 		Follow the cunt descr rule;
 		say "You groan as your cunt becomes more shallow, leaving you with a [cunt size desc of Player] pussy.";
 		LibidoBoost 20;
 		if debugactive is 1:
-			say "DEBUG -> After-Use: Cunt Count of Player: [Cunt Count of Player]; Cunt Length of Player: [Cunt Length of Player][line break]";
+			say "DEBUG -> After-Use: Cunt Count of Player: [Cunt Count of Player]; Cunt Depth of Player: [Cunt Depth of Player][line break]";
 	else:
 		say "     You [SelfStripCrotch], then pop the tip off of the device and ready yourself to use it. Seeing as you're not a female, you don't exactly have a pussy to insert the cylinder into. Apparently, the small device has some sort of timer since it starts to spew out the gel onto the ground. You can't help but feel extremely frustrated over the wasted purchase.";
 		LibidoLoss 10;

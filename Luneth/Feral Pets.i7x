@@ -67,7 +67,7 @@ Cock Length of Snips is 1. [X Inches]
 Ball Size of Snips is 1.
 Ball Count of Snips is 2. [X balls]
 Cunt Count of Snips is 0. [X pussy]
-Cunt Length of Snips is 0. [X Cunt]
+Cunt Depth of Snips is 0. [X Cunt]
 Cunt Tightness of Snips is 0. [X Cunt]
 Nipple Count of Snips is 0. [X nipples]
 Breast Size of Snips is 0. [X at the start]
@@ -261,7 +261,7 @@ Cock Length of Dinah is 0. [X Inches]
 Ball Size of Dinah is 0.
 Ball Count of Dinah is 0. [X balls]
 Cunt Count of Dinah is 1. [X pussy]
-Cunt Length of Dinah is 2. [X Cunt]
+Cunt Depth of Dinah is 2. [X Cunt]
 Cunt Tightness of Dinah is 1. [X Cunt]
 Nipple Count of Dinah is 6. [X nipples]
 Breast Size of Dinah is 0. [X at the start]
@@ -479,7 +479,7 @@ Cock Length of Chirpy is 0. [X Inches]
 Ball Size of Chirpy is 0.
 Ball Count of Chirpy is 0. [X balls]
 Cunt Count of Chirpy is 1. [X pussy]
-Cunt Length of Chirpy is 2. [X Cunt]
+Cunt Depth of Chirpy is 2. [X Cunt]
 Cunt Tightness of Chirpy is 1. [X Cunt]
 Nipple Count of Chirpy is 0. [X nipples]
 Breast Size of Chirpy is 0. [X at the start]
@@ -664,7 +664,7 @@ Cock Length of Hobo is 6. [X Inches]
 Ball Size of Hobo is 3.
 Ball Count of Hobo is 2. [X balls]
 Cunt Count of Hobo is 0. [X pussy]
-Cunt Length of Hobo is 0. [X Cunt]
+Cunt Depth of Hobo is 0. [X Cunt]
 Cunt Tightness of Hobo is 0. [X Cunt]
 Nipple Count of Hobo is 6. [X nipples]
 Breast Size of Hobo is 0. [X at the start]
@@ -864,16 +864,16 @@ an everyturn rule:
 				now hobo-food-reminder is turns;
 				now lastfuck of helper dog is turns;
 			else if humanity of Player <= 25 and humanity of Player > 0 and journal is owned and hobo-journal - turns >= 8:
-				if bodyname of Player is "Human" and facename of Player is "Human":
+				if BodyName of Player is "Human" and FaceName of Player is "Human":
 					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
-				else if facename of Player is "Human":
-					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival as your [bodyname of Player] instincts affect your mind. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
-				else if bodyname of Player is "Human":
-					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival as your [facename of Player] instincts affect your mind. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
-				else if bodyname of Player is not facename of Player:
-					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival as a jumble of [bodyname of Player] and [facename of Player] instincts affect your mind. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
+				else if FaceName of Player is "Human":
+					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival as your [BodyName of Player] instincts affect your mind. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
+				else if BodyName of Player is "Human":
+					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival as your [FaceName of Player] instincts affect your mind. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
+				else if BodyName of Player is not FaceName of Player:
+					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival as a jumble of [BodyName of Player] and [FaceName of Player] instincts affect your mind. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
 				else:
-					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival as a jumble of [bodyname of Player] instincts affect your mind. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
+					say "     While taking a break, your mind starts to wander into strange, confused thoughts focused on sex and depravity more than survival as a jumble of [BodyName of Player] instincts affect your mind. You hear a soft whine beside you before Hobo buries his nose in your pack. Thinking that he might be sniffing after some food, you go to grab him, but he instead pulls out your journal and drops it in your lap. Looking down at it, you pat the clever dog on the head in thanks for the reminder. You need to take better care of yourself if you want to get through this.";
 				now hobo-journal is turns;
 				now lastfuck of helper dog is turns;
 			else if Libido of Player > 80 and inheat is true and slutfucked > 5 and hobo-libidosupp is false:

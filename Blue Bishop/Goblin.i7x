@@ -180,7 +180,7 @@ to say losetogob_m:
 		else:
 			say "he briefly teases your [cunt size desc of Player] portal[sfn] before [if Cunt Count of Player > 1]their[else]its[end if] appropriate use";
 		say ". Soon thereafter, you feel the head of his eager organ shove its way past the supple folds of your flesh, ";
-		if Cunt Length of Player > 15:
+		if Cunt Depth of Player > 15:
 			say "his prick barely registering against for you and your sizeable hole. He doesn't seem to regard this, though; perhaps all the more excuse to be more reckless in his [if HP of Player > 0]use[else]abuse[end if].";
 		else:
 			say "[if HP of Player > 0]eliciting a moan from you in[else]forcing a moan from your lips in involuntary[end if] response against the irreverent intrusion. He [if HP of Player > 0]at least spares you a moment of gentle reservation before his wanton need takes precedent[else]spares you little reprieve, eager to enforce his wanton dominion[end if].";
@@ -189,7 +189,7 @@ to say losetogob_m:
 				say "[one of][if scalevalue of Player > 3]Ass, big ass, MINE, mine[else]Ass, ass, MINE, ass[end if][or]Mine, MINE, ha ha[or]Fuck, fuck, fuck, ass[at random]";
 			else:
 				say "[if scalevalue of Player > 3][one of]F-fuck, there's so much here[or]I bet you can't feel a thing[or]I could lose myself in a hole this big[at random][else if HP of Player > 0][one of]Oh, a nice fit[or]I bet you want to see me do my magic[or]Oh, this is going to be a fun ride[at random][else][one of]Don't tense up so much, it'll only be harder for you[or]Oh, calm down and let me work my magic[or]Oh, what a squirming ride[at random][end if]";
-			if Cunt Length of Player > 15:
+			if Cunt Depth of Player > 15:
 				say "!' Slowly building up a pace of fucking you proper, his intrusion is not enough to effectively pleasure you[if HP of Player > 0] - not that this is really a pressing issue you for you right now -[else],[end if] ";
 				if Player is male:
 					say "[if Cock Count of Player > 2]a shortcoming he attempts to compensate for by the additional attention he confers to your dicks, freeing both hands to rapidly pump two of them[else if Cock Count of Player > 1]a shortcoming he attempts to compensate for by the additional attention he confers to your dicks, freeing both hands to rapidly pump the two of them[else], a shortcoming he compensates for by the additional attention he confers to your dick, freeing a hand to rapidly pump along its length[end if]. You can imagine the whole affair is a bit awkward for the diminutive goblin, barely able to ride and hold onto you at the same time, though he's certainly not lacking in tenacity.";
@@ -222,7 +222,7 @@ to say losetogob_m:
 					else:
 						say "[if scalevalue of Player > 3][one of]Whew, ah, what a ride[or]Ah, give me a second, big one[or]Heh, I still have the magic touch, even with someone so large[at random][else][one of]Oh, you've gone and made a mess of yourself[or]Whew, I'm going to need a second[or]Ho boy, what a ride[at random][end if]";
 					say "...' Taking a moment to catch his breath, creature eventually pulls himself free from you, casually wiping his spent tool clean against your behind before he crawls back into the hole from whence he came, regarding you with a sly grin as he departs, allowing you to recover and go about your business once more.[impregchance]";
-				else if (Cunt Length of Player > 15 and (Cunt Count of Player > 1 or Breast Size of Player > 0)) or Cunt Length of Player < 16:
+				else if (Cunt Depth of Player > 15 and (Cunt Count of Player > 1 or Breast Size of Player > 0)) or Cunt Depth of Player < 16:
 					say "     Suddenly, you feel the goblin's load flood your womb, the sensation - coupled with his additional attendance - driving you to ecstasy as well, the diminutive creature panting against your [bodytype of Player] form as your greedy hole milks him of every last drop.";
 					say "     '";
 					if gobdem is true:
@@ -255,7 +255,7 @@ to say losetogob_m:
 
 
 [  - old scene -
-	if Player is female and bodyname of Player is "Goblin":
+	if Player is female and BodyName of Player is "Goblin":
 		say "     The goblin cackles merrily at his victory and pushes you down onto the ground. Having found a female goblin, or at least someone close to one, he pushes you onto all fours with his foot and scrambles atop you. Raising his loincloth, he brings his green cock to your pussy and thrusts into you with no preamble. He grips your shoulders and pounds away at you, driving his small cock in again and again. Your body can't help but respond to this, panting and moaning at having a goblin cock inside it. Your pussy quivers over his penis, milking at it until he cums. As his hot seed rushes into you, you cum as well with a loud, squealing moan. Once he's drained his balls into you, he gives you another kick to send you on your way.[impregchance]";
 	else:
 		say "     The goblin cackles at his victory and pushes you to the ground. Taking your head in his hands, you can feel they have a surprisingly strong grip for their spindly size. Pressing your face to his loincloth, the masculine scent it's masking becomes more apparent. As his cock grows hard, his loincloth is pushed aside to reveal a five inch cock. Given his body's size, it must seem impressive to him, though you've seen much bigger out in this city.";
@@ -360,7 +360,7 @@ to say beatthegoblin:
 
 to say fgob_vicsex1:	[f-gob vaginal sex]
 	say "     While she attempts to recover you move behind her, exposing your cock[smn] and driving [if Cock Count of Player > 1]one of them[else]it[end if] to arousal. Suddenly, you pounce on her, [if scalevalue of Player > 3]lifting her clean off the ground and impaling the poor lass[else]pinning her to the ground as you drill into her hole[end if] with your [cock size desc of Player] dick. She cries out, [if Cock Length of Player > 8]forced to contend with your sizeable flesh[else]struggling in vain against your hold[end if].";
-	say "     [if scalevalue of Player > 3]Grip firm on her, you begin to force her up and down against your [cockname of Player] cock, relegating the beleaguered goblin to a mere sex toy[else]Firm hold on her, you begin to thrust against her cunt, beleaguered goblin moaning out as you continue to abuse her[end if]. Your motions gradually start to pick up in pace until you cry out in rapturous release, [if Cock Count of Player > 2]your exposed cocks firing impotently into the air[else if Cock Count of Player > 1]your exposed cock firing impotently into the air[else]the creature moaning loudly[end if] as you pump her full of your seed[if Ball Size of Player >= 6]. Elongated and strained her moans become as her belly visibly bloats with your impressive load, each successive gout spurted from her stuffed hole when she can abide it no further[end if].";
+	say "     [if scalevalue of Player > 3]Grip firm on her, you begin to force her up and down against your [CockName of Player] cock, relegating the beleaguered goblin to a mere sex toy[else]Firm hold on her, you begin to thrust against her cunt, beleaguered goblin moaning out as you continue to abuse her[end if]. Your motions gradually start to pick up in pace until you cry out in rapturous release, [if Cock Count of Player > 2]your exposed cocks firing impotently into the air[else if Cock Count of Player > 1]your exposed cock firing impotently into the air[else]the creature moaning loudly[end if] as you pump her full of your seed[if Ball Size of Player >= 6]. Elongated and strained her moans become as her belly visibly bloats with your impressive load, each successive gout spurted from her stuffed hole when she can abide it no further[end if].";
 	say "     Your flow soon diminishes and - now sated - you pull [if scalevalue of Player > 3]her free of you and put her down[else]yourself free of her and let her go[end if]. The goblin weakly retreats, leaving a trail of sexual fluids in her wake and letting you continue on your merry way.";
 
 
@@ -422,7 +422,7 @@ to say fgob_vicsex3_f:
 
 to say mgob_vicsex1:	[m-gob vaginal sex]
 	say "     You push him onto his back, casually parting the creature's raggedy loincloth to expose his cock before you. [if scalevalue of Player > 2]He's not particularly big, but given a creature of his size you suppose it measures up to be quite impressive by standards of proportions[else]You're happy to see he's quite well endowed in spite of being in your general size range[end if], and - thankfully - he doesn't protest when your [if scalevalue of Player > 3]tongue[else]head[end if] moves to lick his rod, eliciting its arousal.";
-	say "     You inevitably move to mount him, your affections sufficient enough to drive the goblin to arousal. [if scalevalue of Player > 3]He'd doubtlessly be more obliging towards these turn of events if you didn't tower over him as much as you do now, perhaps quick to fear you'd crush him under the weight of your [Body Size Adjective of Player], [bodydesc of Player] body[else]He can probably live with his loss if it leads to something like this, encouraging your use of his tool by stroking your [bodydesc of Player] form with his free hands[end if]. You moan in approval as his cock sinks into the depths of [if Cunt Count of Player > 1]one of your [cunt size desc of Player] cunts[else]your [cunt size desc of Player] cunt[end if], [if Cunt Length of Player > 12]and though his tool is too small to easily pleasure yourself, that isn't going to stop you from making full use of him[else]his rod gradually enveloped by the folds of your flesh[end if].";
+	say "     You inevitably move to mount him, your affections sufficient enough to drive the goblin to arousal. [if scalevalue of Player > 3]He'd doubtlessly be more obliging towards these turn of events if you didn't tower over him as much as you do now, perhaps quick to fear you'd crush him under the weight of your [Body Size Adjective of Player], [bodydesc of Player] body[else]He can probably live with his loss if it leads to something like this, encouraging your use of his tool by stroking your [bodydesc of Player] form with his free hands[end if]. You moan in approval as his cock sinks into the depths of [if Cunt Count of Player > 1]one of your [cunt size desc of Player] cunts[else]your [cunt size desc of Player] cunt[end if], [if Cunt Depth of Player > 12]and though his tool is too small to easily pleasure yourself, that isn't going to stop you from making full use of him[else]his rod gradually enveloped by the folds of your flesh[end if].";
 	if Player is male:
 		if scalevalue of Player > 4:
 			say "     The small creature eclipsed under your form, your hands move to stroke your hardening [if Cock Count of Player > 2]cocks. Two of them in your grasp, you're not about to let your beleaguered companion be the sole progenitor of your pleasure[else if Cock Count of Player > 1]cocks. Both of them in your grasp, you're not about to let your beleaguered companion be the sole progenitor of your pleasure[else]cock. With your [cock size desc of Player] tool in your grasp, you're not about to let your beleaguered companion be the sole progenitor of your pleasure[end if]. So small compared to you, he at least gets the small mercy of your organ aimed well over him, [if Ball Size of Player >= 5]though you could only imagine this sentiment as he's buried under your [Ball Size Adjective of Player] [Balls][else]though he is perhaps more distracted by having to contend with your troubling weight[end if].";
@@ -435,7 +435,7 @@ to say mgob_vicsex1:	[m-gob vaginal sex]
 		say ", wracking you with the throes of your own subsequent release. [if Cock Count of Player < 1]Cocks shooting their load[else]cock shooting its load[end if] clear across the open air, you unleash a [Cum Load Size of Player] load as that makes a [if Ball Size of Player >= 6]considerable[else]fair[end if] mess of the surrounding scenery, milking him of every last drop before you finally relent.";
 	else if Player is male:
 		say ", wracking you with the throes of your own subsequent release. [if Cock Count of Player < 1]Cocks firing their load[else]cock firing its load[end if] straight into the goblin's exposed face, you unleash a [Cum Load Size of Player] load as that makes a [if Ball Size of Player >= 6]considerable[else]fair[end if] mess of the [if scalevalue of Player > 2]diminutive[end if] creature's face, milking him of every last drop before you finally relent.";
-	else if Cunt Length of Player > 12:
+	else if Cunt Depth of Player > 12:
 		say "; however, this isn't nearly enough to get yourself off, forcing the [if scalevalue of Player > 2]diminutive[end if] goblin to endure your persistent abuse, forcing him to orgasm a number of additional times before you achieve your bliss, milking the poor creature dry before you finally relent.";
 	else:
 		say ", wracking you with the throes of your own subsequent release. [if scalevalue of Player > 3]Straining the goblin even further as you more firmly pin him down[else]Tightening your grip around the goblin[end if], your greedy hole milks the creature of his seed [']til naught remains before you finally relent.";
@@ -584,13 +584,14 @@ to say goblindesc:
 Section 2 - Creature Insertion
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 [ Adds a blank row to the table, this is immediately filled ;) ]
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
+	now Species Name entry is "";
 	now Name entry is "Goblin"; [ Infection/Creature name. Capitalized. ]
 	now enemy title entry is "";
 	now enemy Name entry is "";
@@ -627,7 +628,7 @@ When Play begins:
 	now Breast Size entry is 2; [ Size of breasts the infection will try to attain. ]
 	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 1; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Length entry is 6; [ Depth of female sex the infection will attempt to give a player. ]
+	now Cunt Depth entry is 6; [ Depth of female sex the infection will attempt to give a player. ]
 	now Cunt Tightness entry is 3; [ Width of female sex the infection will try to give a player. ]
 	now libido entry is 35; [ Target libido the infection will rise towards. ]
 	now loot entry is ""; [ Dropped item, blank for none. Case sensitive. ]
@@ -644,11 +645,12 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
+	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -656,28 +658,31 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
+	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
+	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3;
+	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
+	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -688,28 +693,33 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
-	now Asshole Depth entry is 7; [inches deep for anal fucking;]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Asshole Depth entry is 7; [inches deep for anal fucking]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3;
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
+	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Count entry is 0;
 	now Cock Girth entry is 0; [thickness 1-5, generates the Cock Girth Adjective]
@@ -724,8 +734,8 @@ When Play begins:
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
 	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Length entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
+	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
@@ -737,7 +747,7 @@ When Play begins:
 
 
 when play ends:
-	if bodyname of Player is "Goblin":
+	if BodyName of Player is "Goblin":
 		if humanity of Player < 10:
 			say "     As your goblin body's instincts take over, you cackle to yourself and scamper off through the city. You are drawn back to the large junkyard at the edge of town. After some scurrying away from the bigger creatures there, you run into a goblin patrol. They welcome you before leading you through the junkpiles to their hidden warren. There are several warrens built into mounds across the junkyard. Inside, the goblins tinker with trash or scuffle with one another before sating their lusts. Joining the workers, you set to making traps from the trash. When the soldiers enter the city, your people are ready with traps scattered around the junkyard to help deal with those who manage to get past its larger defenders. Those caught in goblin snares are dragged back to the warrens to be raped and converted into more goblins.";
 		else:
