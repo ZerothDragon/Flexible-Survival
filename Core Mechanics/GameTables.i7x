@@ -22,11 +22,11 @@ Name(text)	CarriedNumber(number)	StoredNumber(number)	EquippedStatus(truth state
 with 1000 blank rows
 
 Table of GameCharacters
-Name(text)	LocationName(text)	Energy(number)	HP(number)	MaxHP(number)	XP(number)	Level(number)	Armor(number)	Weapon Damage(number)	Capacity(number)	ScaleValue(number)	Strength(number)	Dexterity(number)	Stamina(number)	Charisma(number)	Intelligence(number)	Perception(number)	Hunger(number)	Thirst(number)	SleepRhythm(number)	Morale(number)	Lust(number)	Libido(number)	Loyalty(number)	Humanity(number)	Cocks(number)	Cock Length(number)	Cock Width(number)	Testes(number)	Cunts(number)	Cunt Depth(number)	Cunt Width(number)	Breasts(number)	Breast Size(number)	PlayerMet(truth state)	PlayerRomanced(truth state)	PlayerFucked(truth state)	OralVirgin(truth state)	Virgin(truth state)	AnalVirgin(truth state)
+Name(text)	LocationName(text)	Energy(number)	HP(number)	MaxHP(number)	XP(number)	Level(number)	Armor(number)	Weapon Damage(number)	Capacity(number)	ScaleValue(number)	Strength(number)	Dexterity(number)	Stamina(number)	Charisma(number)	Intelligence(number)	Perception(number)	Hunger(number)	Thirst(number)	SleepRhythm(number)	Morale(number)	Lust(number)	Libido(number)	Loyalty(number)	Humanity(number)	Cocks(number)	Cock Length(number)	Cock Width(number)	Testes(number)	Cunts(number)	Cunt Length(number)	Cunt Width(number)	Breasts(number)	Breast Size(number)	PlayerMet(truth state)	PlayerRomanced(truth state)	PlayerFucked(truth state)	OralVirgin(truth state)	Virgin(truth state)	AnalVirgin(truth state)
 with 1000 blank rows
 
 Table of PlayerData
-skin(text)	SkinName(text)	cock(text)	CockName(text)	face(text)	FaceName(text)	tail(text)	TailName(text)	body(text)	BodyName(text)	scent(text)	Cock Size Desc(text)	Cunt Size Desc(text)	Breast Size Desc(text)	Short Breast Size Desc(text)	bodydesc(text)	bodytype(text)
+skin(text)	skinname(text)	cock(text)	cockname(text)	face(text)	facename(text)	tail(text)	tailname(text)	body(text)	bodyname(text)	scent(text)	Cock Size Desc(text)	Cunt Size Desc(text)	Breast Size Desc(text)	Short Breast Size Desc(text)	bodydesc(text)	bodytype(text)
 with 1 blank row
 
 Table of PlayerLists
@@ -693,7 +693,6 @@ Name(text)	Type(text)
 "KoballoonSexBadEnd"	"number"
 "koboldgangmet"	"number"
 "koboldgangsubs"	"number"
-"KoboldScaleColor"	"number"
 "Koghhstatus"	"number"
 "KorvinSubmitCounter"	"number"
 "kpstatus"	"number"
@@ -1260,8 +1259,6 @@ Name(text)	Type(text)
 "SylviaTrapVar"	"number"
 "SylviaVirginCheck"	"number"
 "taintedwoolfound"	"number"
-"TaniClassMemory"	"number"
-"TaniRecommendation"	"number"
 "Targetturns"	"number"
 "tatsave"	"number"
 "tatstatus"	"number"
@@ -1524,9 +1521,7 @@ Name(text)	Type(text)
 "pfpcock"	"text"
 "pfphair"	"text"
 "pfpskin"	"text"
-"PlayerClass"	"text"
 "ppcolor"	"text"
-"PronounChoice"	"text"
 "sangr"	"text"
 "Scenario"	"text"
 "sh-descr"	"text"
@@ -1539,16 +1534,16 @@ Name(text)	Type(text)
 "wolvloc"	"text"
 "wrbody"	"text"
 "wrbodydesc"	"text"
-"wrBodyName"	"text"
+"wrbodyname"	"text"
 "wrbodytype"	"text"
 "wrcock"	"text"
-"wrCockName"	"text"
+"wrcockname"	"text"
 "wrface"	"text"
-"wrFaceName"	"text"
+"wrfacename"	"text"
 "wrskin"	"text"
-"wrSkinName"	"text"
+"wrskinname"	"text"
 "wrtail"	"text"
-"wrTailName"	"text"
+"wrtailname"	"text"
 "A_Candy"	"truth state"
 "A_Colleen"	"truth state"
 "A_David"	"truth state"

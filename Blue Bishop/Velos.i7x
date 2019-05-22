@@ -111,7 +111,7 @@ Cock Length of Velos is 0. [X Inches]
 Ball Size of Velos is 0. [Each testicle X inch across]
 Ball Count of Velos is 0. [X balls]
 Cunt Count of Velos is 0. [X pussy]
-Cunt Depth of Velos is 0. [X Cunt]
+Cunt Length of Velos is 0. [X Cunt]
 Cunt Tightness of Velos is 0. [X Cunt]
 Nipple Count of Velos is 0. [X nipples]
 Breast Size of Velos is 0. [X at the start]
@@ -159,7 +159,7 @@ to say velosdesc:
 
 
 Instead of conversing the Velos:
-	if FaceName of Player is "Cerberus" or skrp > 0 and velosheadstalk is false:		[multiple heads]
+	if facename of Player is "Cerberus" or skrp > 0 and velosheadstalk is false:		[multiple heads]
 		add -3 to velospostmusings, if absent;
 	else if velospostmusings is not empty:		[remove if unused and doesn't apply]
 		if -3 is listed in velospostmusings, remove -3 from velospostmusings;

@@ -15,7 +15,7 @@ AmbushChoice is a number that varies. [Used to temporary remember which choice y
 [Saved Variables]
 TaniClassMemory is a number that varies. [The class Tani recommends][1=Warrior, 2=Knight, 3=Rogue, 4=Bard, 5=Marksman, 6=Scout, 7=Tactician, 8=Companion][Saved Variable]
 TaniRecommendation is a number that varies. [Whether the player accepted the recommendation or not.][1=Declined, 2=Accepted][Saved Variable]
-PlayerClass is a text that varies. PlayerClass is usually "Error". [Player's Chosen Class][Warrior, Knight, Rogue, Bard, Marksman, Scout, Tactician, Companion][Saved Variable]
+PlayerClass is a number that varies. [Player's Chosen Class][1=Warrior, 2=Knight, 3=Rogue, 4=Bard, 5=Marksman, 6=Scout, 7=Tactician, 8=Companion][Saved Variable]
 KoboldScaleColor is a number that varies. [Determines Infection Scale Color][Saved Variable]
 
 Part 2 - Kobold Infection Menu
@@ -40,23 +40,23 @@ to say KoboldInfectionMenu:
 		say "[KoboldScaleMenu]";
 	else if calcnumber is 3:
 		now scalevalue of player is 2;
-		now BodyName of player is "Avalon Kobold";
-		now FaceName of player is "Avalon Kobold";
-		now TailName of player is "Avalon Kobold";
-		now SkinName of player is "Avalon Kobold";
-		now CockName of player is "Avalon Kobold";
+		now bodyname of player is "Avalon Kobold";
+		now facename of player is "Avalon Kobold";
+		now tailname of player is "Avalon Kobold";
+		now skinname of player is "Avalon Kobold";
+		now cockname of player is "Avalon Kobold";
 	else if calcnumber is 4:
 		say "[KoboldSelectiveMenu]";
 	else if calcnumber is 5:
 		say "     ";
 
 to say KoboldEyeMenu:
-	say "     What color will your eyes be?";
-	say "[link](Red)[as]1[end link][line break]";
-	say "[link](Blue)[as]2[end link][line break]";
-	say "[link](Green)[as]3[end link][line break]";
-	say "[link](Yellow)[as]4[end link][line break]";
-	say "[link](Orange)[as]5[end link][line break]";
+	WaitLineBreak;
+	say "     [link](Red)[as]1[end link][line break]";
+	say "     [link](Blue)[as]2[end link][line break]";
+	say "     [link](Green)[as]3[end link][line break]";
+	say "     [link](Yellow)[as]4[end link][line break]";
+	say "     [link](Orange)[as]5[end link][line break]";
 	now calcnumber is 0;
 	while calcnumber < 1 or calcnumber > 5:
 		say "Choice? (1-5)>[run paragraph on]";
@@ -64,7 +64,7 @@ to say KoboldEyeMenu:
 		if calcnumber is 1 or calcnumber is 2 or calcnumber is 3 or calcnumber is 4 or calcnumber is 5:
 			break;
 		else:
-			say "Invalid choice. Please choose [link]Red[as]1[end link], [link]Blue[as]2[end link], [link]Green[as]3[end link], [link]Yellow[as]4[end link], or [link]Orange[as]5[end link] eyes.";
+			say "Invalid choice.";
 	if calcnumber is 1:
 		say "     Do you want to have red eyes?";
 		say "     ([link]Yes[as]y[end link])[line break]";
@@ -108,12 +108,12 @@ to say KoboldEyeMenu:
 	WaitLineBreak;
 
 to say KoboldScaleMenu:
-	say "     What color will your scales be?";
-	say "[link](Red)[as]1[end link][line break]";
-	say "[link](Blue)[as]2[end link][line break]";
-	say "[link](Green)[as]3[end link][line break]";
-	say "[link](Black)[as]4[end link][line break]";
-	say "[link](White)[as]5[end link][line break]";
+	WaitLineBreak;
+	say "     [link](Red)[as]1[end link][line break]";
+	say "     [link](Blue)[as]2[end link][line break]";
+	say "     [link](Green)[as]3[end link][line break]";
+	say "     [link](Black)[as]4[end link][line break]";
+	say "     [link](White)[as]5[end link][line break]";
 	now calcnumber is 0;
 	while calcnumber < 1 or calcnumber > 5:
 		say "Choice? (1-5)>[run paragraph on]";
@@ -121,7 +121,7 @@ to say KoboldScaleMenu:
 		if calcnumber is 1 or calcnumber is 2 or calcnumber is 3 or calcnumber is 4 or calcnumber is 5:
 			break;
 		else:
-			say "Invalid choice. Please choose [link]Red[as]1[end link], [link]Blue[as]2[end link], [link]Green[as]3[end link], [link]Black[as]4[end link], or [link]White[as]5[end link] scales.";
+			say "Invalid choice.";
 	if calcnumber is 1:
 		say "     You want to be Red Scaled?";
 		say "     ([link]Yes[as]y[end link])[line break]";
@@ -174,7 +174,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 	WaitLineBreak;
 	say "     'There are eight classes available to you right now. Warrior, Knight, Rogue, Bard, Marksman, Scout, Tactician, and Companion.'";
 	LineBreak;
-	say "'What class do you want to know about?'[line break]";
+	say "'What class do you want to know about?''";
 	say "     [link](Warrior)[as]1[end link][if TaniClassMemory is 1] - Tani's Recommendation[end if][line break]";
 	say "     [link](Knight)[as]2[end link][if TaniClassMemory is 2] - Tani's Recommendation[end if][line break]";
 	say "     [link](Rogue)[as]3[end link][if TaniClassMemory is 3] - Tani's Recommendation[end if][line break]";
@@ -190,7 +190,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		if calcnumber is 1 or calcnumber is 2 or calcnumber is 3 or calcnumber is 4 or calcnumber is 5 or calcnumber is 6 or calcnumber is 7 or calcnumber is 8:
 			break;
 		else:
-			say "Invalid choice.  Please pick either [link]Warrior[as]1[end link], [link]Knight[as]2[end link], [link]Rogue[as]3[end link], [link]Bard[as]4[end link], [link]Marksman[as]5[end link], [link]Scout[as]6[end link], [link]Tactician[as]7[end link], or [link]Companion[as]8[end link].";
+			say "Invalid choice.";
 	if calcnumber is 1:
 		say "     '[bold type]Warrior[roman type]; a true fighter. Sometimes you just need to punch a unicorn in the face to get the job done, and you're the one with the strength to do that.'";
 		LineBreak;
@@ -200,7 +200,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		say "     ([link]No[as]n[end link])";
 		LineBreak;
 		if player consents:
-			now PlayerClass is "warrior";
+			now PlayerClass is 1;
 			if TaniClassMemory is 1:
 				now TaniRecommendation is 2;
 			else:
@@ -216,7 +216,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		say "     ([link]No[as]n[end link])";
 		LineBreak;
 		if player consents:
-			now PlayerClass is "knight";
+			now PlayerClass is 2;
 			if TaniClassMemory is 2:
 				now TaniRecommendation is 2;
 			else:
@@ -232,7 +232,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		say "     ([link]No[as]n[end link])";
 		LineBreak;
 		if player consents:
-			now PlayerClass is "rogue";
+			now PlayerClass is 3;
 			if TaniClassMemory is 3:
 				now TaniRecommendation is 2;
 			else:
@@ -248,7 +248,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		say "     ([link]No[as]n[end link])";
 		LineBreak;
 		if player consents:
-			now PlayerClass is "bard";
+			now PlayerClass is 4;
 			if TaniClassMemory is 4:
 				now TaniRecommendation is 2;
 			else:
@@ -264,7 +264,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		say "     ([link]No[as]n[end link])";
 		LineBreak;
 		if player consents:
-			now PlayerClass is "marksman";
+			now PlayerClass is 5;
 			if TaniClassMemory is 5:
 				now TaniRecommendation is 2;
 			else:
@@ -280,7 +280,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		say "     ([link]No[as]n[end link])";
 		LineBreak;
 		if player consents:
-			now PlayerClass is "scout";
+			now PlayerClass is 6;
 			if TaniClassMemory is 6:
 				now TaniRecommendation is 2;
 			else:
@@ -296,7 +296,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		say "     ([link]No[as]n[end link])";
 		LineBreak;
 		if player consents:
-			now PlayerClass is "tactician";
+			now PlayerClass is 7;
 			if TaniClassMemory is 7:
 				now TaniRecommendation is 2;
 			else:
@@ -312,7 +312,7 @@ to say ClassMenu:[This is a one time use menu for this event only]
 		say "     ([link]No[as]n[end link])";
 		LineBreak;
 		if player consents:
-			now PlayerClass is "companion";
+			now PlayerClass is 8;
 			if TaniClassMemory is 8:
 				now TaniRecommendation is 2;
 			else:
@@ -360,62 +360,36 @@ to GildwingKoboldTest:
 		if resolution of Fall-O-the-Wisp is 4: [ran away]
 			say "     The spear-wielding red kobold gestures to the others, and slowly they all lower their weapons before he turns to you. 'My brother says you fell on your ass, messed with a unicorn while it was getting lucky, then ran away. That's pretty damn funny!' he laughs. Some of the other kobolds snicker from their positions as well. 'With The Order after our tails, we can't just let anyone in. We can't afford to lose this war.'";
 		[]
+		say "     'I'm Tyrin Redscale, level 20 Chieftain,' he continues. 'Why is it that you've come to the Gildwings?'";
+		say "     [link](1)[as]1[end link] - Just Exploring";
+		LineBreak;
+		say "     [link](2)[as]2[end link] - Wanting to Help";
+		LineBreak;
+		say "     [link](3)[as]3[end link] - Just Scavenging";
+		LineBreak;
+		say "     [link](4)[as]4[end link] - Wanting to Become a Kobold";
+		LineBreak;
 		if resolution of Fall-O-the-Wisp is 4:
-			say "     'I'm Tyrin Redscale, level 20 Chieftain,' he continues. 'Why is it that you've come to the Gildwings?'";
-			say "     [link](1)[as]1[end link] - Just Exploring";
+			say "     [link](5)[as]5[end link] - Invited to Join.";
 			LineBreak;
-			say "     [link](2)[as]2[end link] - Wanting to Help";
-			LineBreak;
-			say "     [link](3)[as]3[end link] - Just Scavenging";
-			LineBreak;
-			say "     [link](4)[as]4[end link] - Wanting to Become a Kobold";
-			LineBreak;
-			say "     [link](5)[as]5[end link] - Invited to Join";
-			LineBreak;
-			now calcnumber is 0;
-			while calcnumber < 1 or calcnumber > 5:
-				say "Choice? (1-5)>[run paragraph on]";
-				get a number;
-				if calcnumber is 1 or calcnumber is 2 or calcnumber is 3 or calcnumber is 4 or calcnumber is 5:
-					break;
-				else:
-					say "Invalid choice. Type [link]1[end link] for exploring, [link]2[end link] for wanting to help, [link]3[end link] for scavenging, [link]4[end link] for becoming a kobold, or [link]5[end link] for invited.";
-			if calcnumber is 1:
-				say "     'If you're able to move around Avalon so freely, then maybe we could use someone like you.'";
-			else if calcnumber is 2:
-				say "     'Is that so?' Tyrin asks, rubbing his scaly chin in thought.";
-			else if calcnumber is 3:
-				say "     'We have supplies, but it's only rationed to our clan and our allies,' Tyrin says, rubbing his scaly chin in thought. 'Maybe if you became our ally, we could help you out.'";
-			else if calcnumber is 4:
-				say "     'Really?' Tyrin asks with a look of pleased surprise. 'If that's what you really want, we can grant you that wish, but you need to prove that you're not an enemy first.''";
-			else if calcnumber is 5:
-				say "     'So my brother has told me. We'd be happy to have you as soon as we know we can trust you.'";
-		else:
-			say "     'I'm Tyrin Redscale, level 20 Chieftain,' he continues. 'Why is it that you've come to the Gildwings?'";
-			say "     [link](1)[as]1[end link] - Just Exploring";
-			LineBreak;
-			say "     [link](2)[as]2[end link] - Wanting to Help";
-			LineBreak;
-			say "     [link](3)[as]3[end link] - Just Scavenging";
-			LineBreak;
-			say "     [link](4)[as]4[end link] - Wanting to Become a Kobold";
-			LineBreak;
-			now calcnumber is 0;
-			while calcnumber < 1 or calcnumber > 4:
-				say "Choice? (1-4)>[run paragraph on]";
-				get a number;
-				if calcnumber is 1 or calcnumber is 2 or calcnumber is 3 or calcnumber is 4:
-					break;
-				else:
-					say "Invalid choice. Type [link]1[end link] for exploring, [link]2[end link] for wanting to help, [link]3[end link] for scavenging, or [link]4[end link] for becoming a kobold.";
-			if calcnumber is 1:
-				say "     'If you're able to move around Avalon so freely, then maybe we could use someone like you.'";
-			else if calcnumber is 2:
-				say "     'Is that so?' Tyrin asks, rubbing his scaly chin in thought.";
-			else if calcnumber is 3:
-				say "     'We have supplies, but it's only rationed to our clan and our allies,' Tyrin says, rubbing his scaly chin in thought. 'Maybe if you became our ally, we could help you out.'";
-			else if calcnumber is 4:
-				say "     'Really?' Tyrin asks with a look of pleased surprise. 'If that's what you really want, we can grant you that wish, but you need to prove that you're not an enemy first.'";
+		now calcnumber is 0;
+		while calcnumber < 1 or calcnumber > 5:
+			say "Choice? (1-5)>[run paragraph on]";
+			get a number;
+			if calcnumber is 1 or calcnumber is 2 or calcnumber is 3 or calcnumber is 4 or calcnumber is 5:
+				break;
+			else:
+				say "Invalid choice. Type [link]1[end link] to A, [link]2[end link] to B or [link]3[end link] to C.";
+		if calcnumber is 1:
+			say "     'If you're able to move around Avalon so freely, then maybe we could use someone like you.'";
+		else if calcnumber is 2:
+			say "     'Is that so?' Tyrin asks, rubbing his scaly chin in thought.";
+		else if calcnumber is 3:
+			say "     'We have supplies, but it's only rationed to our clan and our allies,' Tyrin says, rubbing his scaly chin in thought. 'Maybe if you became our ally, we could help you out.'";
+		else if calcnumber is 4:
+			say "     'Really?' Tyrin asks with a look of pleased surprise. 'If that's what you really want, we can grant you that wish, but you need to prove that you're not an enemy first.''";
+		else if calcnumber is 5:
+			say "     'If that's true, we'd be happy to have you as soon as we know we can trust you.'";
 		[]
 		say "     Tyrin says something to one of the nearby guards that you can't quite make out, followed by the guard saluting and scrambling into their base. 'If you want to prove that you aren't our enemy, then you're going to have to go on a quick quest with one of our Scouts. There has been reported enemy activity in an area. Deal with them, and if Gildwing approves, we'll allow you to join us,' he explains before the gates start to opening.";
 		say "     You get a small glimpse of the cave entrance as a green kobold steps forward. Unlike the others, this one is dressed in what seemed like high-quality leather armor with feathers tied to its small horns. The lizard offers a hand in greeting, which you shake, partly out of habit.";
@@ -499,7 +473,6 @@ to say Ambush Test:
 to say Class Question:
 	if StrClass is 2 or IntClass is 2 or DexClass is 2 or PerClass is 2:
 		say "     With your mission complete, you follow the same path that brought you here, Tani staying by your side this time instead of leading you. He happily hums to himself, looking around at nothing in particular. The kobold seems very carefree despite returning from a mission of war. After about a half an hour of silence, he turns to you at last with curious eyes.";
-		WaitLineBreak;
 		[STR]
 		if StrClass is 2:
 			say "     'So... Why is it you fight? What do you fight for? Is it for yourself? Survival Is tough after everything that has happened, and there's no shame in it. Or is it that you fight for others and are trying to make things better, hoping to inspire them to do the same?";
@@ -552,7 +525,6 @@ to say Class Question:
 			else:
 				say "     'Sometimes supporting others is the key to victory. It's always good to know where and when your talents are most useful.' Tani gives you a little nod. 'Tani hopes you have a good heart inside of you, despite all of the darkness in the world. The Gildwings could use an extra glimmer of hope.'";
 				now TaniClassMemory is 8;
-		WaitLineBreak;
 		say "[DragonMeet]";
 	else:
 		say "Error, you shouldn't be able to get here, please report this bug on the FS Discord with the Class Question Event and Numbers StrClass:[StrClass] IntClass:[IntClass] DexClass:[DexClass] PerClass:[PerClass]";
@@ -563,7 +535,7 @@ to say DragonMeet:
 	WaitLineBreak;
 	say "     'Tani doesn't know about trust, but...' Tani looks towards you with a smile. 'Tani likes [ObjectPro of player]. [SubjectProCap of player] promise. Tani thinks we should bring [ObjectPro of player] to the master and let him decide.' Tyrin smiles slightly as he gestures the others to return to their posts. 'Follow me,' he says as he leads you both through the gates.";
 	say "     Past the wall, the cliffside opens up into a cave entrance large enough for a truck to drive through. The inside seems to be dimly lit by glowing crystals that give off a soft while light, each held in a sconce about ten feet apart. The floor is dirt at first, likely trailed in by lots of feet going in and out of the cave, but continuing on, it quickly transitions into smooth stone. As you travel through the tunnels you pass by kobolds of various colors, ";
-	if BodyName of player is "Kobold" and FaceName of player is "Kobold":
+	if bodyname of player is "Kobold" and facename of player is "Kobold":
 		say "most of which seem too focused on whatever they have on their minds.";
 	else:
 		say "some of which give you a curious expression, suggesting they aren't used to all that many non-kobolds coming in.";
@@ -572,10 +544,10 @@ to say DragonMeet:
 	say "     'Tani hopes you choose to become a kobold! Tani thinks you'd make a great kobold.' He coos happily, to which Tyrin adds, '[PosAdjCap of player] choice is [PosAdj of player] own, though another kobold is welcome, as any ally is helpful.' Tani just giggles and says, 'Yeah, but kobolds are the best!'";
 	WaitLineBreak;
 	say "     The cave finally comes to an end, opening up into a very large room. Stalactites hang from the ceiling and stalagmites line the bottom edges. There's a pool on the floor to the right side, fueled by a flow of subterranean water leaking out of the wall like a faucet. What really grabs your attention, however, is the huge golden dragon that stands staring into the pool thoughtfully. It looks just like something out of a fantasy book, standing on four bestial legs, each ending in feet baring deadly looking claws. Its skin is covered with golden-yellow scales that seem to have a slight metallic sheen. Its bat-like wings are furled and tucked against its back, and upon its head are four proud, golden-colored, draconic horns.";
-	say "     The dragon slowly turns towards you, his blue eyes softly glowing with power in the dim light of the crystals. 'You have brought someone to see me, Tyrin?' He speaks in a deep and powerful voice that echoes throughout the room. 'Yes, master.' Tyrin says as he and Tani bow politely. 'This one shows potential, but we leave them for you to judge.' The red and green kobolds stand up and quickly go back the way you came, leaving you alone with the dragon.";
+	say "     The dragon slowly turns towards you, his blue eyes softly glowing with power in the dim light of the crystals. 'You have brought someone to see me, Tyrin?' He speaks in a deep and powerful voice that echoes throughout the room. 'Yes, master,' Tyrin says as he and Tani bow politely. 'This one shows potential, but we leave them for you to judge.' The red and green kobolds stand up and quickly go back the way you came, leaving you alone with the dragon.";
 	WaitLineBreak;
 	say "     The dragon leans towards you, sniffing you a little before standing up proudly. 'I am Gildwing, and I have taken these kobolds under my care,' he says before asking, 'What is it that I may call you?' You introduce yourself and ask what he wants from you. 'I'm sure you have noticed that we are at war[if player is not defaultnamed], [name of player][end if]. I am also sure that the other side will tell you that we are monsters who seek only chaos and destruction. Though this once was true, it is not anymore.'";
-	say "     The dragon slowly lays down, curling up a little, but his eyes never leave you. 'When I found the kobolds, they were a dying ember. They had suffered from the outbreak that has laid waste to your world, and as such, they had attacked and raped as many creatures do. They were rightfully forced back by the Wisp Queen and her Champions, and sealed within these caves where they had come from, but this... the underground... being locked down here with the infection quickly shatters the minds of the kobolds. They were a pathetic and dying race, one that I felt sorry for and wanted to help. I came and I sealed their infectious nature. I did my best to restore their sanity and reduce their urges to attack. Like many in your world, they still struggle with their nature, but down here, they have no chance to survive. Even with my help, unless the kobolds become free to wander the surface, they will all lose their minds to the infection, but the people still remember the times when kobolds were a blight and fear what their return may bring.'";
+	say "     The dragon slowly lays down, curling up a little, but his eyes never leave you. 'When I found the kobolds, they were a dying ember. They had suffered from the outbreak that has laid waste to your world, and as such, they had attacked and raped as many creatures do. They were rightfully forced back by the Wisp Queen and her Champions, and sealed within these caves where they had come from, but this... the underground... being locked down here with the infection quickly shatters the minds of the kobolds. They were a pathetic and dying race, and one that I felt sorry for, and wanted to help. I came and I sealed their infectious nature. I did my best to restore their sanity and reduce their urges to attack. Like many in your world, they still struggle with their nature, but down here, they have no chance to survive. Even with my help, unless the kobolds become free to wander the surface, they will all lose their minds to the infection, but the people still remember the times when kobolds were a blight and fear what their return may bring.'";
 	WaitLineBreak;
 	say "     Goldwing stretches his neck towards you, looking deep into your eyes. 'This is why we have brought war. We fight for our survival and sanity. Once we have earned our place up above, we will help return things to order once more and show that no race is above redemption! This... is where you are needed[if player is not defaultnamed], [name of player][end if].' The dragon bows his head in respect before continuing. 'My kobolds are not as strong as the Wisp Queen's Champions, and though we outnumber them, I fear this isn't enough. We need outside help if we are to change the tides of this war, and both Tyrin and I can sense that there is something special about you. So, I ask you, will you join the Gildwings in our fight for survival? If you join us, we can help train you and equip you, and help you in any way we can. If you need time to think, feel free to decline. The offer will remain open as long as you do not join our enemy. So[if player is not defaultnamed], [name of player][end if]... Will you join us?'";
 	say "     ([link]Yes[as]y[end link]) - Join the Gildwings";
@@ -607,8 +579,8 @@ to say GildwingClanAccept:
 			LineBreak;
 		[Skin]
 		say "     Your skin begins to itch horribly as [if KoboldScaleColor is 1]rose-red[else if KoboldScaleColor is 2]azure[else if KoboldScaleColor is 3]forest-green[else if KoboldScaleColor is 4]charcoal-black[else if KoboldScaleColor is 5]snowy-white[else](Error, value invalid. Please report this issue to the FS Discord Server with KoboldScaleColor: [KoboldScaleColor].)[end if] scales form to cover your whole body. They interlock and smooth out and leaving you with sleek, [if KoboldScaleColor is 1]red[else if KoboldScaleColor is 2]blue[else if KoboldScaleColor is 3]green[else if KoboldScaleColor is 4]black[else if KoboldScaleColor is 5]white[else](Error, value invalid. Please report this issue to the FS Discord Server with KoboldScaleColor: [KoboldScaleColor].)[end if], kobold scales.";
-		now SkinName of player is "Avalon Kobold";
-		now Skin of Player is "[if KoboldScaleColor is 1][one of]crimson[or]red[or]rose-red[at random][else if KoboldScaleColor is 2][one of]azure[or]blue[or]sea-blue[at random][else if KoboldScaleColor is 3][one of]verdant[or]green[or]forest-green[at random][else if KoboldScaleColor is 4][one of]obsidian[or]black[or]charcoal-black[at random][else if KoboldScaleColor is 5][one of]alabaster[or]white[at random]snow-white[else](Error, value invalid. Please report this issue to the FS Discord Server with KoboldScaleColor: [KoboldScaleColor].)[end if] scales. Despite their protective nature, you can still feel everything just fine through your now draconic";
+		now skinname of player is "Avalon Kobold";
+		now skin of player is "[if KoboldScaleColor is 1][one of]crimson[or]red[or]rose-red[at random][else if KoboldScaleColor is 2][one of]azure[or]blue[or]sea-blue[at random][else if KoboldScaleColor is 3][one of]verdant[or]green[or]forest-green[at random][else if KoboldScaleColor is 4][one of]obsidian[or]black[or]charcoal-black[at random][else if KoboldScaleColor is 5][one of]alabaster[or]white[at random]snow-white[else](Error, value invalid. Please report this issue to the FS Discord Server with KoboldScaleColor: [KoboldScaleColor].)[end if] scales. Despite their protective nature, you can still feel everything just fine through your now draconic";
 		LineBreak;
 		[Chest]
 		if breast size of player > 0:
@@ -618,41 +590,29 @@ to say GildwingClanAccept:
 			LineBreak;
 		[Body]
 		say "     Your legs suddenly collapse underneath you, causing you to fall to your knees. Your legs and feet quiver as they bend and reconfigure into a more draconic digitigrade shape with a three-toed, raptor-like foot. Your hands clench involuntarily as your fingers merge in such a way that you are left with only four fingers instead of five, each tipped with a small claw. Feeling stable again, you push yourself to your feet and try to get used to your new stance.";
-		now BodyName of player is "Avalon Kobold";
-		now Body of Player is "lithe but surprisingly strong. It looks and feels perfect for a cave dwelling Kobold. [if player is female]Besides that, there is also a bit of a feminine curve to your hips, making them somewhat wider for egg laying. [end if]Your legs are digitigrade and end in three-toed feet, while your arms sport four fingered hands, each tipped with a small claw.";
-		now TorsoName of Player is ""; [wiping out the new style parts]
-		now BackName of Player is ""; [wiping out the new style parts]
-		now LegsName of Player is ""; [wiping out the new style parts]
-		now ArmsName of Player is ""; [wiping out the new style parts]
+		now bodyname of player is "Avalon Kobold";
+		now body of player is "lithe but surprisingly strong. It looks and feels perfect for a cave dwelling Kobold. [if player is female]Besides that, there is also a bit of a feminine curve to your hips, making them somewhat wider for egg laying. [end if]Your legs are digitigrade and end in three-toed feet, while your arms sport four fingered hands, each tipped with a small claw";
 		LineBreak;
-		[back]
-		[if player:
+		[[back]
+		if player:
 			say "     ";
 			LineBreak;]
 		[Tail]
 		say "     A sharp pressure builds at the base of your spine, quickly changing into a strange tingle that shifts outwards, traveling along your new reptilian tail as it settles into its new shape. Wiggling it back and forth, you confirm quickly how well it can move and shift your balance.  The perfect tail for a kobold!";
-		now TailName of player is "Avalon Kobold";
+		now tailname of player is "Avalon Kobold";
 		now tail of player is "A long and agile reptilian tail sways behind you, adjusting to your every movement to help you keep balance. It is surprisingly dexterous and you are able to control your tail as well as any other limb. It seems to wiggle at times when you are happy.";
-		now AssName of Player is ""; [wiping out the new style parts]
 		LineBreak;
 		[Face]
 		say "     Your vision turns blurry and your head aches as it rearranges its shape. Pressure builds at the back of your skull as two small kobold horns grow, and by the time the headache clears and your vision returns, you are met with a small draconic snout with a mouth filled with pointy little teeth, making you look similar to a small dragon.";
-		now FaceName of player is "Avalon Kobold";
-		now Face of Player is "reptilian in shape and crowned with two small horns. Your wide, [Eye Color of player] eyes are surprisingly keen, even while in the dark. Small but sharp teeth and a pointed tongue complete your draconic visage";
-		now HeadName of Player is ""; [wiping out the new style parts]
+		now facename of player is "Avalon Kobold";
+		now face of player is "reptilian in shape and crowned with two small horns. Your wide, [Eye Color of player] eyes are surprisingly keen, even while in the dark. Small but sharp teeth and a pointed tongue complete your draconic visage";
 		LineBreak;
 		[Cock&Balls]
 		if player is male:
-			say "     Your crotch feels warm as your arousal flares, causing your [if player is internal][Cock of Player] cock to stir within you, slowly pushing its way out from your vent, beginning to pulse as its shape changes to something more fitting for a small lizard. It becomes smooth; tapering down until thickening into a pseudo-knot bulge at the base. As soon as the transformation is complete, the feeling starts to fade, and slowly your new kobold cock withdraws back into your genital slit[else][Cock of Player] cock to harden and grow to its full length, beginning to pulse as its shape starts to change. Your balls pull up, and for a moment you are worried that you are losing them, but you can feel them traveling within you to become internal. At the same time, your dick becomes something more fitting for a small lizard. It becomes smooth; tapering down until thickening into a pseudo-knot bulge at the base. You feel a new depth push inward as a vent is formed to house your new reptilian length. As soon as the transformation is complete, the feeling starts to fade, and slowly your new kobold cock withdraws into your genital slit, leaving it impossible to tell your gender merely by looking at your groin[end if].";
-			now CockName of player is "Avalon Kobold";
-			now Cock of Player is "[one of]reptilian[or]draconic[or]taperd[or]kobold[at random]";
+			say "     Your crotch feels warm as your arousal flares, causing your [if player is internal][cock of player] cock to stir within you, slowly pushing its way out from your vent, beginning to pulse as its shape changes to something more fitting for a small lizard. It becomes smooth; tapering down until thickening into a pseudo-knot bulge at the base. As soon as the transformation is complete, the feeling starts to fade, and slowly your new kobold cock withdraws back into your genital slit[else][cock of player] cock to harden and grow to its full length, beginning to pulse as its shape starts to change. Your balls pull up, and for a moment you are worried that you are losing them, but you can feel them traveling within you to become internal. At the same time, your dick becomes something more fitting for a small lizard. It becomes smooth; tapering down until thickening into a pseudo-knot bulge at the base. You feel a new depth push inward as a vent is formed to house your new reptilian length. As soon as the transformation is complete, the feeling starts to fade, and slowly your new kobold cock withdraws into your genital slit, leaving it impossible to tell your gender merely by looking at your groin[end if].";
+			now cockname of player is "Avalon Kobold";
+			now cock of player is "[one of]reptilian[or]draconic[or]taperd[or]kobold[at random]";
 			WaitLineBreak;
-		[Womb]
-		if (Player is female or Player is mpreg_ok) and ovipregalways is false:
-			say "     You feel a shift in your belly as your insides adjusts to your new form. Instinctually, you know you now are an egg layer, ready to breed the next generation of kobolds.";
-			WaitLineBreak;
-			now ovipregalways is true;
-			now ovipreglevel is 3;
 		[]
 		say "     Gildwing looks over your new kobold form with a pleased expression. 'This suits you well,' he says before calling out, 'Tyrin!' The red kobold quickly enters the cavern room, stopping for a moment as soon as he sees you. 'Oh! Our friend decided to join us? Tani will be happy about that.' The dragon gesture towards you. 'Please show [ObjectPro of player] around and explain how [ObjectPro of player] may help.' Tyrin nods and looks towards you. 'Follow me please,' he asks before leading you out into the main passageway.";
 		now Resolution of GildwingKoboldTest is 3;
@@ -705,26 +665,26 @@ to say GildwingClanAccept:
 	if player consents:
 		if TaniClassMemory is:
 			-- 1:
-				now PlayerClass is "warrior";
+				now PlayerClass is 1;
 			-- 2:
-				now PlayerClass is "knight";
+				now PlayerClass is 2;
 			-- 3:
-				now PlayerClass is "rogue";
+				now PlayerClass is 3;
 			-- 4:
-				now PlayerClass is "bard";
+				now PlayerClass is 4;
 			-- 5:
-				now PlayerClass is "marksman";
+				now PlayerClass is 5;
 			-- 6:
-				now PlayerClass is "scout";
+				now PlayerClass is 6;
 			-- 7:
-				now PlayerClass is "tactician";
+				now PlayerClass is 7;
 			-- 8:
-				now PlayerClass is "companion";
+				now PlayerClass is 8;
 			now TaniRecommendation is 2;
 	else:
 		say "[ClassMenu]";
 	[1=Warrior, 2=Knight, 3=Rogue, 4=Bard, 5=Marksman, 6=Scout, 7=Tactician, 8=Companion]
-	say "     Tyrin nods approvingly. 'From now on, you are now [if player is not defaultnamed][name of player],[else]a[end if] Level 1 [PlayerClass in sentence case]. You say this when you report in. To gain levels in your class, you need to complete missions to prove your skill.'";
+	say "     Tyrin nods approvingly. 'From now on, you are now [if player is not defaultnamed][name of player],[else]a[end if] Level 1 [if PlayerClass is 1]Warrior[else if PlayerClass is 2]Knight[else if PlayerClass is 3]Rogue[else if PlayerClass is 4]Bard[else if PlayerClass is 5]Marksman[else if PlayerClass is 6]Scout[else if PlayerClass is 7]Tactician[else if PlayerClass is 8]Companion[else](Error: Report to FS Discord with PlayerClass:[PlayerClass])[end if]. You say this when you report in. To gain levels in your class, you need to complete missions to prove your skill.'";
 	WaitLineBreak;
 	say "     You both finally come upon another room with a thick wooden door. The room beyond contains shelves of books, scrolls, and maps, while in the center is a large table with another large map on it, along with what look to be small figurines and some dice. In one corner of the room, you can see a bed, a dresser, a side table, posters of anime characters and dragons, and action figures standing posed on the dresser... It is the bedroom of a true nerd, and it seems almost out of place among everything else in the room. 'This is the War Room, and where I live. You can come here to find me and accept your missions,' he explains before walking off, not even giving you a chance to ask further questions.";
 	say "     The next room he shows you is pretty massive. The long chamber contains rows and rows of simple bunk beds, each one with chests to match. In the corner closest to the door is an area closed off with what seems like a somewhat poorly constructed building. There's a large window on the side, closed off with bars. Within, you can see chests, armor racks, weapon racks...";

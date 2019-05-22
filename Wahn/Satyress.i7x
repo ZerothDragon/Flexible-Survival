@@ -97,7 +97,7 @@ to say SatyressSexSelection:
 
 to say SatyressFuck1:
 	say "     The satyress looks up at you with momentary surprise before responding, 'Well, why did you act like you wanted to beat me off with a stick just before? We could have had this fun without scuffling and all. Ah, no matter - come here and give me a good dicking...' Her beaming expression shows how eager she is for some fun, and in a move worthy of a trained gymnast, she pushes her body up in a graceful arch, showing off all her curves and the already moist pussy lips between her legs. Then she sinks back down again, lying on the grass between the campus buildings, spreading her legs slightly and cupping her own breasts. 'Come on then, I'm waiting,' she coos in an enticing tone. Eager to get going, you rapidly discard your gear and clothing as you walk towards, then kneel on the grass between her legs. Running your hands along the sides of her lithe legs, you feel the soft fur of her blond curls and soon reach the moist folds of her sex. The transformed student moans lustfully as you brush over them, rubbing her nether lips and the sensitive clit at the top.";
-	say "     You play with the satyress for a moment, teasing and stroking her body and reveling in the sounds you can make her do. Then finally the throbbing of your own [Cock of Player] shaft can't be denied anymore. Time to claim your prize. Moving forward on your knees, you brush your hard manhood against the young woman's pussy lips and the trimmed bush of her pubes[if Cock Length of Player > 24]. Feeling the size of your massive prick, she looks up at you with raised eyebrows and gives an almost musical giggle, then grinds against you all the harder. 'My, you are a big boy, aren't you?' she says in a somewhat drunken laugh[else if Cock Length of Player > 12]. Feeling the size of your large prick, she shows no hesitation and grinds back against you. 'Come on, I wanna feel this bad boy in me now,' she says with a somewhat drunken laugh[else]. Feeling your [cock size desc of Player] prick, she gives an almost musical giggle and grinds back against you. 'Well, you're not as huge as some satyrs I know, but this should still be fun,' she says with a drunken laugh[end if]. Just grinning in reply, you line up the tip of your shaft and sink it into her waiting snatch.";
+	say "     You play with the satyress for a moment, teasing and stroking her body and reveling in the sounds you can make her do. Then finally the throbbing of your own [cock of Player] shaft can't be denied anymore. Time to claim your prize. Moving forward on your knees, you brush your hard manhood against the young woman's pussy lips and the trimmed bush of her pubes[if Cock Length of Player > 24]. Feeling the size of your massive prick, she looks up at you with raised eyebrows and gives an almost musical giggle, then grinds against you all the harder. 'My, you are a big boy, aren't you?' she says in a somewhat drunken laugh[else if Cock Length of Player > 12]. Feeling the size of your large prick, she shows no hesitation and grinds back against you. 'Come on, I wanna feel this bad boy in me now,' she says with a somewhat drunken laugh[else]. Feeling your [cock size desc of Player] prick, she gives an almost musical giggle and grinds back against you. 'Well, you're not as huge as some satyrs I know, but this should still be fun,' she says with a drunken laugh[end if]. Just grinning in reply, you line up the tip of your shaft and sink it into her waiting snatch.";
 	WaitLineBreak;
 	say "     Moaning loudly as you penetrate deeper and deeper, the satyress digs her hands into the grass in arousal, trembling from feeling your shaft inside her pussy. 'Yeah - fuck me,' she pants and looks you right in the eyes, sliding her legs around your hips to pull you closer. You're more than ready to indulge her request and start sawing your hard cock in and out of her pussy. The naked half-goat woman is a very eager partner to get fucked, vocally telling you - and everyone in earshot - that she likes it hard and grinding her crotch up against you. As you continue to hammer into her warm and wet hole, the satyress teases you on and on, proving that she lives to have fun. In between loud moans, she tells you about the [one of]powerful gorilla[or]sexy incubus[or]dick-girl cheerleader[or]insanely well-hung nerd[at random] that had her behind the library and the satyr gang-bang she was in at a nearby frat-house. You just know that it had to be Phi Alpha Nu - the place where you helped spread satyr-dom to the college campus. It is with great pleasure that you enjoy the fruits of your 'hard work' over there, sliding in and out of this sexy young woman now turned into a mythological being.";
 	say "     After a long and satisfying ride, you drive your cock deep inside and fill her with your potent load. The sexy student with you isn't far behind - as she proceeds to finger her clit in a frantic pace to finish herself off. Mere moments later, she is squirting femcum over your crotch as well as herself, soaking her pubes and the start of her leg fur. Once you're done and pulled out, she grabs her fallen cup (crawling over to it on all fours and also stopping a few times to show her messy pussy with your creamy load [if Ball Size of Player > 5]flowing[else if Ball Size of Player > 4]running[else if Ball Size of Player > 2]leaking[else]trickling[end if] out of it. Looking over her shoulder and giving you a wink, the satyress says, 'Thanks! I really needed that. See you again soon, I hope!' And with that she stands up and dashes off, looking to find a refill of wine.";
@@ -110,7 +110,7 @@ to say SatyressFuck2:
 	say "     The sexy student with you isn't far behind - as your partner's hands are freed from having to brace herself and she fingers her clit in a frantic pace to finish herself off. Mere moments later, she is squirting femcum over the ground, as well as it trickling down to soak the furred inside of her legs. Once you're done and pulled out, she grabs her fallen cup (bending over to show you his messy ass with your creamy load [if Ball Size of Player > 5]flowing[else if Ball Size of Player > 4]running[else if Ball Size of Player > 2]leaking[else]trickling[end if] out of it. Turning around and giving you a wink, the satyress says, 'Thanks! I really needed that. See you again soon, I hope!' And with that she dashes off, looking to find a refill of wine.";
 
 to say SatyressFuck3:
-	say "     The Satyress looks up at you with a salacious smile on her face. 'Oooh, you like giving orders. Will do babe,' she says in a slightly slurred tone and giggles as she pushes herself up on her knees and waits for you, wiggling her tongue playfully. Eager to get going, you rapidly discard your gear and clothing as you walk closer until you're standing right before the sexy young woman. Leaning forward, she immediately takes hold of your hard [Cock of Player] dick, holding it up to lick the underside then brushing her lips over the cockhead. 'It's no wine, but I'm sure it'll have a full-bodied flavor,' the satyress adds in a merry chuckle, then gets back to light stroking and lapping. When the teasing and licking goes on for a bit too long for your taste, you grab her horns and pull her mouth forward, driving your cock into it. She gives a bleating sound of surprise, but doesn't seem at all upset - at least judging from how she immediately starts to work her tongue and lips all over your manhood.";
+	say "     The Satyress looks up at you with a salacious smile on her face. 'Oooh, you like giving orders. Will do babe,' she says in a slightly slurred tone and giggles as she pushes herself up on her knees and waits for you, wiggling her tongue playfully. Eager to get going, you rapidly discard your gear and clothing as you walk closer until you're standing right before the sexy young woman. Leaning forward, she immediately takes hold of your hard [cock of Player] dick, holding it up to lick the underside then brushing her lips over the cockhead. 'It's no wine, but I'm sure it'll have a full-bodied flavor,' the satyress adds in a merry chuckle, then gets back to light stroking and lapping. When the teasing and licking goes on for a bit too long for your taste, you grab her horns and pull her mouth forward, driving your cock into it. She gives a bleating sound of surprise, but doesn't seem at all upset - at least judging from how she immediately starts to work her tongue and lips all over your manhood.";
 	say "     She sucks you skillfully, clearly the satyress no stranger to this kind of fun. Your [if Cock Length of Player > 24]massive penis is a bit more than she can handle, even with her practice, but she works gamely at pleasing you[else if Cock Length of Player > 12]large penis presents no difficulty to the practiced satyress, as she's used to taking cocks deeply and deep-throats you as you're about to cum[else if Cock Length of Player > 4][cock size desc of Player] penis is easily deep throated by the satyress who's had to deal with much larger males before[else][cock size desc of Player] penis is worked all over by the talented satyress's mouth[end if]. You grab her horns again as you're about to cum, groaning in pleasure and feeding the lustful female your load[if a random chance of 1 in 2 succeeds], spraying the last few spurts across her face[end if]. She smiles and licks her lips, joking that she needs a drink to wash that down as she heads off with her empty cup in search of more wine.";
 
 to say SatyressFuck4:
@@ -128,13 +128,12 @@ to say SatyressDesc:
 Section 2 - Creature Insertion
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "";
 	now Name entry is "Satyress";
 	now enemy title entry is "";
 	now enemy Name entry is "";
@@ -168,10 +167,10 @@ When Play begins:
 	now Cock Length entry is 14;
 	now Ball Size entry is 3;            [ Size of balls ]
 	now Nipple Count entry is 2;               [ Number of nipples. ]
-	now Breast Size entry is 2;           [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Breast Size entry is 2;           [ Size of breasts infection will try to attain ]
 	now Male Breast Size entry is 0;      [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 1;                 [ number of pussies if sex is 'Female' or 'Both' ]
-	now Cunt Depth entry is 10;
+	now Cunt Length entry is 10;
 	now Cunt Tightness entry is 7;
 	now libido entry is 30;               [ Amount player Libido will go up if defeated ]
 	now loot entry is "Satyress Wine";    [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
@@ -188,12 +187,11 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -201,31 +199,28 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
-	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
-	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
+	now Mouth Circumference entry is 3;
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -236,33 +231,28 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Asshole Depth entry is 7; [inches deep for anal fucking]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Asshole Depth entry is 7; [inches deep for anal fucking;]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
+	now Asshole Tightness entry is 3;
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Change entry is ""; [partial sentence that fits in: "Your cock [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cock Change entry]."]
 	now Cock Description entry is ""; [partial sentence to fit: "You have a [Cock Girth Adjective of Player], [Cock Length of Player]-inch-long [cock adjective of Player] [one of]cock[or]penis[or]shaft[or]maleness[at random] that [cock description of Player]."]
@@ -281,8 +271,8 @@ When Play begins:
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0;
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+	now Cunt Length entry is 0;
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
@@ -304,7 +294,7 @@ instead of sniffing Satyress Wine:
 	say "The wine is aromatic and quite powerful. And after everything you've seen in this strange city, you could definitely go for a drink.";
 
 when play ends:
-	if BodyName of Player is "Satyress":
+	if bodyname of Player is "Satyress":
 		if humanity of Player < 10:
 			say "     Finally giving in to your base desires, you make your way back to the college campus where you know there is a party going on. Running into several students, male and female, you entice them to come with you and soon arrive at the Phi Alpha Nu frat-house with a small entourage. Bringing more fun to the party, you're eagerly welcomes by Kerr and Talov, the two satyr bartenders. As you join the revels, with alcohol flowing freely and sex just a question away, time loses most of its meaning for you. Days and nights are danced away, but as neither you nor the satyrs and nymphs around you ever seem to get any older, who cares?";
 			say "     At one point several people with guns come around to try to get you to leave, but as they don't have any booze of their own, you helpfully offer them some of yours, and soon enough they come around to your way of thinking as they join the party. Strangely enough, the rest of them seem to avoid your party after that, one could almost think they didn't know how to have fun, not that you could really bring yourself to care through the happy fog of alcohol and sex that you pass the carefree days in.";

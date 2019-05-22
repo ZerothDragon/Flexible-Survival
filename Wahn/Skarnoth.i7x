@@ -251,7 +251,7 @@ to say SkarnothSex6: [Skarnoth's ass fucked]
 	say "     Your captive demon is quite good at teasing a guy to higher and higher arousal, jerking you off in a comfortable grind of his warm skin on your dick. For a second, you're almost ready to just let him stroke you till you blow your load all over that muscle-ribbed chest of his, paint those abs in your cum - but then you remember that you had something else in mind. Pulling back a little from the sexy demon, you grip Skarnoth's bulging bicep and wrench him around, then push on his broad back to bend him over. [one of]'Oooh, so you wanna eat my ass? Go on, get in there!'[or]'About time you get to it!'[or]'So you wanna punish the evil demon by giving him your rod? Did you know that many exorcisms end this way?'[or]'Come on, kneel and eat me out! You know you want to!'[at random] he calls out in a teasing tone, then grunts deeply as you shove the wet fingers of your hand against the winking pucker under his long tail.";
 	say "     Finding himself with two fingers thrust knuckle-deep into his hot and tightly gripping chute, the demon's own cock throbs with a spurt of pre-cum that connects his swinging dick to the edge of his chair for a second, stretching out in a sticky string before snapping. Looks like he enjoys having the magic button of his prostate being pushed quite a bit, despite his obvious desire to be the one on top. You pump your fingers in and out a few more times, then pull them away and watch his pucker wink open and shut in eager anticipation. Taking hold of the base of your shaft, you smack it against Skarnoth's crack and buttocks, creating satisfying meaty thuds. Next you press the cockhead in against his ring muscle, increasing the pressure until it starts to give, then letting up on it again, chuckling as the demon holds his breath each time, then lets out more and more frustrated panting.";
 	WaitLineBreak;
-	say "     Soon, the powerful demon is almost trembling with the build-up of lust and glances over his shoulder at you. 'Fuck me already you bastard!' he growls out between clenched teeth, his tail snaking its way around your hips to pull you closer against him. After one more last-minute tease that has Skarnoth almost gnawing on the armrest he is holding on to, you finally relent and slide yourself into his ass, stretching his insides out with your [Cock of Player] shaft. He feels amazing around your dick, incredibly warm and tight, and you eagerly start thrusting, pounding into the captive demon with increasing force. 'Ngh. Ngh! Yeah that's it! Harder! You'll fuck the evil right out of me if you keep going,' the powerful being grunts out in a mixture of mocking and genuine lust - enticing you to really take out all the stops.";
+	say "     Soon, the powerful demon is almost trembling with the build-up of lust and glances over his shoulder at you. 'Fuck me already you bastard!' he growls out between clenched teeth, his tail snaking its way around your hips to pull you closer against him. After one more last-minute tease that has Skarnoth almost gnawing on the armrest he is holding on to, you finally relent and slide yourself into his ass, stretching his insides out with your [cock of Player] shaft. He feels amazing around your dick, incredibly warm and tight, and you eagerly start thrusting, pounding into the captive demon with increasing force. 'Ngh. Ngh! Yeah that's it! Harder! You'll fuck the evil right out of me if you keep going,' the powerful being grunts out in a mixture of mocking and genuine lust - enticing you to really take out all the stops.";
 	say "     While you are busy shafting Skarnoth deep and hard, his tail moves against you, with the tip brushing down your back to search out your own bare buttocks. Then suddenly the demon tenses his inner muscles around your shaft, squeezing it like a vise before going on to almost jerk you off with a surprising amount of muscle control. The amazing sensations his gripping chute gives you totally dominates your thoughts for a moment - so much so that you almost miss the moment in which some gentle rubbing by his appendage turns into a push of its spaded head against your own hole. Skarnoth wants to tail-fuck you! From the somewhat slick feeling of his tail-tip, he must have lubed it up with his own pre too!";
 	LineBreak;
 	say "     [bold type]Do you let him fuck you with his tail?[roman type][line break]";
@@ -307,13 +307,12 @@ instead of going northwest from Grey Abbey Library while (HP of Skarnoth > 1):
 Section 5 - Infection for combat purposes
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "";
 	now Name entry is "Demon Prince";
 	now enemy title entry is "";
 	now enemy Name entry is "Skarnoth";
@@ -350,8 +349,8 @@ When Play begins:
 	now Breast Size entry is 0;        [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
 	now Male Breast Size entry is 0;   [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 0;              [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Depth entry is 0;        [ Depth in inches of female sex the infection will attempt to give a player. ]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]         [ Width in inches of female sex the infection will try to give a player. ]
+	now Cunt Length entry is 0;        [ Depth in inches of female sex the infection will attempt to give a player. ]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]         [ Width in inches of female sex the infection will try to give a player. ]
 	now libido entry is 70;
 	now loot entry is "";              [ Dropped item, blank for none. Case sensitive. ]
 	now lootchance entry is 0;         [ Percentage chance of dropping loot, from 0-100. ]
@@ -367,12 +366,11 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -380,31 +378,28 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
-	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
-	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
+	now Mouth Circumference entry is 3;
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -415,33 +410,28 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Asshole Depth entry is 7; [inches deep for anal fucking]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Asshole Depth entry is 7; [inches deep for anal fucking;]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
+	now Asshole Tightness entry is 3;
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Count entry is 0;
 	now Cock Girth entry is 0; [thickness 1-5, generates the Cock Girth Adjective]
@@ -456,8 +446,8 @@ When Play begins:
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
 	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0;
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+	now Cunt Length entry is 0;
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
@@ -468,7 +458,7 @@ When Play begins:
 
 
 when play ends:
-	if BodyName of Player is "Demon Slave":
+	if bodyname of Player is "Demon Slave":
 		say "     Your new reality in hell focuses on satisfying Skarnoth's every desire - of which there are many, mostly carnal ones. As the overlord of his own little demonic realm, your master has the power to play with your body shape too, transforming you as he wishes to better enjoy breaking you to his will...";
 		stop the action;
 

@@ -48,7 +48,7 @@ Instead of resolving a Shipping Container:
 						break;
 				now Nipple Count entry is 6;
 				now Breast Size entry is 3;
-				now Cunt Depth entry is 12;
+				now Cunt Length entry is 12;
 				now Cunt Tightness entry is 6;
 				now monf is MonsterID;
 			if guy is not banned:		[Adjust Alpha Husky]
@@ -62,40 +62,40 @@ Instead of resolving a Shipping Container:
 				now Ball Size entry is 3;
 				now Nipple Count entry is 6;
 				now Breast Size entry is 3;
-				now Cunt Depth entry is 12;
+				now Cunt Length entry is 12;
 				now Cunt Tightness entry is 6;
 				now libido entry is 90;
 				now monm is MonsterID;
 			if ( "Female Preferred" is listed in feats of Player and girl is not banned ) or guy is banned:
 				choose row monf from Table of Random Critters;
-				now TailName of Player is "Husky Bitch";
-				now FaceName of Player is "Husky Bitch";
-				now SkinName of Player is "Husky Bitch";
-				now BodyName of Player is "Husky Bitch";
-				now CockName of Player is "Husky Bitch";
+				now tailname of Player is "Husky Bitch";
+				now facename of Player is "Husky Bitch";
+				now skinname of Player is "Husky Bitch";
+				now bodyname of Player is "Husky Bitch";
+				now cockname of Player is "Husky Bitch";
 				attributeinfect;
 				now tail of Player is tail entry;
-				now Face of Player is face entry;
-				now Skin of Player is skin entry;
-				now Body of Player is body entry;
-				now Cock of Player is cock entry;
+				now face of Player is face entry;
+				now skin of Player is skin entry;
+				now body of Player is body entry;
+				now cock of Player is cock entry;
 				if hellHoundLevel is 0:
 					follow the sex change rule;
 					follow the sex change rule;
 					follow the sex change rule;
 			else:
 				choose row monm from Table of Random Critters;
-				now TailName of Player is "Husky Alpha";
-				now FaceName of Player is "Husky Alpha";
-				now SkinName of Player is "Husky Alpha";
-				now BodyName of Player is "Husky Alpha";
-				now CockName of Player is "Husky Alpha";
+				now tailname of Player is "Husky Alpha";
+				now facename of Player is "Husky Alpha";
+				now skinname of Player is "Husky Alpha";
+				now bodyname of Player is "Husky Alpha";
+				now cockname of Player is "Husky Alpha";
 				attributeinfect;
 				now tail of Player is tail entry;
-				now Face of Player is face entry;
-				now Skin of Player is skin entry;
-				now Body of Player is body entry;
-				now Cock of Player is cock entry;
+				now face of Player is face entry;
+				now skin of Player is skin entry;
+				now body of Player is body entry;
+				now cock of Player is cock entry;
 				if hellHoundLevel is 0:
 					follow the sex change rule;
 					follow the sex change rule;

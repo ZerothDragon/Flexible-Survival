@@ -35,14 +35,14 @@ instead of going Northwest from College Walkway Northwest while CloudKnowledge i
 	now CloudKnowledge is 1;
 
 instead of going Up from College Belltower:
-	if BodyName of Player is listed in infections of flightlist:
+	if bodyname of Player is listed in infections of flightlist:
 		say "     With a hard push you use your ability to fly to launch yourself into the air. When you do remove yourself from the ground your beginning flight is rather unsteady. You have to quickly correct your path so that you don't crash into the belltower itself. Once you're out of the turbulence of the tower you easily glide up to the fluffy white clouds. You reach them in no time, landing yourself on the vast expanse of surprisingly solid water vapor.";
 		move player to The Clouds;
 	else:
 		say "     You get a confused look on your face when you try to go up. What would make you think you could fly without wings or some infection that can do so without. So instead you shrug and remain where you are, unable to get to the clouds.";
 
 instead of going Down from The Clouds:
-	if BodyName of Player is listed in infections of flightlist:
+	if bodyname of Player is listed in infections of flightlist:
 		say "     With a burst of speed you run before flipping yourself off the clouds. Your ability to fly kicks in right away allowing you to hover in place. Once you've gathered your bearings you begin a dive to the ground. It's not long before you gracefully land in front of the College Belltower, leaving you to continue on your journey.";
 		move player to College Belltower;
 	else:
@@ -86,7 +86,7 @@ Cock Length of Stewart is 7. [X Inches]
 Ball Size of Stewart is 4.
 Ball Count of Stewart is 2. [X balls]
 Cunt Count of Stewart is 0. [X pussy]
-Cunt Depth of Stewart is 0. [X Cunt]
+Cunt Length of Stewart is 0. [X Cunt]
 Cunt Tightness of Stewart is 0. [X Cunt]
 Nipple Count of Stewart is 2. [X nipples]
 Breast Size of Stewart is 0. [X at the start]

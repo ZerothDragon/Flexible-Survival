@@ -11,8 +11,8 @@ when play begins:
 
 to say CheetahWomanWins:
 	if Player is male:
-		say "     A happy grin stretches across the cheetah woman's muzzle as you stumble, off balance due to her swift movements. She pounces before you can recover your balance, knocking you to the ground beneath her. 'That was a good workout,' she murmurs in a low voice as she rubs the side of her muzzle slowly along your face, her whiskers tickling you as her soft fur trails along your [Skin of Player] skin. 'But working out always leaves me so... hot,' she moans, one of her hands caressing your side, while her other hand slowly trails down her body, emphasizing her lithe form and her pert breasts, before she runs it over her soft mound seductively. You find yourself growing hard underneath her teasing as the scent of a cheetah in heat washes over you, its effect only intensified by her recent exertion. 'Mmmm,' she moans above you as her hand moves from her wet mound to rub over your erect cock, the feel of her juice on your cock as she strokes it with her soft paw nearly making you erupt right then and there.";
-		say "     'So hot, need it so bad,' the cheetah moans as she slowly lowers herself onto you, making you gasp in pleasure at the feel of her tight passage slipping itself around your cock. The cheetah moans in obvious relief at the feel of your [Cock of Player] cock sliding inside her, lowering herself onto you until you are fully hilted inside her. Moaning, she wiggles her hips slightly, causing you to gasp in pleasure. Then she lowers herself down onto you, her pert breasts rubbing up against your chest as her soft short fur slides over your body, her muzzle coming up to capture your mouth in a deep kiss, silencing any potential protest you might make. Her tongue darts into your mouth, teasing and rubbing along your own as her muzzle stays locked on your mouth, and her body begins to rock up against you, moving up and down slightly on your cock as she uses you for her pleasure.";
+		say "     A happy grin stretches across the cheetah woman's muzzle as you stumble, off balance due to her swift movements. She pounces before you can recover your balance, knocking you to the ground beneath her. 'That was a good workout,' she murmurs in a low voice as she rubs the side of her muzzle slowly along your face, her whiskers tickling you as her soft fur trails along your [skin of Player] skin. 'But working out always leaves me so... hot,' she moans, one of her hands caressing your side, while her other hand slowly trails down her body, emphasizing her lithe form and her pert breasts, before she runs it over her soft mound seductively. You find yourself growing hard underneath her teasing as the scent of a cheetah in heat washes over you, its effect only intensified by her recent exertion. 'Mmmm,' she moans above you as her hand moves from her wet mound to rub over your erect cock, the feel of her juice on your cock as she strokes it with her soft paw nearly making you erupt right then and there.";
+		say "     'So hot, need it so bad,' the cheetah moans as she slowly lowers herself onto you, making you gasp in pleasure at the feel of her tight passage slipping itself around your cock. The cheetah moans in obvious relief at the feel of your [cock of Player] cock sliding inside her, lowering herself onto you until you are fully hilted inside her. Moaning, she wiggles her hips slightly, causing you to gasp in pleasure. Then she lowers herself down onto you, her pert breasts rubbing up against your chest as her soft short fur slides over your body, her muzzle coming up to capture your mouth in a deep kiss, silencing any potential protest you might make. Her tongue darts into your mouth, teasing and rubbing along your own as her muzzle stays locked on your mouth, and her body begins to rock up against you, moving up and down slightly on your cock as she uses you for her pleasure.";
 		WaitLineBreak;
 		say "     Starting out slow and sensual, she soon builds up speed as she moves her body on top of yours. The sensations of her tight wet cunt gripping your cock as she moves are almost indescribable, and her needy musky scent fills your body as she rubs herself all over you. Soon you can't help but thrust upwards into her on your own, your body an eager participant in the procedure, her muzzle still locked to yours as she groans and writhes on top of you. She finally breaks the bestial kiss with a loud moan as you both draw closer and closer to your peak. Orgasming together, your world explodes in pleasure as she lets out a loud yowl, before resting her head on your shoulder for a minute, her body shuddering on top of yours in reaction to the amazing orgasm you both share.";
 		say "     Rubbing her furred head alongside your shoulder and chin, she slowly pulls herself off of you. You find her strong scent has you still half aroused as she runs her hands down your body before focusing on your cock again. Moving down so she is between your legs, the cheetah woman lowers her head to your half erect organ, before reaching out and giving it a slow lick. The sensation of her rough tongue lightly tracing along your organ has you tensing up in pleasure again. Seeing your reaction, the cheetah lets a soft smile cross her muzzle, before she slowly takes your cock into her muzzle completely. You can't do anything other than moan and convulse slightly as her hot wet mouth engulfs you, her rough tongue wrapping around and lapping at your member as she cleans your seed and her juices off of you. Even the feel of her sharp teeth lightly brushing along the underside of your cock seems erotic beyond belief, and you find yourself hard again sooner than you would have thought possible.";
@@ -20,7 +20,7 @@ to say CheetahWomanWins:
 		say "     Just as you are about to be brought to orgasm again, the cheetah lifts her muzzle off you and backs off slightly, causing you to stare at her as you pant in need. Winking at you, she turns around and lowers herself onto all fours, lifting her tail up as she glances at you over her shoulder in an obvious invitation. Groaning you haul yourself up, no more able to refuse the demands of your arousal and her hot need at this point than you are able to fly. You quickly grip her hips as she raises them up for you, feeling her start to purr as she shakes in anticipation underneath you. Hard and needy already, you waste no time wrapping your arms around her body as you thrust yourself into her. She gasps and mews happily underneath you as you slowly begin to move inside her, your hands finding their way to her soft breasts as you lean over her. The feeling is nothing less than glorious as her moist depths seem to welcome your cock back eagerly, your need rising to meet hers as you thrust firmly into her heat driven body again and again, causing her to moan shamelessly underneath you, begging with every motion for the hot fertile treasure only you can fill her with. Your hands grip her body tightly to you as she moves with you, your orgasm sweeping over you with surprising speed and strength as you spill yourself into her, yours triggering her own as she yowls and shudders underneath you in pleasure.";
 		say "     You stay locked together for several seconds like that, unable to move as the aftermath washes through you, before finally you are able to pull out and collapse to the ground nearby. The cheetah seems in slightly better shape as she moans slightly, before moving over to nuzzle you with her soft muzzle. 'That was amazing,' she says as she slowly stretches her lithe body out for you to admire. 'I definitely look forward to catching you again next time you come this way,' the cheetah says as she begins to saunter off, a pleased look on her face as she calls back over her shoulder. 'So don't forget to come back this way soon, ok?' she finishes as she vanishes into the zoo.";
 	else:
-		say "     A happy grin stretches across the cheetah woman's muzzle as you stumble, off balance due to her swift movements. She pounces before you can recover your balance, knocking you to the ground beneath her. 'That was a good workout,' she murmurs in a low voice as she rubs the side of her muzzle slowly along your face, her whiskers tickling you as her soft fur trails along your [Skin of Player] skin. 'But working out always leaves me so... hot,' she moans, one of her hands caressing your side, while her other hand slowly trails down her body, emphasizing her lithe form and her pert breasts, before she runs it over her soft mound seductively. You find your own body heating up almost instinctively in response as she rubs herself up against you, the scent of her feline arousal filling your head as she begins to purr softly. 'You don't mind helping me out with this, do you?' she asks as she crawls up your body, her wet pussy leaving a soft trail of her arousal as she slowly moves it up along your body until your face is between her thighs.";
+		say "     A happy grin stretches across the cheetah woman's muzzle as you stumble, off balance due to her swift movements. She pounces before you can recover your balance, knocking you to the ground beneath her. 'That was a good workout,' she murmurs in a low voice as she rubs the side of her muzzle slowly along your face, her whiskers tickling you as her soft fur trails along your [skin of Player] skin. 'But working out always leaves me so... hot,' she moans, one of her hands caressing your side, while her other hand slowly trails down her body, emphasizing her lithe form and her pert breasts, before she runs it over her soft mound seductively. You find your own body heating up almost instinctively in response as she rubs herself up against you, the scent of her feline arousal filling your head as she begins to purr softly. 'You don't mind helping me out with this, do you?' she asks as she crawls up your body, her wet pussy leaving a soft trail of her arousal as she slowly moves it up along your body until your face is between her thighs.";
 		say "     Trapped between those powerful spotted thighs, you have no choice but to do as she wishes, and so you find yourself raising your head up slightly so you can lick at those soft pink lips almost hidden in the white fur of her underbelly. After the first lick however, you quickly go from helpless captive to eager participant, her feline taste exploding on your tongue making you want more desperately. Already aroused from the fight, you find the mixed scent of her strong arousal and heat, stirred up by the chase, to be almost overwhelming, your own body growing hot as you eagerly explore her body with your mouth. Her moans of pleasure above you are like some kind of primal music to your ears, encouraging you to lick harder and deeper, her walls clenching and teasing your tongue as you pleasure her. Soon her wonderful taste runs over your tongue and floods your mouth as she yowls above you, her fluids rushing over your face as you bring her to orgasm.";
 		WaitLineBreak;
 		say "     'Oh that was good, but you still look like you need some help,' you hear the cheetah above you murmur as you try to lick up all that wonderful flavor that got on your face, your own body hot and aroused from both her feline scent and the sexy situation. Before you can do anything else, the cheetah above you lifts herself off your face, making you sad for a minute at the loss of that wonderful pussy. You don't notice the lack for long though, as after shifting around, she lowers it once more back into reach. This time though, her legs go on either side of your head, angled the other way as she lies down along your body, her pert breasts rubbing up against you as she positions herself atop you. You are slightly confused for a second by the new position, your lust-addled brain finding it hard to focus on anything beyond your own arousal and the fact that her heat-scented pussy is once more within reach.";
@@ -38,7 +38,7 @@ To say CheetahWomanLoses:
 		say "     ([link]N[as]n[end link]) - No.";
 		if Player consents:
 			if Player is male: [Male]
-				say "     Moving to restrain her before she can get away you force her down on to her knees, holding her up by her arms. After you are sure that she will not try to run or attack you again you let go of her arms, force her onto all fours[if Player is not barecrotch] and [one of]hurredly[or]quickly[or]hastily[at random] remove your clothes, exposing your [Cock of Player] [one of]dick[or]cock[or]penis[at random][end if]. You tear away at the tattered remains of her clothes and stare down at her lustfully. She has by now returned the same stare and presents herself for your use. Her tail swaying with delight. You thrust your [one of]dick[or]member[or]cock[at random] into her feline [one of]pussy[or]slit[or]twat[at random] and pound into her furiously. Her body quickly joins the rhythm of your thrusts and her [one of]large[or]small[or]pert[at random]breasts sway up and down on her chest. As the two of you continue to fuck you soon reach orgasm and she quickly follows. The two of you are tired and worn out and she is clearly half conscious. Deciding that you have had your fun you collect yourself and leave the cheetah woman to collect herself or be fucked before she can escape.";
+				say "     Moving to restrain her before she can get away you force her down on to her knees, holding her up by her arms. After you are sure that she will not try to run or attack you again you let go of her arms, force her onto all fours[if Player is not barecrotch] and [one of]hurredly[or]quickly[or]hastily[at random] remove your clothes, exposing your [cock of Player] [one of]dick[or]cock[or]penis[at random][end if]. You tear away at the tattered remains of her clothes and stare down at her lustfully. She has by now returned the same stare and presents herself for your use. Her tail swaying with delight. You thrust your [one of]dick[or]member[or]cock[at random] into her feline [one of]pussy[or]slit[or]twat[at random] and pound into her furiously. Her body quickly joins the rhythm of your thrusts and her [one of]large[or]small[or]pert[at random]breasts sway up and down on her chest. As the two of you continue to fuck you soon reach orgasm and she quickly follows. The two of you are tired and worn out and she is clearly half conscious. Deciding that you have had your fun you collect yourself and leave the cheetah woman to collect herself or be fucked before she can escape.";
 			else: [Female]
 				say "     The Cheetah woman falls to her knees in defeat and you grab hold of her arms and push her to the ground and sit on top of her ensuring she can't escape. You interlock your lips with her [one of]muzzle[or]mouth[at random]. She quickly gives in to her own lust and personality returns the kiss, you let go of her arms and she quickly wraps them around you. Refusing to let go th two of you passionately embrace one another, your lust takes over and soon the both of you are on the floor kissing passionately and rubbing at each others [one of]pussies[or]cunts[at random]";
 				say "     The both of you are brought to orgasm almost simultaneously, you are lost in bliss and it feels as if an eternity has passed. You look to your partner and smile, satisfied that you have had your pleasure you gather your things and make on your way, leaving the cheetah woman to whatever fate awaits her";
@@ -59,13 +59,12 @@ to say CheetahWomanDesc:
 Section 2 - Creature Insertion
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "";
 	now Name entry is "Cheetah Woman";
 	now enemy title entry is "";
 	now enemy Name entry is "";
@@ -77,7 +76,7 @@ When Play begins:
 	now face entry is "sleek and cheetah-like, with a short muzzle, soft whiskers, and small, rounded ears resting on top of your new head"; [ Face description, format as "Your face is (your text)."]
 	now body entry is "Slim and sleek, with not an ounce of wasted fat anywhere you can spot, its strong tight muscles made for running. You balance easily on your new, pawlike feet, gripping the ground tightly. You find yourself leaning forward slightly as you walk, as if you were always ready to spring into action"; [ Body Description, format as "Your Body is (your text)."]
 	now skin entry is "[one of]cheetah spotted[or]cheetah furred[or]black and yellow spotted[or]sleek furred[or]short fur covered[at random]"; [ skin Description, format as "You have (your text) skin."]
-	now tail entry is "You have a long, thin feline tail stretching out behind you, constantly lashing and curling around from side to side as if it is always eager to be moving. It is covered in [Skin of Player] skin and provides an excellent counterbalance to swift movement."; [ Tail description, write a whole Sentence or leave blank. ]
+	now tail entry is "You have a long, thin feline tail stretching out behind you, constantly lashing and curling around from side to side as if it is always eager to be moving. It is covered in [skin of Player] skin and provides an excellent counterbalance to swift movement."; [ Tail description, write a whole Sentence or leave blank. ]
 	now cock entry is "[one of]feline[or]cheetah[or]barbed[or]pointed[at random]"; [ Cock Description, format as you have a 'size' (your text) cock]
 	now face change entry is "your mouth pushes out into a slim muzzle, your ears moving to the top of your head as your nose shrinks and becomes part of your new muzzle. Your vision blurs for a minute as your eyes water, then it clears, and the world comes into a new, sharper focus before your now-predatory eyes as many new sharp, enticing scents fill your feline nose"; [ face change text. format as "Your face feels funny as (your text)." ]
 	now body change entry is "it grows slim and sleek, your legs shifting forward and growing corded with tight muscles, soft paws forming on your feet for better traction when running. Your hands grow slender and sleek as well, with thick pads forming on the paws, though your fingers are still just as dexterous as ever, if not more so"; [ body change text. format as "Your body feels funny as (your text)." ]
@@ -99,11 +98,11 @@ When Play begins:
 	now Cock Length entry is 9;  [ Length infection will make cock grow to if cocks]
 	now Ball Size entry is 2;  [ Size of balls ]
 	now Nipple Count entry is 0;  [ Number of nipples infection will give you (males have nipples too) ]
-	now Breast Size entry is 0;  [cup size as number, counting Flat Pecs = 0, A = 1, B = 2, ...]
+	now Breast Size entry is 0;  [ Size of breasts infection will try to attain ]
 	now Male Breast Size entry is 0;  [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 0;  [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+	now Cunt Length entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
 	now libido entry is 30;  [ Amount player Libido will go up if defeated ]
 	now loot entry is "cheetah milk";  [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
 	now lootchance entry is 40;  [ Chance of loot dropping 0-100 ]
@@ -119,12 +118,11 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -132,31 +130,28 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
-	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
-	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
+	now Mouth Circumference entry is 3;
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -167,33 +162,28 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Asshole Depth entry is 7; [inches deep for anal fucking]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Asshole Depth entry is 7; [inches deep for anal fucking;]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
+	now Asshole Tightness entry is 3;
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Count entry is 0;
 	now Cock Girth entry is 0; [thickness 1-5, generates the Cock Girth Adjective]
@@ -208,8 +198,8 @@ When Play begins:
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
 	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+	now Cunt Length entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
@@ -230,7 +220,7 @@ The usedesc of cheetah milk is "[drinkcheetahmilk]";
 
 to say drinkcheetahmilk:
 	say "     You drink down the cheetah milk. It has a strangely pleasant taste and it helps quench your thirst a little. You feel a little more lustful and excited.";
-	if BodyName of Player is "Cheetah Woman" and inheat is true, increase slutfucked by 1;
+	if bodyname of Player is "Cheetah Woman" and inheat is true, increase slutfucked by 1;
 	PlayerDrink 10;
 	increase Libido of Player by 5;
 
@@ -324,7 +314,7 @@ to say cheetahwomaninheat:
 Section 4 - Endings
 
 when play ends:
-	if BodyName of Player is "Cheetah Woman":
+	if bodyname of Player is "Cheetah Woman":
 		if humanity of Player < 10:
 			if Player is male:
 				say "     Surrendering to your baser instincts, you find yourself running and running through the city, until you once more end up back in the zoo where you found that cheetah before. Following where your nose and your cock lead you, you soon find where the cheetah has made her den in one of the empty enclosures, and much to your surprise, she isn't alone either. You find her there slowly teasing another female cheetah as they relax during the day, the other female is obviously a new convert to the cheetah way of life much like yourself, but you find yourself unable to care about that anymore with the sight of two females in front of you. Their gazes focus on you as you proudly approach, a soft grin spreading across the muzzle of the cheetah you encountered earlier as she recognizes your fine spots and masculine scent.";

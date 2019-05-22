@@ -101,7 +101,7 @@ to say LoseToFeralBull:
 		now antimoo is 1;
 	if CowBully > 0:
 		if Player is female:
-			say "     The big bull grunts fiercely, breathing hard after his maddened fight. He prods you with his sharp horns until you huddle on all fours. He scrabbles at your rear with his hooves and you have a few moments to wrench your clothes out of the way before you feel the animal's huge member thrust into you, [if Cunt Depth of Player < 28]feeling like it will split you in half. Your cries, when you hear them, sound almost as pitiful as the cow you defeated earlier as you try in vain to brace yourself against the crazed beast's rutting[else]filling your cavernous pussy like few can. Your cries of ecstasy, unknowingly echo the pitiful cries of the cow girl you defeated. All of your attention, however, is focused on bracing yourself against the magnificent brute's powerful rutting thrusts[end if]. He bellows as you feel his burning seed pour into you, filling you up, and making you look very pregnant. Finally done with you, calm after his release, he wanders off to graze.";
+			say "     The big bull grunts fiercely, breathing hard after his maddened fight. He prods you with his sharp horns until you huddle on all fours. He scrabbles at your rear with his hooves and you have a few moments to wrench your clothes out of the way before you feel the animal's huge member thrust into you, [if Cunt Length of Player < 28]feeling like it will split you in half. Your cries, when you hear them, sound almost as pitiful as the cow you defeated earlier as you try in vain to brace yourself against the crazed beast's rutting[else]filling your cavernous pussy like few can. Your cries of ecstasy, unknowingly echo the pitiful cries of the cow girl you defeated. All of your attention, however, is focused on bracing yourself against the magnificent brute's powerful rutting thrusts[end if]. He bellows as you feel his burning seed pour into you, filling you up, and making you look very pregnant. Finally done with you, calm after his release, he wanders off to graze.";
 			infect "Bovine";
 			now CowBully is 0;
 			if Mooing > 0:
@@ -131,7 +131,7 @@ to say LoseToFeralBull:
 			say "     The bull seems to lose interest in you and wanders off to find some grass to eat.";
 		else:
 			if Player is female:
-				say "     Lifting his nose to the air, the bull catches your scent and you know exactly what scent that is, cow in heat. Pacing over to you he sniffs at your rear and you feel yourself rising to all fours and presenting your pussy to the beast. His weight is suddenly upon you, you struggle to hold him for a moment until you feel his huge member press at your cleft. Suddenly nothing seems to matter but having him within you. His bellowing thrusts are [if Cunt Depth of Player < 28]softened by your attempts to buck forward with him, trying to avoid being impaled by his gigantic rod. Suddenly his breeding tool seems to swell even bigger, stretching your already taxed snatch to the breaking point[else]countered by your own as you rock your hips back against his motion, feeling him deep within you. Suddenly his breeding tool seems to swell even larger, somehow making even your gigantic cunt feel full[end if], and explodes with his orgasm, painting every inch of your insides white. Dismounting, he makes a loud whuffing sound and you feel so happy and full of his seed you lay down and rest just a moment, even as you begin to feel thirsty again...";
+				say "     Lifting his nose to the air, the bull catches your scent and you know exactly what scent that is, cow in heat. Pacing over to you he sniffs at your rear and you feel yourself rising to all fours and presenting your pussy to the beast. His weight is suddenly upon you, you struggle to hold him for a moment until you feel his huge member press at your cleft. Suddenly nothing seems to matter but having him within you. His bellowing thrusts are [if Cunt Length of Player < 28]softened by your attempts to buck forward with him, trying to avoid being impaled by his gigantic rod. Suddenly his breeding tool seems to swell even bigger, stretching your already taxed snatch to the breaking point[else]countered by your own as you rock your hips back against his motion, feeling him deep within you. Suddenly his breeding tool seems to swell even larger, somehow making even your gigantic cunt feel full[end if], and explodes with his orgasm, painting every inch of your insides white. Dismounting, he makes a loud whuffing sound and you feel so happy and full of his seed you lay down and rest just a moment, even as you begin to feel thirsty again...";
 				fimpregchance;
 				fimpregchance;
 				fimpregchance;
@@ -160,7 +160,7 @@ to say BeatTheBovine:
 			say "You take the defeated cow's hands and remove them from your waist, telling her to present herself. She lets out a lustful moo and drops to all fours, turning quickly around. As she does so, her breasts start to leak more of her milk, the sight making you rather thirsty. A thought comes to mind and you realize that you could not only satisfy your sexual urges, but you could also quench your thirst. (Y=Drink+Sex, N=Just Sex)";
 			if Player consents:
 				if Player is male:
-					say "     You grin and tell the cow you've got a slight change of plans. Ordering her onto her back, you lean forward, taking one of her nipples into your mouth, flicking your tongue across it, the rich taste of milk driving you to begin sucking on it. The cow girl moans and her chest heaves as she begs you to fuck her. Still sucking, you shift position on top of her so that your now hard cock is resting against her folds. You pull your hips back, lining the tip of your [Cock of Player] cock up with her wet lips and then slamming into her, groaning in pleasure. As you pound away at the cow girl's cunt, she [if Cock Length of Player < 28]slowly gets more and more into it, her legs wrapping around you, drawing you deeper into her. Soon enough you feel your climax building, your balls swelling with cum. With one final thrust, you bury your [cock size desc of Player] length as deep as you can[else]screams her pleasure, her large hands firmly on your ass, making sure you fuck her fully with each stroke. Soon enough you feel your climax building, your balls swelling with cum. With one final thrust, you bury your [cock size desc of Player] length in her, knowing you are filling her utterly[end if], [if Ball Size of Player < 14]giving her your fertile seed[else]flooding her womb with your fertile seed, excess cum leaking out around your dick[end if]. You nearly black out when she reaches her peak, her snatch squeezing your rod tightly and the two of you squirm in ecstasy.";
+					say "     You grin and tell the cow you've got a slight change of plans. Ordering her onto her back, you lean forward, taking one of her nipples into your mouth, flicking your tongue across it, the rich taste of milk driving you to begin sucking on it. The cow girl moans and her chest heaves as she begs you to fuck her. Still sucking, you shift position on top of her so that your now hard cock is resting against her folds. You pull your hips back, lining the tip of your [cock of Player] cock up with her wet lips and then slamming into her, groaning in pleasure. As you pound away at the cow girl's cunt, she [if Cock Length of Player < 28]slowly gets more and more into it, her legs wrapping around you, drawing you deeper into her. Soon enough you feel your climax building, your balls swelling with cum. With one final thrust, you bury your [cock size desc of Player] length as deep as you can[else]screams her pleasure, her large hands firmly on your ass, making sure you fuck her fully with each stroke. Soon enough you feel your climax building, your balls swelling with cum. With one final thrust, you bury your [cock size desc of Player] length in her, knowing you are filling her utterly[end if], [if Ball Size of Player < 14]giving her your fertile seed[else]flooding her womb with your fertile seed, excess cum leaking out around your dick[end if]. You nearly black out when she reaches her peak, her snatch squeezing your rod tightly and the two of you squirm in ecstasy.";
 					say "     After you pump the last of your cum into her, you lie atop the cow girl, nursing from her breast, a warm feeling radiating out from your stomach. The two of you doze briefly in your post-orgasmic stupor, but after a while you get up to head out. As you do, the bovine woman calls out after you, 'That was fun, but I don't think my bull is going to like you very much.' You stop in your tracks, wondering whether you should ask for more information on this bull of hers, but some loud crashing noises nearby send you running as fast as you can before the source of the crashing reaches you.";
 					say "[Mooplus]";
 					PlayerEat 5;
@@ -185,7 +185,7 @@ to say BeatTheBovine:
 					increase CowBully by 1;
 			else:
 				if Player is male:
-					say "     You take hold of the cow girl's legs and nudge them apart, grinning and licking your lips at the sight of her massive bovine pussy. The cow girl shivers and whimpers in anticipation as you pull yourself up against her, your [Cock of Player] cock grinding against her wet snatch. You line yourself up and thrust in, ramming your length [if Cock Length of Player < 28]as deep inside her as you can manage. Gripping the cow girl's hips tightly as you pound away at her cunt, you can't stop yourself from moaning in pleasure. She groans and begs, 'Please fuck me deeper! I need more!' Annoyed that she seems unfazed by your efforts so far, you hilt yourself in one go to try and satisfy her. She grunts a little, but she says, 'I need more, please, I'm so empty'. You start bucking harder and faster into her, hoping to make up for your size with your passion[else]deep inside her. Gripping the cow girl's hips tightly as you pound away at her cunt, you can't stop yourself from moaning in pleasure. She groans and says, 'Oh yeah, just like that! I want everything you've got!' Pleased that she's loving your efforts so far, you hilt yourself in one go to push her over. She grunts and lets out a loud moo, unable to articulate her approval. You start bucking harder and faster into her[end if], feeling your climax building. You lean forward and wrap your arms underneath her body, your hands taking hold of her shoulders.";
+					say "     You take hold of the cow girl's legs and nudge them apart, grinning and licking your lips at the sight of her massive bovine pussy. The cow girl shivers and whimpers in anticipation as you pull yourself up against her, your [cock of Player] cock grinding against her wet snatch. You line yourself up and thrust in, ramming your length [if Cock Length of Player < 28]as deep inside her as you can manage. Gripping the cow girl's hips tightly as you pound away at her cunt, you can't stop yourself from moaning in pleasure. She groans and begs, 'Please fuck me deeper! I need more!' Annoyed that she seems unfazed by your efforts so far, you hilt yourself in one go to try and satisfy her. She grunts a little, but she says, 'I need more, please, I'm so empty'. You start bucking harder and faster into her, hoping to make up for your size with your passion[else]deep inside her. Gripping the cow girl's hips tightly as you pound away at her cunt, you can't stop yourself from moaning in pleasure. She groans and says, 'Oh yeah, just like that! I want everything you've got!' Pleased that she's loving your efforts so far, you hilt yourself in one go to push her over. She grunts and lets out a loud moo, unable to articulate her approval. You start bucking harder and faster into her[end if], feeling your climax building. You lean forward and wrap your arms underneath her body, your hands taking hold of her shoulders.";
 					say "     With one last hard thrust, you bury your [cock size desc of Player] shaft in her depths and cum hard, [if Ball Size of Player < 14]dumping your seed into this cow girl, as she moos her orgasm[else]filling this cow girl up with every last bit of fertile seed you've got, making her moo loudly in orgasm[end if]. When you're finished with her, you get up and wipe your cock off on her ass, a few last spurts of cum splattering on her back. You take a bit of perverse pride at the state you've left the cow in and gather your things before heading back along the path. As you do, the bovine woman calls out after you, 'That was fun, but I don't think my bull is going to like you very much.' You stop in your tracks, wondering whether you should ask for more information on this bull of hers, but some loud crashing noises nearby send you running as fast as you can before the source of the crashing reaches you.";
 					increase CowBully by 1;
 				else:
@@ -203,7 +203,7 @@ to say BeatTheBovine:
 	else if Bovine_type is 2:
 		say "     The large bull collapses to the ground, causing a slight shake as his mass settles as the thumps heavily onto his side.";
 		if VictoryOverDaBull < 3:
-			if BodyName of Player is "Bovine":
+			if bodyname of Player is "Bovine":
 				say "     You look over the fallen body of the large bull, your body drawing you to him, urges within your bovine form calling to you. It would be such a shame to waste such a virile specimen.";
 				say "     [bold type]Do you follow these urges?[roman type][line break]";
 				LineBreak;
@@ -245,7 +245,7 @@ to say BeatTheBovine:
 		else if VictoryOverDaBull is 3:			[Considering what you could do with the beaten bull.]
 			say "     You look at the massive beast sprawled before you, defeated once more. A thought occurs to you as the 'bull' breathes heavily in a heap; what kind of bull can't defend his herd? Maybe this bull doesn't deserve the title anymore. [if Mooing > 10]Perhaps, [italic type]you[roman type] deserve to be the bull. [end if]You turn away from the pathetic creature and walk away, your mind turning over how you could put the so-called bull in his proper place... milk maybe.";
 			increase VictoryOverDaBull by 1;
-		[else if (Mooing > 10) and (BodyName of Player is "Bovine") and (FaceName of Player is "Bovine") and (VictoryOverDaBull > 3):			[You're gonna be the bull but beware, it's a full time job.]
+		[else if (Mooing > 10) and (bodyname of Player is "Bovine") and (facename of Player is "Bovine") and (VictoryOverDaBull > 3):			[You're gonna be the bull but beware, it's a full time job.]
 			say "     A.";
 		else if VictoryOverDaBull > 3:			[What are you going to do with the bull?]
 			say "     Once again, you've beaten the monstrous bull, no longer the fearsome beast after your battle. And perhaps it's time this bull's appearance matched his demeanor. Perhaps you have something in your pack that'll do the trick?";
@@ -344,13 +344,12 @@ to say feral bull attack:
 Section 2 - Creature Insertion
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "";
 	now Name entry is "Bovine"; [Name of your new Monster]
 	now enemy title entry is "";
 	now enemy Name entry is "";
@@ -387,7 +386,7 @@ When Play begins:
 	now Breast Size entry is 9; [Size of breasts infection will try to attain ]
 	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 1; [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
-	now Cunt Depth entry is 28; [ Length of female sex infection will attempt to give you. ]
+	now Cunt Length entry is 28; [ Length of female sex infection will attempt to give you. ]
 	now Cunt Tightness entry is 8; [ Width of female sex infection will try and give you ]
 	now libido entry is 0; [ Amount player Libido will go up if defeated ]
 	now loot entry is "cow milk"; [ Loot monster drops, usually infective with the monster's _own_ strain (for example if there is a Cross-Infection from sex)]
@@ -404,12 +403,11 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -417,31 +415,28 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
-	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
-	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
+	now Mouth Circumference entry is 3;
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -452,33 +447,28 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Asshole Depth entry is 7; [inches deep for anal fucking]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Asshole Depth entry is 7; [inches deep for anal fucking;]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
+	now Asshole Tightness entry is 3;
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Count entry is 0;
 	now Cock Girth entry is 0; [thickness 1-5, generates the Cock Girth Adjective]
@@ -493,8 +483,8 @@ When Play begins:
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
 	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+	now Cunt Length entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
@@ -562,7 +552,7 @@ to say cow milk use:
 an everyturn rule:
 	if mooing > 0:
 		if the remainder after dividing turns by 3 is 0:
-			if BodyName of Player is not "Bovine" and FaceName of Player is not "Bovine" and CockName of Player is not "Bovine":
+			if bodyname of Player is not "Bovine" and facename of Player is not "Bovine" and cockname of Player is not "Bovine":
 				decrease mooing by 1;
 			else if a random chance of 1 in 2 succeeds:
 				decrease mooing by 1;

@@ -49,8 +49,8 @@ to say fsdm attack:
 			say "     You immediately throw up your arms and lower your guard, showing you don't wish to fight. [one of]He doesn't immediately buy it, cautiously nosing you until fall over. This certainly amuses him, at least, and while he looks you over[or]He huffs a mocking sound and firmly sweeps his tail over to push you onto your side. He advances to look you over, and[at random] you're given a glimpse of his emergent cock, peeking out from his underside.";
 		else if FSDOPEN is 0:
 			say "     Seeing an opening, he unloads a deafening roar of dominance and slaps you down with his massive tail, and you're briefly knocked out. When you come to, you can already feel the beast's enquiring tongue over your vulnerable form, your vision clearing to give you a blatant few of his erect cock. There's no question what he has in store for you.";
-		if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
-			if Player is female and Cunt Depth of Player > 11:
+		if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
+			if Player is female and Cunt Length of Player > 11:
 				say "     Circling around to mount you, you soon feel the head of his hard organ press against[if Cunt Count of Player > 1] one of[end if] your [cunt size desc of Player] cunt[sfn]. He makes a soft growling sound as the shaft's flared head sinks slowly inside you, sending waves of intense pleasure before that head is fully engulfed. Quite the tease, he only engulfs the rod half-way before pulling it out almost entirely, the influence of your feral infection driving you to whine out in despair - much to his amusement - before you find solace in its return. The dragon plays this game with you only briefly before he's taken by the imperative of his own bestial need and starts ramming you with his cock proper.";
 				say "     You writhe limply under the beast's girth, mind ahaze in pleasure. It's as though this creature's cock was made just for you, your needy cunt constricting against its rigid mass out of a carnal need to have it in you, its motion no doubt lubricated by your sexual fluids mixed with his own.";
 				say "     Though you would rather he fuck you forever it's inevitable that he concludes with one final thrust, his hilted dick flooding your womb until it's bloated with his seed, triggering your own climax in response[if Cock Count of Player > 1], all the while your own, [cock size desc of Player], and very much neglected members spill their [Cum Load Size of Player] load across the sand before both[else if Player is male], all the while your own, [cock size desc of Player], and very much neglected member spills its [Cum Load Size of Player] load across the sand before both[else]. Both[end if] of you cry out in celebration of this dual orgasm - his a deep, throaty roar, yours a beautiful-sounding song.[impregchance][line break]";
@@ -72,7 +72,7 @@ to say fsdm attack:
 						say "     Satisfied, he dismounts you. [if Player is female]Forcing[else]Wrenching[end if] his cock free of your abused hole with [one of]a moist sucking[or]a wet popping[at random] sound. Huffing a little, [if Player is female]he's kind enough to give you a soft, affectionate lick across your side before he dives back into the water's depths,[else]he nips your ass playfully, amused by his little cock sleeve before he dives back into the water's depths,[end if] no doubt waiting for your return";
 				else:
 					say "     He climbs on top of you, his bulky weight pinning you to the sandy floor. He's shameless in prodding his proud dick against your snout, and by now your feral-tainted mind cannot resist submitting to this virile beast's needs. You open your jaws, your thick tongue the only cushion when it's [if Player is female]firmly[else]harshly[end if] thrusted into the confines of your quickly stuffed maw. Gently suckling it, ";
-					if FaceName of Player is "Feral Sea Dragon" or FaceName of Player is "Feral Sea Dragoness":
+					if facename of Player is "Feral Sea Dragon" or facename of Player is "Feral Sea Dragoness":
 						say "it's at least good that your elongated neck can";
 					else:
 						say "it's quite a challenge to";
@@ -165,7 +165,7 @@ to say fsdm attack:
 					say "     In due time you come to, greeted by the thick and hard confines of an egg, light from the outside spilling through the translucent surface and compelling you to break yourself free. Exposed to the salty air once more, you were thankfully left on the beach, and you clean yourself off before gathering your belongings as they are, strewn across the beach.";
 					infect;
 					now FSDOPEN is 0;
-			else if Player is female and Cunt Depth of Player > 11:
+			else if Player is female and Cunt Length of Player > 11:
 				say "     Finally, and thankfully, you're relinquished of the monster's mass; however, before you can get up you're pinned by his massive bulk a second time, now completely on top of you. He's shifted his weight enough so not to crush you, but now he's in a much better position to impale you with his massive, throbbing dick.";
 				say "     You twitch with every irreverent and jerking thrust, only teasing tests [if Cunt Count of Player > 1]for one of[else]of[end if] your [cunt size desc of Player] cunt's willingness to accommodate his flared head. Soon your feel him put on the pressure as he slowly squeezes the rigid organ past your entrance, the intense sensation of which grants you inevitable reprieve when you get past its spade-shaped tip. The beast lets out an airy hiss in his own approval, but only lets you adapt to his girth briefly before he begins fucking you in earnest.";
 				say "     His assault quickly becomes relentless in its pace, intent on using you with little regard to your well being. Any protests you might offer up rapidly diminish as you feel his pre incrementally spurt within your depth, what pain and discomfort you might have had driven away in favor of an immense and overwhelming desire to continue to be reamed by this powerful dragon, and soon you are drowning in ecstasy with every forceful thrust.";
@@ -257,7 +257,7 @@ to fsdmvicmenu:
 		say "(1) [if Player is male][link]Mount him[as]1[end link][else][italic type]Male-specific interaction[roman type][end if][line break]";
 		say "(2) [if Player is male][link]Have him suck your dick[as]2[end link][else][italic type]Male-specific interaction[roman type][end if][line break]";
 		say "(3) [if Player is female][link]Have him eat your cunt[as]3[end link][else][italic type]Female-specific interaction[roman type][end if][line break]";
-		say "(4) [if Player is female][link]Ride his dick[as]4[end link][else][italic type]Female-specific interaction[roman type][end if] [if Player is female and Cunt Depth of Player < 12][italic type]- Too small![roman type][end if][line break]";
+		say "(4) [if Player is female][link]Ride his dick[as]4[end link][else][italic type]Female-specific interaction[roman type][end if] [if Player is female and Cunt Length of Player < 12][italic type]- Too small![roman type][end if][line break]";
 		say "(5) [link]Ride his dick anally[as]5[end link] [if scalevalue of Player is 3 and player is not twistcapped][italic type]- Too small![roman type][else if scalevalue of Player < 4][italic type]- Too small![roman type][end if][line break]";
 		say "(6) [link]Suck him off[as]6[end link][line break]";
 		LineBreak;
@@ -300,7 +300,7 @@ to fsdmvicmenu:
 				now tempnum is 0;
 				now Trixieexit is 1;
 		else if calcnumber is 4:
-			if Player is not female or Cunt Depth of Player < 12:
+			if Player is not female or Cunt Length of Player < 12:
 				say "[bracket]Invalid interaction: You don't meet the criteria[close bracket][line break]";
 			else:
 				say "[FSDM_4]"; [Cunt Catching]
@@ -348,28 +348,28 @@ to fsdbiasshift:
 	if tempnum is 1: [Male]
 		if fsdbias is 0:
 			now fsdbias is 1;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, reveling in your exposure to the male beast. Surely you fate is tied to him, should you succumb[roman type].";
 		else if fsdbias is 4:
 			now fsdbias is 3;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, reveling in your exposure to the male beast. Your fate remains tied to a female, should you succumb, but continued exposure will cause a shift in your bias[roman type].";
 		else if fsdbias is 3 or fsdbias is 2:
 			now fsdbias is 1;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, reveling in your exposure to the male beast. Surely your fate is tied to him, should you succumb[roman type].";
 	else: [Female]
 		if fsdbias is 0:
 			now fsdbias is 4;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, reveling in your exposure to the female beast. Surely you fate is tied to her, should you succumb[roman type].";
 		else if fsdbias is 1:
 			now fsdbias is 2;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, reveling in your exposure to the female beast. Your fate remains tied to a male, should you succumb, but continued exposure will cause a shift in your bias[roman type].";
 		else if fsdbias is 3 or fsdbias is 2:
 			now fsdbias is 4;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, reveling in your exposure to the female beast. Surely your fate is tied to her, should you succumb[roman type].";
 
 
@@ -377,28 +377,28 @@ to fsdbiasshift:
 	if tempnum2 is 1:
 		if fsdmposture is 0:
 			now fsdmposture is 1;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, reveling in your submission to the beast[if Player is dominant], even against your dominant inclinations[end if]. Surely this is a sign of your fate, should you succumb[roman type].";
 		else if fsdmposture is 4:
 			decrease fsdmposture by 1;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, whispering of your submission to the beast[if Player is dominant], even against your dominant inclinations[end if]. You still feel fairly dominant towards them, but losing to them again will likely cause your posture to switch[roman type].";
 		else if fsdmposture is 2 or fsdmposture is 3:
 			now fsdmposture is 1;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your defeat, reveling in your submission to the beast[if Player is dominant], even against your dominant inclinations[end if]. Surely this is a sign of your fate, should you succumb[roman type].";
 	else if tempnum2 is 2:
 		if fsdmposture is 0:
 			now fsdmposture is 4;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your victory, reveling in your dominance of the beast[if Player is submissive], even against your submissive inclinations[end if]. Surely this is a sign of your fate, should you succumb[roman type].";
 		else if fsdmposture is 1:
 			increase fsdmposture by 1;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your victory, whispering of your dominance of the beast[if Player is submissive], even against your submissive inclinations[end if]. You still feel fairly submissive towards them, but defeating them again will likely cause your posture to switch[roman type].";
 		else if fsdmposture is 2 or fsdmposture is 3:
 			now fsdmposture is 4;
-			if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+			if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 				say "     [italic type]Your tainted mind echoes with your victory, reveling in your dominance of the beast[if Player is submissive], even against your submissive inclinations[end if]. Surely this is a sign of your fate, should you succumb[roman type].";
 	now tempnum2 is 0;]
 
@@ -525,7 +525,7 @@ to say FSDM_3: [Oral Receiving Cunt]
 		say "     [if tempnum is 1]Eager to begin[else if tempnum is 2]Eager and drooling to begin[else]With little effort[end if]";
 	else:
 		say "     [if tempnum is 1]Having warmed up to you slightly[else if tempnum is 2]Having warmed up to you by a bit now[else]With persistent chastising, along with the cock's persistent prodding against his snout[end if]";
-	say ", he obliges your need, scaled lips parting to envelop [if Cock Count of Player > 1]one of your pussies[else]your pussy[end if] within its embrace. Thick tongue slathering along its supple entrance, [if Cunt Depth of Player > 17]he easily thrusts the slick, writhing organ into your pliable depths[else]he thrusts the slick, writhing organ into your depths, quickly straining you with its impressive size[end if]. The touch of his saliva[if tempnum is 2], along with that lingering in your maw,[end if] [one of]seeming to intensify[or]intensifying[stopping] your arousal, you can't help but press against his snout, the dragon [if boundmod is 1]rumbling in approval[else]snorting in disdain[end if].";
+	say ", he obliges your need, scaled lips parting to envelop [if Cock Count of Player > 1]one of your pussies[else]your pussy[end if] within its embrace. Thick tongue slathering along its supple entrance, [if Cunt Length of Player > 17]he easily thrusts the slick, writhing organ into your pliable depths[else]he thrusts the slick, writhing organ into your depths, quickly straining you with its impressive size[end if]. The touch of his saliva[if tempnum is 2], along with that lingering in your maw,[end if] [one of]seeming to intensify[or]intensifying[stopping] your arousal, you can't help but press against his snout, the dragon [if boundmod is 1]rumbling in approval[else]snorting in disdain[end if].";
 	say "     Writhing against the beast's touch, [if boundmod is 1]happily[else]slowly[end if] making you twitch and writhe with each motion of his worming appendage, you find it difficult to keep a clear head as you rapidly approach ecstasy";
 	if Player is male:
 		say ". You don't think you'll be able to hold back for any longer, dick[smn] drooling against the open air. Shall you pull out at the last second and shame the sea dragon with your cum? Otherwise, you'll spare him the humiliation.";
@@ -556,10 +556,10 @@ to say FSDM_4: [Cunt Catching]
 		now tempnum is 0;
 	say ". [if scalevalue of Player < 4]Crawling[else]Moving[end if] over the sea dragon's throbbing rod, you carefully position yourself over its tip before you make your slow descent. Shall you pace yourself out? Otherwise, you'll put him through a rough ride.";
 	if Player consents:
-		say "     Slowly forcing the dragon's pointed tip through the folds of[if Cunt Count of Player > 1] one of[end if] your cunt's lips, you're [if Cunt Depth of Player < 14]fairly[else if Cunt Depth of Player < 18]briefly[else]barely[end if] strained as you engulf the beast's flared head. Descent slicked by [if tempnum is 1]your prior attendance[else]his sexual fluids[end if], the sea dragon groans and writhes as each successive inch in engulfed. Once you manage to take the head, the rest of his shaft seems comparatively easy to tackle, your speed slightly rising as you begin to ride the creature proper.";
+		say "     Slowly forcing the dragon's pointed tip through the folds of[if Cunt Count of Player > 1] one of[end if] your cunt's lips, you're [if Cunt Length of Player < 14]fairly[else if Cunt Length of Player < 18]briefly[else]barely[end if] strained as you engulf the beast's flared head. Descent slicked by [if tempnum is 1]your prior attendance[else]his sexual fluids[end if], the sea dragon groans and writhes as each successive inch in engulfed. Once you manage to take the head, the rest of his shaft seems comparatively easy to tackle, your speed slightly rising as you begin to ride the creature proper.";
 		say "     [if Player is male]Dick[smn] waving against the open air, you move to jerk yourself off as[else if Cunt Count of Player > 2]Fondling one of your unattended pussies,[else if Cunt Count of Player is 2]Fondling your unattended pussy[else]Fondling your stuffed pussy,[end if] your motion starts to pick up its pace, motion slicked by sweat as the beast's increasingly shallow breath intensifies your endeavor, each descent coaxing him free of his breath";
 	else:
-		say "     Unceremoniously, you force yourself down on the dragon's point tip, squeezed through the folds of[if Cunt Count of Player > 1] one of[end if] your cunt's lips as it's quickly engulfed, [if Cunt Depth of Player < 14]fairly[else if Cunt Depth of Player < 18]briefly[else]barely[end if] strained by the beast's flared head. Descent thankfully slicked by [if tempnum is 1]your prior attendance[else]his sexual fluids[end if], the sea dragon grunts and tenses as you rapidly engulf inch after inch of his flesh. Once you've impaled yourself with the head, the rest is much easier to take, plunging yourself down as you begin to ride the creature proper.";
+		say "     Unceremoniously, you force yourself down on the dragon's point tip, squeezed through the folds of[if Cunt Count of Player > 1] one of[end if] your cunt's lips as it's quickly engulfed, [if Cunt Length of Player < 14]fairly[else if Cunt Length of Player < 18]briefly[else]barely[end if] strained by the beast's flared head. Descent thankfully slicked by [if tempnum is 1]your prior attendance[else]his sexual fluids[end if], the sea dragon grunts and tenses as you rapidly engulf inch after inch of his flesh. Once you've impaled yourself with the head, the rest is much easier to take, plunging yourself down as you begin to ride the creature proper.";
 		say "     [if Player is male]Dick[smn] quickly bobbing against the open air, you move to furiously jerk yourself off as[else if Cunt Count of Player > 2]Unattended pussies aching against the open air, you move to furiously fondle yourself as[else if Cunt Count of Player is 2]Unattended pussy aching against the open air, you move to furiously fondle yourself as[else]Furiously fondling your stuffed pussy,[end if] your motion reaches a feverish pace, motion slicked by sweat as the beast's increasingly shallow breath seems to exacerbate your endeavor, each descent forcing his breath from him";
 	say ". It's clear neither of you can hold back any longer. Shall you pull out at the last second?";
 	if Player consents:
@@ -705,13 +705,12 @@ to say FSDM_6: [Oral Giving Cock]
 Section 2 - Creature Insertion
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "";
 	now Name entry is "Feral Sea Dragon";
 	now enemy title entry is "";
 	now enemy Name entry is "";
@@ -748,7 +747,7 @@ When Play begins:
 	now Breast Size entry is 0;
 	now Male Breast Size entry is 0;
 	now Cunt Count entry is 1;
-	now Cunt Depth entry is 21;
+	now Cunt Length entry is 21;
 	now Cunt Tightness entry is 15;
 	now libido entry is 45;
 	now loot entry is "";
@@ -765,12 +764,11 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -778,31 +776,28 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
-	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
-	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
+	now Mouth Circumference entry is 3;
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -813,33 +808,28 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
-	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
-	now Asshole Depth entry is 7; [inches deep for anal fucking]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Asshole Depth entry is 7; [inches deep for anal fucking;]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
+	now Asshole Tightness entry is 3;
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Count entry is 0;
 	now Cock Girth entry is 0; [thickness 1-5, generates the Cock Girth Adjective]
@@ -854,8 +844,8 @@ When Play begins:
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
 	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
+	now Cunt Length entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
@@ -914,16 +904,16 @@ to fsdmvore:
 				if Name entry is "Feral Sea Dragon":
 					now MonsterID is y;
 					break;
-			now BodyName of Player is "Feral Sea Dragon";
-			now FaceName of Player is "Feral Sea Dragon";
-			now TailName of Player is "Feral Sea Dragon";
-			now SkinName of Player is "Feral Sea Dragon";
-			now CockName of Player is "Feral Sea Dragon";
+			now bodyname of Player is "Feral Sea Dragon";
+			now facename of Player is "Feral Sea Dragon";
+			now tailname of Player is "Feral Sea Dragon";
+			now skinname of Player is "Feral Sea Dragon";
+			now cockname of Player is "Feral Sea Dragon";
 			now tail of Player is tail entry;
-			now Face of Player is face entry;
-			now Skin of Player is skin entry;
-			now Body of Player is body entry;
-			now Cock of Player is cock entry;
+			now face of Player is face entry;
+			now skin of Player is skin entry;
+			now body of Player is body entry;
+			now cock of Player is cock entry;
 			now voreloss is true;
 			now Trixieexit is 1;
 			end the story saying "You became a Feral Sea Dragon's meal!";
@@ -1130,7 +1120,7 @@ to say fsdstrugglebar:
 Section 4 - Miscellaneous
 
 when play ends:
-	if BodyName of Player is "Feral Sea Dragon" or BodyName of Player is "Feral Sea Dragoness":
+	if bodyname of Player is "Feral Sea Dragon" or bodyname of Player is "Feral Sea Dragoness":
 		if humanity of Player < 10:
 			if voreloss is true:
 				say "     Your strength completely sapped, you black out. The sea dragon's meager bulge receding as you're unmade, the beast roars out in utter satisfaction once he's finished, your ultimate fate to be nothing more than a meal for a monster. Sated for now, the creature would no doubt seek other victims to sate his substantial hunger...";
@@ -1151,7 +1141,7 @@ when play ends:
 					say "     Your gesture is inevitably reciprocated with the song of an eager female";
 					if fsddom > 5:
 						say ", followed by another, and another... Before you even have a chance to offer yourself, you're beset by at least half a dozen dragonesses, nipping and teasing their new";
-						if BodyName of Player is "Feral Sea Dragon" and player is male:
+						if bodyname of Player is "Feral Sea Dragon" and player is male:
 							say ", male-looking";
 						say " toy. You're dragged off and forced to spend the rest of your years forced to remain within the confines of a cave, forced to attend your many mistress's every whim and desire.";
 						if Player is male:
@@ -1166,7 +1156,7 @@ when play ends:
 								say ". Even as the harem swells in size, you position at the bottom of the totem pole never changes, abused by even the lowliest of dragonesses...";
 					else if fsddom > 0:
 						say ". As she approaches, you shyly offer yourself, a gesture which the dragoness eagerly obliges, apparently having grown fond of such a submissive attitude";
-						if BodyName of Player is "Feral Sea Dragon" and player is male:
+						if bodyname of Player is "Feral Sea Dragon" and player is male:
 							say ", especially when made by one who appears male";
 						say ". You're relegated to remain within your mistress's cave, your future filled with eagerly servicing her every whim and desire.";
 						if Player is male:
@@ -1181,7 +1171,7 @@ when play ends:
 								say " of similarly dominant females. It's especially fun when unsuspecting trespassers stumble on the lot of you...";
 					else if Player is submissive:
 						say ". As she approaches, you shyly offer yourself, a gesture which seems to confuse the dragoness, clearly not used to such a submissive gesture";
-						if BodyName of Player is "Feral Sea Dragon" and player is male:
+						if bodyname of Player is "Feral Sea Dragon" and player is male:
 							say ", especially by one who appears male";
 						say ". Eventually, however, the beast grows comfortable in a position of being your mistress, your future filled with eagerly servicing her every whim and desire.";
 						if Player is male:
@@ -1241,7 +1231,7 @@ when play ends:
 						say "     Your days are filled with the constant abuse of your new toy, forcing him to attend to your every whim and desire. As time passes, the monster grows fond of sating your eternal, bestial need, eager to be used.";
 					else if Player is male:
 						say "     You're met with the distant roar of a male, and though you find yourself hesitating in regards to this turn of event your input on the matter becomes irrelevant when the dragon suddenly rises up from the waters to meet you. He sees your hesitation and responds immediately by forcing you onto your side, his already-emergent cock plunged firmly into your unsuspecting hole. You cry out, ";
-						if BodyName of Player is "Feral Sea Dragoness":
+						if bodyname of Player is "Feral Sea Dragoness":
 							say "the monster frequently mocking your protests, often citing your dragoness appearance as reason for why you should enjoy being the property of such a fertile male until you concede and hide yourself under his dominant form, pumped full of his seed.";
 						else:
 							say "your protests only pleasuring the monster further as he ravages you, until you concede and hide yourself under his dominant form while he pumps you full of his seed.";

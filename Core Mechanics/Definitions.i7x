@@ -20,11 +20,11 @@ Definition: A person (called x) is equalsized with player:
 [State checks]
 [Does the person have boobs?]
 Definition: A person (called x) is MuzzleFaced:
-	if FaceName of x is listed in { "test" }, yes;
+	if facename of x is listed in { "test" }, yes;
 	no;
 
 Definition: A person (called x) is FeralBodied:
-	if BodyName of x is listed in { "test" }, yes;
+	if bodyname of x is listed in { "test" }, yes;
 	no;
 
 Definitions ends here.

@@ -40,7 +40,7 @@ Cock Length of Liliana is 12. [X Inches]
 Ball Size of Liliana is 7.
 Ball Count of Liliana is 2. [X balls]
 Cunt Count of Liliana is 1. [X pussy]
-Cunt Depth of Liliana is 12. [X Cunt]
+Cunt Length of Liliana is 12. [X Cunt]
 Cunt Tightness of Liliana is 3. [X Cunt]
 Nipple Count of Liliana is 2. [X nipples]
 Breast Size of Liliana is 3. [X at the start]
@@ -209,7 +209,7 @@ to say LilianaInfectiousFuck: [Runs whenever Liliana is the active pet and the p
 			say ". She rubs a hand between your legs and over your wet folds before slipping [if Cunt Count of Player > 1]her fingers into your pussies[else]a finger into your pussy[end if], causing you to moan in response";
 		say ". You continue stroking her as you enjoy this attention from her until she cums, blasting her seed across your body. As the semen soaks into you, you feel more equinoid.";
 	else:
-		say "     You find yourself growing excited and lower yourself so you can take her cock in hand and guide it to your mouth. She moans softly and runs her hands over your [FaceName of Player] head. You work the throbbing, dribbling meat with your tongue and mouth until she cums, feeding you her thick load. As your body absorbs the tasty treat, you feel more equinoid.";
+		say "     You find yourself growing excited and lower yourself so you can take her cock in hand and guide it to your mouth. She moans softly and runs her hands over your [facename of Player] head. You work the throbbing, dribbling meat with your tongue and mouth until she cums, feeding you her thick load. As your body absorbs the tasty treat, you feel more equinoid.";
 	infect "Black Equinoid";
 	now lastfuck of equinoid warrior is turns;
 
