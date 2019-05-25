@@ -348,17 +348,17 @@ to say totalTH:
 		if Name entry is "Tigress Hooker":
 			now MonsterID is y;
 			break;
-	now tailname of Player is "Tigress Hooker";
-	now facename of Player is "Tigress Hooker";
-	now skinname of Player is "Tigress Hooker";
-	now bodyname of Player is "Tigress Hooker";
-	now cockname of Player is "Tigress Hooker";
+	now TailName of Player is "Tigress Hooker";
+	now FaceName of Player is "Tigress Hooker";
+	now SkinName of Player is "Tigress Hooker";
+	now BodyName of Player is "Tigress Hooker";
+	now CockName of Player is "Tigress Hooker";
 	attributeinfect;
 	now tail of Player is tail entry; [...to make for quicker and accurate copying of TH appearance.]
-	now face of Player is face entry;
-	now skin of Player is skin entry;
-	now body of Player is body entry;
-	now cock of Player is cock entry;
+	now Face of Player is face entry;
+	now Skin of Player is skin entry;
+	now Body of Player is body entry;
+	now Cock of Player is cock entry;
 	if "Male Preferred" is listed in feats of Player:
 [		say "(Male Preferred, locked results)";]
 		if Player is not male:			[Minimum of TH standard or greater]
@@ -371,8 +371,8 @@ to say totalTH:
 [		say "(Female Preferred, locked results)";]
 		if Player is not female:
 			now Cunt Count of Player is 1;
-		if Cunt Length of Player < 12:
-			now Cunt Length of Player is 12;
+		if Cunt Depth of Player < 12:
+			now Cunt Depth of Player is 12;
 		if Cunt Tightness of Player < 4:
 			now Cunt Tightness of Player is 4;
 		now Nipple Count of Player is 2;
@@ -388,9 +388,9 @@ to say totalTH:
 			now Ball Size of Player is 5;
 		if Player is not female:
 			now Cunt Count of Player is 1;
-		if Cunt Length of Player < 12:
-			now Cunt Length of Player is 12;
-		if Cunt Length of Player < 4:
+		if Cunt Depth of Player < 12:
+			now Cunt Depth of Player is 12;
+		if Cunt Depth of Player < 4:
 			now Cunt Tightness of Player is 4;
 		if Nipple Count of Player < 2:
 			now Nipple Count of Player is 2;
@@ -404,9 +404,9 @@ to say totalTH:
 			now Cock Length of Player is 9;
 		if Ball Size of Player < 5:
 			now Ball Size of Player is 5;
-		if Cunt Length of Player < 12:
-			now Cunt Length of Player is 12;
-		if Cunt Length of Player < 4:
+		if Cunt Depth of Player < 12:
+			now Cunt Depth of Player is 12;
+		if Cunt Depth of Player < 4:
 			now Cunt Tightness of Player is 4;
 		if Breast Size of Player < 4:
 			now Breast Size of Player is 4;
@@ -480,7 +480,7 @@ to say BTchangeover:
 			now Ball Size of Player is 6;
 		if Player is female:
 			now Cunt Count of Player is 0;
-			now Cunt Length of Player is 0;
+			now Cunt Depth of Player is 0;
 			now Cunt Tightness of Player is 0;
 			now Nipple Count of Player is 0;
 			now Breast Size of Player is 0;
@@ -493,40 +493,40 @@ to say BTchangeover:
 			now Ball Size of Player is 6;
 		if Player is female:
 			now Cunt Count of Player is 0;
-			now Cunt Length of Player is 0;
+			now Cunt Depth of Player is 0;
 			now Cunt Tightness of Player is 0;
 			now Nipple Count of Player is 0;
 			now Breast Size of Player is 0;
 	if Player is female:
-		now tailname of Player is "Big Tigress";
-		now facename of Player is "Big Tigress";
-		now skinname of Player is "Big Tigress";
-		now bodyname of Player is "Big Tigress";
-		now cockname of Player is "Big Tigress";
+		now TailName of Player is "Big Tigress";
+		now FaceName of Player is "Big Tigress";
+		now SkinName of Player is "Big Tigress";
+		now BodyName of Player is "Big Tigress";
+		now CockName of Player is "Big Tigress";
 		now scalevalue of Player is 4;
 		now bodydesc of Player is "powerful";
 		now bodytype of Player is "feline";
 		now SleepRhythm of Player is 0;
 		now tail of Player is "From your muscled rear emerges a long, white tail with black stripes banding the fur. It flicks behind you with excitement.";
-		now face of Player is "a feminine tiger face and long, flowing hair. Your hair is raven black and curls lightly at the ends as it drapes across your shoulders, framing your steely-blue eyes";
-		now skin of Player is "ivory white fur streaked with tiger stripes that covers your";
-		now body of Player is "powerfully built with a feminine flair and feline fluidity of motion. Your body moves sensually with every step, but with hidden power. Your hands are human in shape, but with feline claws, pawpads and fur";
-		now cock of Player is "ebon feline";
+		now Face of Player is "a feminine tiger face and long, flowing hair. Your hair is raven black and curls lightly at the ends as it drapes across your shoulders, framing your steely-blue eyes";
+		now Skin of Player is "ivory white fur streaked with tiger stripes that covers your";
+		now Body of Player is "powerfully built with a feminine flair and feline fluidity of motion. Your body moves sensually with every step, but with hidden power. Your hands are human in shape, but with feline claws, pawpads and fur";
+		now Cock of Player is "ebon feline";
 	else:
-		now tailname of Player is "Big Tiger";
-		now facename of Player is "Big Tiger";
-		now skinname of Player is "Big Tiger";
-		now bodyname of Player is "Big Tiger";
-		now cockname of Player is "Big Tiger";
+		now TailName of Player is "Big Tiger";
+		now FaceName of Player is "Big Tiger";
+		now SkinName of Player is "Big Tiger";
+		now BodyName of Player is "Big Tiger";
+		now CockName of Player is "Big Tiger";
 		now scalevalue of Player is 4;
 		now bodydesc of Player is "powerful";
 		now bodytype of Player is "feline";
 		now SleepRhythm of Player is 0;
 		now tail of Player is "From your muscled rear emerges a long, white tail with black stripes banding the fur. It flicks behind you with excitement.";
-		now face of Player is "a male tiger head with a strong jaw and a predatory gaze. With a fully feline head, you have fur, stripes and whiskers cover your stern muzzle";
-		now skin of Player is "ivory white fur streaked with tiger stripes that covers your";
-		now body of Player is "a powerfully built, masculine form. You move with predatory strength and confidence, as well as a feline's smooth grace. Your hands are human in shape, but with feline claws, pawpads and fur";
-		now cock of Player is "ebon feline";
+		now Face of Player is "a male tiger head with a strong jaw and a predatory gaze. With a fully feline head, you have fur, stripes and whiskers cover your stern muzzle";
+		now Skin of Player is "ivory white fur streaked with tiger stripes that covers your";
+		now Body of Player is "a powerfully built, masculine form. You move with predatory strength and confidence, as well as a feline's smooth grace. Your hands are human in shape, but with feline claws, pawpads and fur";
+		now Cock of Player is "ebon feline";
 
 to say BTpostchange:						[New BT form]
 	if Player is herm:		[herm]
@@ -697,7 +697,7 @@ to say losetotigercop:
 			if a random chance of mchance in 12 succeeds:
 				say "     The victorious tiger grabs you roughly and tosses you to the ground at his feet. He puts a heavy paw at your shoulder, pushing you to the ground. 'I warned you what would happen if I caught you,' he rumbles. Above you, you can hear the sound of him unzipping his pants.";
 				say "     Reaching down, he grabs you with his paws and pushes you onto all fours. One paw then holds you firmly by the neck while the other bares your bottom to him";
-				if tailname of Player is "Tigress Hooker" or tailname of Player is "Tiger" or tailname of Player is "Tigertaur":
+				if TailName of Player is "Tigress Hooker" or TailName of Player is "Tiger" or TailName of Player is "Tigertaur":
 					say ". He grabs you by your striped tail and raises your rear up. 'Here you've got this sexy tail and no juicy pussy to go with it. It just ain't right,' he grumbles, giving your ass a hard swat before getting his cock lined up with your rear.";
 				else:
 					say ". He gives your rear a firm swat and lines up his cock with your rear.";
@@ -753,12 +753,13 @@ To say beattigercop:
 Section 9 - Creature Insertion
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
+	now Species Name entry is "";
 	now Name entry is "Tiger Cop"; [Name of your new Monster]
 	now enemy title entry is "";
 	now enemy Name entry is "";
@@ -795,7 +796,7 @@ When Play begins:
 	now Breast Size entry is 4; [Size of breasts infection will try to attain ]
 	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 1; [ if sex = "Female or both", indicates the number of female sexes infection will grant you.]
-	now Cunt Length entry is 12; [ Length of female sex infection will attempt to give you. ]
+	now Cunt Depth entry is 12; [ Length of female sex infection will attempt to give you. ]
 	now Cunt Tightness entry is 4; [ Width of female sex infection will try and give you ]
 	now libido entry is 100; [ Amount player Libido will go up if defeated ]
 	now loot entry is "pepperspray"; [ Dropped item. Key will be used later ]
@@ -812,11 +813,12 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
+	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -824,28 +826,31 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
+	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
+	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3;
+	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
+	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -856,28 +861,33 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
-	now Asshole Depth entry is 7; [inches deep for anal fucking;]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Asshole Depth entry is 7; [inches deep for anal fucking]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3;
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
+	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Count entry is 0;
 	now Cock Girth entry is 0; [thickness 1-5, generates the Cock Girth Adjective]
@@ -892,8 +902,8 @@ When Play begins:
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
 	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Length entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
+	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
@@ -909,18 +919,18 @@ Section 10 - Endings
 when play ends:
 	[force auto-change of name. Prevents problems with dirty water, etc... with endings]
 	[Does not resolve issues with children/use of descriptive names during the game, but better than nothing]
-	if bodyname of Player is "Tiger Cop":
-		now bodyname of Player is "Tigress Hooker";
-	if tailname of Player is "Tiger Cop":
-		now tailname of Player is "Tigress Hooker";
-	if facename of Player is "Tiger Cop":
-		now facename of Player is "Tigress Hooker";
-	if skinname of Player is "Tiger Cop":
-		now skinname of Player is "Tigress Hooker";
-	if cockname of Player is "Tiger Cop":
-		now cockname of Player is "Tigress Hooker";
+	if BodyName of Player is "Tiger Cop":
+		now BodyName of Player is "Tigress Hooker";
+	if TailName of Player is "Tiger Cop":
+		now TailName of Player is "Tigress Hooker";
+	if FaceName of Player is "Tiger Cop":
+		now FaceName of Player is "Tigress Hooker";
+	if SkinName of Player is "Tiger Cop":
+		now SkinName of Player is "Tigress Hooker";
+	if CockName of Player is "Tiger Cop":
+		now CockName of Player is "Tigress Hooker";
 	if mqstatus is 0 or mqstatus is 1:				[no motel quest / incomplete]
-		if bodyname of Player is "Tigress Hooker":
+		if BodyName of Player is "Tigress Hooker":
 			if humanity of Player < 10:
 				say "[THendingC]";
 			else:
@@ -928,7 +938,7 @@ when play ends:
 	if mqstatus is 99:						[refused the motel key hunt]
 		if humanity of Player > 9:				[all survivors get a standard add-on]
 			say "[THending_refusal][line break]";
-		if bodyname of Player is "Tigress Hooker":
+		if BodyName of Player is "Tigress Hooker":
 			if humanity of Player < 10:
 				say "[THendingD]";
 			else:
@@ -936,18 +946,18 @@ when play ends:
 	if mqstatus is 2:							[gave keys, did not accompany]
 		if humanity of Player > 9:				[all survivors get a standard add-on]
 			say "[THending_helper][line break]";
-		if bodyname of Player is "Tigress Hooker":
+		if BodyName of Player is "Tigress Hooker":
 			if humanity of Player < 10:
 				say "[THendingE]";
-			else if tailname of Player is "Tigress Hooker" and facename of Player is "Tigress Hooker" and skinname of Player is "Tigress Hooker":			[visibly fully tigress]
+			else if TailName of Player is "Tigress Hooker" and FaceName of Player is "Tigress Hooker" and SkinName of Player is "Tigress Hooker":			[visibly fully tigress]
 				say "[THendingB]";
 			else:
 				say "[THendingA]";
 	if mqstatus is 4:							[fled from motel hunt]
-		if bodyname of Player is "Tigress Hooker":
+		if BodyName of Player is "Tigress Hooker":
 			if humanity of Player < 10:
 				say "[THendingF]";
-			else if tailname of Player is "Tigress Hooker" and facename of Player is "Tigress Hooker" and skinname of Player is "Tigress Hooker":			[visibly fully tigress]
+			else if TailName of Player is "Tigress Hooker" and FaceName of Player is "Tigress Hooker" and SkinName of Player is "Tigress Hooker":			[visibly fully tigress]
 				say "[THendingB]";
 			else:
 				say "[THendingA]";

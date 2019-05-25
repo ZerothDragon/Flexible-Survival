@@ -298,26 +298,26 @@ to TextVariableSave:
 			now TextVarValue entry is wrbody;
 		-- "wrbodydesc":
 			now TextVarValue entry is wrbodydesc;
-		-- "wrbodyname":
-			now TextVarValue entry is wrbodyname;
+		-- "wrBodyName":
+			now TextVarValue entry is wrBodyName;
 		-- "wrbodytype":
 			now TextVarValue entry is wrbodytype;
 		-- "wrcock":
 			now TextVarValue entry is wrcock;
-		-- "wrcockname":
-			now TextVarValue entry is wrcockname;
+		-- "wrCockName":
+			now TextVarValue entry is wrCockName;
 		-- "wrface":
 			now TextVarValue entry is wrface;
-		-- "wrfacename":
-			now TextVarValue entry is wrfacename;
+		-- "wrFaceName":
+			now TextVarValue entry is wrFaceName;
 		-- "wrskin":
 			now TextVarValue entry is wrskin;
-		-- "wrskinname":
-			now TextVarValue entry is wrskinname;
+		-- "wrSkinName":
+			now TextVarValue entry is wrSkinName;
 		-- "wrtail":
 			now TextVarValue entry is wrtail;
-		-- "wrtailname":
-			now TextVarValue entry is wrtailname;
+		-- "wrTailName":
+			now TextVarValue entry is wrTailName;
 
 to NumberVariableSave:
 	choose blank row in Table of GameNumbers;
@@ -1493,6 +1493,8 @@ to NumberVariableSave:
 			now NumberVarValue entry is koboldgangmet;
 		-- "koboldgangsubs":
 			now NumberVarValue entry is koboldgangsubs;
+		-- "KoboldScaleColor":
+			now NumberVarValue entry is KoboldScaleColor;
 		-- "Koghhstatus":
 			now NumberVarValue entry is Koghhstatus;
 		-- "KorvinSubmitCounter":
@@ -2609,6 +2611,10 @@ to NumberVariableSave:
 			now NumberVarValue entry is SylviaTrapVar;
 		-- "SylviaVirginCheck":
 			now NumberVarValue entry is SylviaVirginCheck;
+		-- "TaniClassMemory":
+			now NumberVarValue entry is TaniClassMemory;
+		-- "TaniRecommendation":
+			now NumberVarValue entry is TaniRecommendation;
 		-- "Targetturns":
 			now NumberVarValue entry is Targetturns;
 		-- "tatsave":
@@ -3955,26 +3961,26 @@ to VariableTextLoad:
 					now wrbody is TextVarValue entry;
 				-- "wrbodydesc":
 					now wrbodydesc is TextVarValue entry;
-				-- "wrbodyname":
-					now wrbodyname is TextVarValue entry;
+				-- "wrBodyName":
+					now wrBodyName is TextVarValue entry;
 				-- "wrbodytype":
 					now wrbodytype is TextVarValue entry;
 				-- "wrcock":
 					now wrcock is TextVarValue entry;
-				-- "wrcockname":
-					now wrcockname is TextVarValue entry;
+				-- "wrCockName":
+					now wrCockName is TextVarValue entry;
 				-- "wrface":
 					now wrface is TextVarValue entry;
-				-- "wrfacename":
-					now wrfacename is TextVarValue entry;
+				-- "wrFaceName":
+					now wrFaceName is TextVarValue entry;
 				-- "wrskin":
 					now wrskin is TextVarValue entry;
-				-- "wrskinname":
-					now wrskinname is TextVarValue entry;
+				-- "wrSkinName":
+					now wrSkinName is TextVarValue entry;
 				-- "wrtail":
 					now wrtail is TextVarValue entry;
-				-- "wrtailname":
-					now wrtailname is TextVarValue entry;
+				-- "wrTailName":
+					now wrTailName is TextVarValue entry;
 			if debugactive is 1:
 				say "DEBUG -> VarName '[TextVarName entry]' restored to '[TextVarValue entry]'.";
 	else:
@@ -5159,6 +5165,8 @@ to VariableNumberLoad:
 					now koboldgangmet is numberVarValue entry;
 				-- "koboldgangsubs":
 					now koboldgangsubs is numberVarValue entry;
+				-- "KoboldScaleColor":
+					now KoboldScaleColor is numberVarValue entry;
 				-- "Koghhstatus":
 					now Koghhstatus is numberVarValue entry;
 				-- "KorvinSubmitCounter":
@@ -6273,6 +6281,10 @@ to VariableNumberLoad:
 					now SylviaTrapVar is numberVarValue entry;
 				-- "SylviaVirginCheck":
 					now SylviaVirginCheck is numberVarValue entry;
+				-- "TaniClassMemory":
+					now TaniClassMemory is numberVarValue entry;
+				-- "TaniRecommendation":
+					now TaniRecommendation is numberVarValue entry;
 				-- "Targetturns":
 					now Targetturns is numberVarValue entry;
 				-- "tatsave":

@@ -245,7 +245,7 @@ to say dominick_sexmenu:
 	now sortorder entry is 9;
 	now description entry is "lavish that doggy cock with attention";
 	[]
-	if HP of Dominick >= 5 and HP of Dominick < 10 and player is female and ( bodyname of Player is "Breederslut" or facename of Player is "Breederslut" ):
+	if HP of Dominick >= 5 and HP of Dominick < 10 and player is female and ( BodyName of Player is "Breederslut" or FaceName of Player is "Breederslut" ):
 		if "Submissive" is not listed in feats of Player and level of Player > 3:
 			choose a blank row in table of fucking options;
 			now title entry is "Beta training";
@@ -262,7 +262,7 @@ to say dominick_sexmenu:
 	else if HP of Dominick >= 10 and HP of Dominick < 20:
 [		if Libido of Dominick > 0:		]
 		if Libido of Dominick is 1:			[***temp only available for Female Husky***]
-			if Player is female and ( bodyname of Player is "Breederslut" or facename of Player is "Breederslut" ):
+			if Player is female and ( BodyName of Player is "Breederslut" or FaceName of Player is "Breederslut" ):
 				choose a blank row in table of fucking options;
 				now sortorder entry is 90;
 				if Libido of Dominick is 1:			[last capture was Female Husky]
@@ -399,7 +399,7 @@ Section 6 - Sex Scenes
 
 to say sexwithDominick_00:
 	let doggytype be false;
-	if facename of Player is listed in infections of Caninelist or bodyname of Player is listed in infections of Caninelist or cockname of Player is listed in infections of Caninelist:
+	if FaceName of Player is listed in infections of Caninelist or BodyName of Player is listed in infections of Caninelist or CockName of Player is listed in infections of Caninelist:
 		now doggytype is true;
 	say "     The tantalizing sight of Dom's doggy cock gets too tempting to resist any longer. Dropping to your knees before him, you nuzzle those plump balls and take in the heady scent of the canine stud. You slip further into lustful need, stroking his manhood while licking and kissing those big balls.";
 	say "     Dom leers down at you. 'That's it, you slut[if Player is female]. You girls can't get enough of my big meat. It's just what a bitch like you needs, isn't it?' he says as he takes hold of your head and grinds his hard, leaking shaft across your cheek. He doesn't bother waiting for your response, pushing his cock past your lips as soon as you open your mouth[else]. That's all you guys are good for - licking my balls and polishing my cock.' He rubs said cock across your cheek, leaking precum onto your face. The scent of his arousal turns you on all the more and the next time you take a panting breath, he pushes his cock past your lips, his Prince Albert piercing tickling the back of your throat[end if]. With his shaft stuffed in your mouth, you're treated to a steady dribble of doggy pre that is deliciously exciting.";
@@ -430,7 +430,7 @@ to say sexwithDominick_01:
 	say "     Feeling the aching need to have him buried inside you[if HP of Dominick >= 4] again[end if], you drop onto all fours and present yourself to him. Grabbing your ass with both paws, he presses his muzzle to your muff and gives you a long, slow lick up your pussy[if anallevel > 1], taint and asshole[end if]. This sends shivers through you, prompting you to push back against his slobbery tongue.";
 	say "     'I appreciate your eagerness, my little pet, but you need to work on your stance if you want to be a proper pedigree bitch of mine,' he says. His paws roam over your body, adjusting your stance into a more naturally canine one. A little press at your shoulders, a reposition of your head and neck, an adjustment of your hips to better raise your rear for to him - all making you a little closer to a perfect show dog. And as he's making these little shifts, fingers find their way to your snatch, fingering your juicy muff as a reward to encourage you to be a good doggy girl for him.";
 	WaitLineBreak;
-	say "     Once he's done [if bodyname of Player is listed in infections of Caninelist]adjusting you a little closer to pedigree standards[else]adjusting your posture to best display your sexy ass[end if], he moves in to mount you. 'Mmm... take that big doggy cock, my pet,' he pants in your ear as his cock slides into your slick slit. 'You [if Player is male]wannabe [end if]bitches are nothing but cock sluts in need of a good fucking.' His canine manhood pushes its way into your [cunt size desc of Player] cunt, every inch of it feeling wonderful as it goes in[if HP of Dominick < 4]. He takes his time at first, savoring his new fucktoy pet[else]. He savors the initial penetration as he mounts you anew[end if].";
+	say "     Once he's done [if BodyName of Player is listed in infections of Caninelist]adjusting you a little closer to pedigree standards[else]adjusting your posture to best display your sexy ass[end if], he moves in to mount you. 'Mmm... take that big doggy cock, my pet,' he pants in your ear as his cock slides into your slick slit. 'You [if Player is male]wannabe [end if]bitches are nothing but cock sluts in need of a good fucking.' His canine manhood pushes its way into your [cunt size desc of Player] cunt, every inch of it feeling wonderful as it goes in[if HP of Dominick < 4]. He takes his time at first, savoring his new fucktoy pet[else]. He savors the initial penetration as he mounts you anew[end if].";
 	if Player is breederslutbodied and a random chance of 3 in 5 succeeds:
 		say "     'Such a cute little girl [if Player is pure]you've turned[else]you're turning[end if] out to be,' he says, running his paws over your smaller shiba inu form. 'My dick's nearly as big as your whole body. You must feel so deliciously full,' he says in your ear, rubbing your stuffed belly. And while he might exaggerate how small you are, he's quite right that his cock's comparatively huge, making a bit of a bulge in your delightfully stuffed tummy.";
 		WaitLineBreak;
@@ -450,7 +450,7 @@ to say sexwithDominick_01:
 
 to say sexwithDominick_02:
 	let doggytype be false;
-	if facename of Player is listed in infections of Caninelist or bodyname of Player is listed in infections of Caninelist or cockname of Player is listed in infections of Caninelist:
+	if FaceName of Player is listed in infections of Caninelist or BodyName of Player is listed in infections of Caninelist or CockName of Player is listed in infections of Caninelist:
 		now doggytype is true;
 	say "     Desiring another round with the sexy husky, you [if Player is breederslutbodied]pad[else]head[end if] over to him and take his erect member in hand. He smiles at this and places a paw meaningfully, possessively on your rear. 'Come back for more, I see. There's nothing a [if Player is male]wannabe-[else]sweet [end if]bitch like you needs more than cock.' His paw slips down between your legs to tease across your wet folds with casual skill. 'You want it in you, don't you?'";
 	say "     Not waiting for your answer, he pulls you along as he takes a seat in his nearby chair. You end up in his lap, his hard cock grinding between your buns. You can feel its warmth, its hardness, its girth and you give a soft moan of desire. Hooking his paws under your thighs, he raises your legs and boosts you up before lowering you down onto his erection. It drives into you like it has every right to be there and your cunt doesn't object, quivering and clutching around it with need. Held in his arms with your legs in the air, you're unable to do anything but let him do with you as he will while on lurid display for his attendant slut girls.";
@@ -460,7 +460,7 @@ to say sexwithDominick_02:
 		say "     Picking up his pace, Dominick thrusts up into you all the harder while bouncing you in his lap. 'How does that feel, my little shiba inu? A little bitch-girl like you moaning like a slut for a dick nearly as big as you are,' he teases, knocking that knot harder against your soaked folds, working them open a little further. And while you are only down to five feet tall, that cock of his is two or three times the average size, ensuring you'll be thoroughly filled. 'I can tell you love it. And once I've knotted you, there'll be no room for all that cum but right into your cute womb of yours,' he adds, grinding his cock deep inside you for emphasis. In your lust-addled state, you long for exactly that.";
 	else:
 		say "     Picking up his pace, Dominick thrusts up into you all the harder while bouncing you in his lap. 'Take it, you [if Player is male]wannabe-[else]horny [end if]slut,' he pants in your ear. Your crotch knocks down harder onto that big knot of his, working your folds open a little further. 'I know you want it. Every bitch[if doggytype is false]-in-training[end if] loves a good, hard dicking,' he says with confidence, grinding his cock deep inside you for emphasis. In your increasingly lust-addled state, your mind and body agree, needing the stud of a dog to fuck you senseless.";
-	say "     Under the continual pounding, your pussy can only take so much before being spread wider and wider until his thick knot pops into you with a wet slurp. You [if facename of Player is listed in infections of caninelist]release a yelp[else]groan loudly[end if] as you're stretched that last bit and the thick bulb of meat finally pops and locks into your achingly stuffed cunt. You arch your back and quiver atop his pulsing rod, your inner walls squeezing and milking at his cock while he continues to bounce you up and down. Tied as you are, you can only move up a short distance before slamming back down onto his crotch, more grinding his cock into you and tugging at your insides.";
+	say "     Under the continual pounding, your pussy can only take so much before being spread wider and wider until his thick knot pops into you with a wet slurp. You [if FaceName of Player is listed in infections of caninelist]release a yelp[else]groan loudly[end if] as you're stretched that last bit and the thick bulb of meat finally pops and locks into your achingly stuffed cunt. You arch your back and quiver atop his pulsing rod, your inner walls squeezing and milking at his cock while he continues to bounce you up and down. Tied as you are, you can only move up a short distance before slamming back down onto his crotch, more grinding his cock into you and tugging at your insides.";
 	WaitLineBreak;
 	say "     But that's still more than enough to send you into orgasmic bliss. And your release is soon followed by that of your canine mate, his hot load shooting up into your womb in a near-steady stream of semen. You can feel the gooey warmth of it filling your uterus, the virile sperm filling you with ecstasy in your post-orgasmic haze[if Player is not male]. And as the seeding goes on, his two attendants approach at his signal, taking turns licking at your stuffed pussy to catch what few dribbles of their master's precious seed leak out around his throbbing knot[end if].";
 	say "     By the time his prolific orgasm has passed and his knot has come down, you're sore, weak and oh-so-satisfied. He raises you up off his knot and lowers you down onto a doggy mat on the floor. It's thoroughly stained with cum and pussy juices already, so the excess leaking from your abused hole won't matter. You bury your nose in it, taking in the heady scent of canine sex suffusing it, losing yourself in it for a good, long while.";
@@ -491,7 +491,7 @@ to say sexwithDominick_03:
 
 to say sexwithDominick_04:
 	let doggytype be false;
-	if facename of Player is listed in infections of Caninelist or bodyname of Player is listed in infections of Caninelist or cockname of Player is listed in infections of Caninelist:
+	if FaceName of Player is listed in infections of Caninelist or BodyName of Player is listed in infections of Caninelist or CockName of Player is listed in infections of Caninelist:
 		now doggytype is true;
 	say "     Kneeling between the husky's legs, you start licking at that fine cock of his. The taste of his dick excites your senses, getting you all the more eager and aroused. Cupping his balls in one hand, you give his meat a long, slow lick from bottom to top. Once at the pointed glans, you swirl your tongue over it before lowering your lips down around his shaft.";
 	if Player is female:
@@ -621,7 +621,7 @@ to say ForcedSubmissionToDom:
 
 to say ForcedSubToDomSex1:			[Facefuck]
 	let doggytype be false;
-	if facename of Player is listed in infections of Caninelist or bodyname of Player is listed in infections of Caninelist or cockname of Player is listed in infections of Caninelist:
+	if FaceName of Player is listed in infections of Caninelist or BodyName of Player is listed in infections of Caninelist or CockName of Player is listed in infections of Caninelist:
 		now doggytype is true;
 	say "     Dom grabs your head and pulls your head between his legs, burying your face in his groin. Your senses are flooded with his musk with each breath you take as he rubs your face into his massive balls. Your need to have Dom inside of you deepens, and you take one of his balls into your mouth, sucking on it and enjoying the fullness of it. You manage to work the other ball into your mouth, and your efforts draw a moan from your master. His hands on the back of your head pull you back, and you whine as his balls leave your lips.";
 	if HP of Dominick > 30 and HP of Dominick < 40:
@@ -740,7 +740,7 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 	say "     Dom gives you a long look before speaking, 'I've been thinking about our first meeting, pet. At first I thought you were trying to take advantage of the situation, to assert your dominance but I see now that wasn't it. You practically threw yourself at me, knowing you couldn't possibly win. You were looking for something you needed and I think what you need, slut, is to be made into a proper bitch. We could take it slow, but we both know you need this now.' Dom stands up and orders you to strip naked. He then guides you to his desk, directing you to support yourself on it. [if scalevalue of Player < 3]Seeing that you're not at the right height for what's to come, Dom finds a sturdy stool for you to stand on. [end if]Your master leans over and growls in your ear, 'I'm going to give you what you need, my desperate bitch. You'll never have to go without again.'";
 	if HP of Dominick is 31:
 		if gsgl is 6 or gsgl is 12 or gsgl is 13:			[No breasts please.]
-			say "     'You're a woman now but I'm going to make you a real bitch.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Length of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
+			say "     'You're a woman now but I'm going to make you a real bitch.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Depth of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
 			say "     A thought does cross your mind as you hold yourself up however, one that makes your pussy clench. You couldn't pleasure yourself anyway with just your hands; that's not what you want, not what Dom wants. Your master is fucking you so you both can feel real pleasure, once you become a proper doggy bitch. Suddenly, you're overcome with a rush of feeling in your groin and you cry out as you cum, flooding the desk top with your femcum. Your orgasmic spasms send Dom over the edge and he grunts as he cums in your snatch. He continues fucking you through your orgasm and the strange feelings in your groin intensifies, causing you to look down. You let out a gasp that quickly changes to a moan as you watch white fur cover your crotch. The erotic thrills coursing through your body from this transformation makes you orgasm and the desk is now drenched in your femcum.";
 			WaitLineBreak;
 			say "     'Now that you're my doggy bitch, the fun can begin.' Dom pulls out of your pussy entirely and begins hot dogging his dick between your folds. He slowly slides his length in again, giving you the opportunity to feel every inch of the his cock enter your snatch. You howl with the feeling of rightness that overwhelms you as Dom's knot presses against your cleft. A howl that is decidedly more dog-like than you expected, though you are less surprised when you feel your face shift and a slim, tan furred muzzle comes into view. The fur that covers your muzzle is not alone; you feel it pushing up through your skin all over your body, not quite painfully. Your arms buckle under this new onslaught of feeling and Dom catches you by the chest, pulling you up against him, and begins fondling you. [if Breast Size of Player < 12]Your breasts swell to fill his hands and his groping touches draw some adorable yips from you as he finds your sensitive spots[else]Your breasts form to his hands and you yip as he finds your sensitive spots[end if].";
@@ -757,7 +757,7 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			fimpregchance;
 		else:
 			if Player is female:
-				say "     'You're a woman now but I'm going to make you a real bitch.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Length of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
+				say "     'You're a woman now but I'm going to make you a real bitch.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Depth of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
 				say "     A thought does cross your mind as you hold yourself up however, one that makes your pussy clench. You couldn't pleasure yourself anyway with just your hands; that's not what you want, not what Dom wants. Your master is fucking you so you both can feel real pleasure, once you become a proper doggy bitch. Suddenly, you're overcome with a rush of feeling in your groin and you cry out as you cum, flooding the desk top with your femcum. Your orgasmic spasms send Dom over the edge and he grunts as he cums in your snatch. He continues fucking you through your orgasm and the strange feelings in your groin intensifies, causing you to look down. You let out a gasp that quickly changes to a moan as you watch white fur cover your crotch. The erotic thrills coursing through your body from this transformation makes you orgasm and the desk is now drenched in your femcum.";
 				WaitLineBreak;
 				say "     'Now that you're my doggy bitch, the fun can begin.' Dom pulls out of your pussy entirely and begins hot dogging his dick between your folds. He slowly slides his length in again, giving you the opportunity to feel every inch of the his cock enter your snatch. You howl with the feeling of rightness that overwhelms you as Dom's knot presses against your folds. A howl that is decidedly more dog-like than you expected, though you are less surprised when you feel your face shift and a slim, tan furred muzzle comes into view. The fur that covers your muzzle is not alone; you feel it pushing up through your skin all over your body, not quite painfully. Your arms buckle under this new onslaught of feeling and Dom catches you by the chest, pulling you up against him, and begins fondling you. [if Breast Size of Player < 12]Your breasts swell to fill his hands and his groping touches draw some adorable yips from you as he finds your sensitive spots[else]Your breasts form to his hands and you yip as he finds your sensitive spots[end if].";
@@ -772,19 +772,19 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			SanLoss 15;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 34;
-			now facename of Player is "Breederslut";
-			now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now tailname of Player is "Breederslut";
+			now FaceName of Player is "Breederslut";
+			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+			now TailName of Player is "Breederslut";
 			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now bodyname of Player is "Breederslut";
-			now body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
-			now skinname of Player is "Breederslut";
-			now skin of Player is "golden brown and snowy white fur-covered";
+			now BodyName of Player is "Breederslut";
+			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
+			now SkinName of Player is "Breederslut";
+			now Skin of Player is "golden brown and snowy white fur-covered";
 			now Cock Count of Player is 0;
 			now Cunt Count of Player is 1;
 			now Nipple Count of Player is 2;
 			now Breast Size of Player is 12;
-			now Cunt Length of Player is 16;
+			now Cunt Depth of Player is 16;
 			now Cunt Tightness of Player is 12;
 			now ForcedBreederslutTF is 3;
 			fimpregchance;
@@ -807,7 +807,7 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			mimpregchance;
 		else if gsgl is 7 or gsgl is 8 or gsgl is 9:			[Vagina fine and a penis too.]
 			if gsgl is 7:			[No breasts though.]
-				say "     'You're on the right path already, but we need to go all the way now.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Length of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
+				say "     'You're on the right path already, but we need to go all the way now.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Depth of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
 				say "     A thought does cross your mind as you hold yourself up however, one that makes your useless dick dribble. You couldn't pleasure yourself anyway with your little cocklet; that's not what you want, not what Dom wants. Your master is fucking you so you both can feel real pleasure, once you become a proper bitch. Suddenly, you're overcome with a rush of feeling in your groin and you cry out as your dicklet cums, making a small puddle on the desk beneath you. Your orgasmic spasms send Dom over the edge and he grunts as he cums in your snatch. He continues fucking you through your orgasms and you cum again with a shout. Dom lets out a surprised noise and says, [one of]'Huh, that's weird, you still have a dick. Guess I have to try harder![or]'Still resisting, pet? One of these days it'll take, don't worry.'[stopping]";
 				WaitLineBreak;
 				say "     Dom pulls out of your pussy entirely and begins hot dogging his dick between your folds. He slowly slides his length in again, giving you the opportunity to feel every inch of the his cock enter your snatch. You howl with the feeling of rightness that overwhelms you as Dom's knot presses against your cleft. A howl that is decidedly more dog-like than you expected, though you are less surprised when you feel your face shift and a slim, tan furred muzzle comes into view. The fur that covers your muzzle is not alone; you feel it pushing up through your skin all over your body, not quite painfully. Your arms buckle under this new onslaught of feeling and Dom catches you by the chest, pulling you up against him, and begins fondling you. He gropes at your chest roughly and lets out a frustrated growl as though he expected more from you. You feel guilty that you've disappointed your master.";
@@ -823,7 +823,7 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 				infect "Breederslut";
 				fimpregchance;
 			else:			[I want to keep my dick.]
-				say "     'You're on the right path already, but we need to go all the way now.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Length of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
+				say "     'You're on the right path already, but we need to go all the way now.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Depth of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
 				say "     A thought does cross your mind as you hold yourself up however, one that makes your useless dick dribble. You couldn't pleasure yourself anyway with your little cocklet; that's not what you want, not what Dom wants. Your master is fucking you so you both can feel real pleasure, once you become a proper bitch. Suddenly, you're overcome with a rush of feeling in your groin and you cry out as your dicklet cums, making a small puddle on the desk beneath you. Your orgasmic spasms send Dom over the edge and he grunts as he cums in your snatch. He continues fucking you through your orgasms and you cum again with a shout. Dom lets out a surprised noise and says, [one of]'Huh, that's weird, you still have a dick. Guess I have to try harder![or]'Still resisting, pet? One of these days it'll take, don't worry.'[stopping]";
 				WaitLineBreak;
 				say "     Dom pulls out of your pussy entirely and begins hot dogging his dick between your folds. He slowly slides his length in again, giving you the opportunity to feel every inch of the his cock enter your snatch. You howl with the feeling of rightness that overwhelms you as Dom's knot presses against your cleft. A howl that is decidedly more dog-like than you expected, though you are less surprised when you feel your face shift and a slim, tan furred muzzle comes into view. The fur that covers your muzzle is not alone; you feel it pushing up through your skin all over your body, not quite painfully. Your arms buckle under this new onslaught of feeling and Dom catches you by the chest, pulling you up against him, and begins fondling you. He gropes at your chest roughly and lets out a frustrated growl as though he expected more from you. You feel guilty that you've disappointed your master.";
@@ -839,7 +839,7 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 				infect "Breederslut";
 				fimpregchance;
 		else if gsgl is 12 or gsgl is 13:			[Vagina fine but no breasts.]
-			say "     'You're on the right path already, but we need to go all the way now.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Length of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
+			say "     'You're on the right path already, but we need to go all the way now.' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Depth of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
 			say "     A thought does cross your mind as you hold yourself up however, one that makes your pussy clench. You couldn't pleasure yourself anyway with just your hands; that's not what you want, not what Dom wants. Your master is fucking you so you both can feel real pleasure, once you become a proper doggy bitch. Suddenly, you're overcome with a rush of feeling in your groin and you cry out as you cum, flooding the desk top with your femcum. Your orgasmic spasms send Dom over the edge and he grunts as he cums in your snatch. He continues fucking you through your orgasm and the strange feelings in your groin intensifies, causing you to look down. You let out a gasp that quickly changes to a moan as you watch white fur cover your crotch. The erotic thrills coursing through your body from this transformation makes you orgasm and the desk is now drenched in your femcum.";
 			WaitLineBreak;
 			say "     Dom pulls out of your pussy entirely and begins hot dogging his dick between your folds. He slowly slides his length in again, giving you the opportunity to feel every inch of the his cock enter your snatch. You howl with the feeling of rightness that overwhelms you as Dom's knot presses against your cleft. A howl that is decidedly more dog-like than you expected, though you are less surprised when you feel your face shift and a slim, tan furred muzzle comes into view. The fur that covers your muzzle is not alone; you feel it pushing up through your skin all over your body, not quite painfully. Your arms buckle under this new onslaught of feeling and Dom catches you by the chest, pulling you up against him, and begins fondling you. [if Breast Size of Player < 12]Your breasts swell to fill his hands and his groping touches draw some adorable yips from you as he finds your sensitive spots[else]Your breasts form to his hands and you yip as he finds your sensitive spots[end if].";
@@ -856,7 +856,7 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			fimpregchance;
 		else:
 			if Player is female:
-				say "     [if Player is male]'You're on the right path already, but we need to go all the way now[else]'Looks like you've been trying to fix yourself on your own. I'm going to finish what you started[end if].' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Length of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
+				say "     [if Player is male]'You're on the right path already, but we need to go all the way now[else]'Looks like you've been trying to fix yourself on your own. I'm going to finish what you started[end if].' With no more warning than that, Dom thrusts into your cunt, all the way up to his knot. [if Cunt Depth of Player < 16]You cry out as you're stuffed by your master's massive cock. He holds himself there for a few minutes, giving you ample time to get somewhat used to the feeling of fullness[else]You grunt as your master enters you roughly, less from its size than the suddenness, though Dom's cock certainly makes its presence known. Dom holds himself still briefly, giving you a moment to catch your breath[end if]. Sensing your readiness, Dom begins fucking you hard, each pump of his hips slamming his knot against your cleft. You pant in lust, the feeling of fullness your master's dick gives you driving you wild. You can't even think of pleasuring yourself, however, as you need both arms to brace yourself against Dom's pleasurable assault.";
 				if Player is male:
 					say "     A thought does cross your mind as you hold yourself up however, one that makes your useless dick dribble. You couldn't pleasure yourself anyway with your little cocklet; that's not what you want, not what Dom wants. Your master is fucking you so you both can feel real pleasure, once you become a proper bitch. Suddenly, you're overcome with a rush of feeling in your groin and you cry out as your dicklet cums, making a small puddle on the desk beneath you. Your orgasmic spasms send Dom over the edge and he grunts as he cums in your snatch. He continues fucking you through your orgasms and the strange feelings in your groin intensifies, causing you to look down. You let out a gasp that quickly changes to a moan as you watch your little prick withdraw into your body, leaving only your dripping cunt. The erotic thrills coursing through your body from this transformation makes you orgasm and the little puddle of your last load is washed away by your femcum.";
 					WaitLineBreak;
@@ -875,19 +875,19 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			SanLoss 15;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 44;
-			now facename of Player is "Breederslut";
-			now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now tailname of Player is "Breederslut";
+			now FaceName of Player is "Breederslut";
+			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+			now TailName of Player is "Breederslut";
 			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now bodyname of Player is "Breederslut";
-			now body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
-			now skinname of Player is "Breederslut";
-			now skin of Player is "golden brown and snowy white fur-covered";
+			now BodyName of Player is "Breederslut";
+			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
+			now SkinName of Player is "Breederslut";
+			now Skin of Player is "golden brown and snowy white fur-covered";
 			now Cock Count of Player is 0;
 			now Cunt Count of Player is 1;
 			now Nipple Count of Player is 2;
 			now Breast Size of Player is 12;
-			now Cunt Length of Player is 16;
+			now Cunt Depth of Player is 16;
 			now Cunt Tightness of Player is 12;
 			now ForcedBreederslutTF is 3;
 			fimpregchance;
@@ -903,23 +903,23 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			SanLoss 15;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 54;
-			now facename of Player is "Breederslut";
-			now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now tailname of Player is "Breederslut";
+			now FaceName of Player is "Breederslut";
+			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+			now TailName of Player is "Breederslut";
 			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now bodyname of Player is "Breederslut";
-			now body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
-			now skinname of Player is "Breederslut";
-			now skin of Player is "golden brown and snowy white fur-covered";
+			now BodyName of Player is "Breederslut";
+			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
+			now SkinName of Player is "Breederslut";
+			now Skin of Player is "golden brown and snowy white fur-covered";
 			now Cock Count of Player is 1;
-			now cockname of Player is "Breederslut";
-			now cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
+			now CockName of Player is "Breederslut";
+			now Cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
 			now Cunt Count of Player is 0;
 			now Nipple Count of Player is 2;
 			now Breast Size of Player is 12;
 			now Cock Length of Player is 2;
 			now Ball Size of Player is 6;
-			now cockname of Player is "Breederslut";
+			now CockName of Player is "Breederslut";
 			now ForcedBreederslutBoyTF is 3;
 			mimpregchance;
 		else:
@@ -936,23 +936,23 @@ to say ForcedSubtoDomSex3:			[Full TF Sequence]
 			SanLoss 15;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 54;
-			now facename of Player is "Breederslut";
-			now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
-			now tailname of Player is "Breederslut";
+			now FaceName of Player is "Breederslut";
+			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+			now TailName of Player is "Breederslut";
 			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
-			now bodyname of Player is "Breederslut";
-			now body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
-			now skinname of Player is "Breederslut";
-			now skin of Player is "golden brown and snowy white fur-covered";
+			now BodyName of Player is "Breederslut";
+			now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur or scales you might have";
+			now SkinName of Player is "Breederslut";
+			now Skin of Player is "golden brown and snowy white fur-covered";
 			now Cock Count of Player is 1;
-			now cockname of Player is "Breederslut";
-			now cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
+			now CockName of Player is "Breederslut";
+			now Cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
 			now Cunt Count of Player is 0;
 			now Nipple Count of Player is 2;
 			now Breast Size of Player is 0;
 			now Cock Length of Player is 2;
 			now Ball Size of Player is 6;
-			now cockname of Player is "Breederslut";
+			now CockName of Player is "Breederslut";
 			now ForcedBreederslutBoyTF is 3;
 			mimpregchance;
 
@@ -961,7 +961,7 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 		say "     Dom leers down at you, 'You're willing, but you're not ready to be my bitch yet. You're incomplete, hungry for meaning. I can give you that, bitch, if you beg nicely. Can you do that for me?' You hesitate, thinking if that is what you want. Your gaze is drawn to Dom's perpetually erect cock, just inches away. You quickly strip and drop to your knees, nodding eagerly, which strangely causes Dom to frown before you realize your mistake and add a plaintive yes sir after a slightly too long pause. Dom's frown shifts to a grin and says, 'I was worried for a moment but I think you are ready. Let's get started then, pet.' Dom orders you to stand again and turn around. You feel him stand up behind you, the heat of his body engulfing you. The heat becomes tangible as his dick finds its way between your legs.";
 		if Player is female:
 			say "     Your master humps against you, his dick forcing your legs apart. With his strong hands holding you in place, he continues to fuck himself between your thighs, his massive rod coming into view with each thrust. You find yourself reaching down to run your fingers along his length each time it comes back. It's slick, with large globs of precum intermittently spurting from the tip as you caress it. If only, you think, it could be in you, rather than this glorified masturbation. You turn to ask Dom to fuck you, only to have him chuckle in response. 'Relax and enjoy the ride, slut. You'll get fucked soon enough.' Frustrated by your master's denial and feeling defiant, you try to push Dom's dick into you. Unfortunately your frustration only grows when Dom stops moving, and his hand knock yours away as he growls into your ear, 'Aw, the bitch doesn't like foreplay. Guess I'll give you it to you now.'";
-			say "     He reaches down to your pussy and begins fingerblasting you, while starting to fuck between your thighs again. As he fingers you, [if Cunt Length of Player < 16]you feel your cunt expanding, a needy void growing deep within your body[else]you gasp as he finds the right spots with each pump of his hand[end if] and the sensation overwhelms you. Dom's rough handling pulls a powerful orgasm from you and you soak your master's hand with your femcum. Dom stops thrusting his cock and just holds you as you shudder through your orgasm. The moment passes and he pushes your upper body forward and you find yourself bracing your hands on your knees for lack of support, mostly relying on Dom's hands on your hips. You feel his cock at the entrance to your cunt and you push backwards, trying to get your master to fuck you for real. He laughs at your eagerness, sliding his dick in with one stroke.";
+			say "     He reaches down to your pussy and begins fingerblasting you, while starting to fuck between your thighs again. As he fingers you, [if Cunt Depth of Player < 16]you feel your cunt expanding, a needy void growing deep within your body[else]you gasp as he finds the right spots with each pump of his hand[end if] and the sensation overwhelms you. Dom's rough handling pulls a powerful orgasm from you and you soak your master's hand with your femcum. Dom stops thrusting his cock and just holds you as you shudder through your orgasm. The moment passes and he pushes your upper body forward and you find yourself bracing your hands on your knees for lack of support, mostly relying on Dom's hands on your hips. You feel his cock at the entrance to your cunt and you push backwards, trying to get your master to fuck you for real. He laughs at your eagerness, sliding his dick in with one stroke.";
 			WaitLineBreak;
 		else:
 			say "     Your master humps against you, his dick forcing your legs apart. With his strong hands holding you in place, he continues to fuck himself between your thighs, his massive rod coming into view below your smooth crotch. You find yourself reaching down to run your fingers along his length each time it comes back. It's slick, with large globs of precum intermittently spurting from the tip as you caress it. If only, you think, it could be in you, rather than this glorified masturbation. You turn to ask Dom to fuck you, only to have him chuckle in response. 'Relax and enjoy the ride, slut. You'll get fucked soon enough.' Frustrated by your master's denial and feeling defiant, you try to rub yourself to completion. Unfortunately your frustration only grows as you can't seem to get aroused no matter what you do. Dom's hand knock yours away as he growls into your ear, 'Aw, the bitch doesn't know how to get herself off. Let me help you with that.'";
@@ -972,8 +972,8 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 		SanLoss 5;
 		now lastfuck of Dominick is turns;
 		now HP of Dominick is 32;
-		now facename of Player is "Breederslut";
-		now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+		now FaceName of Player is "Breederslut";
+		now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
 		now Cock Count of Player is 0;
 		now Cunt Count of Player is 1;
 		now ForcedBreederslutTF is 1;
@@ -987,7 +987,7 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 					say "     He reaches down to your cocklet and begins circling it with his fingers, once again pumping away between your legs. As his fingers play with your little dick, you feel your orgasm building, not in your dick, but in your pussy. All thought ceases as Dom's fingers enter your cunt and the sensation overwhelms you. You moan as each push seems to expand your snatch until you feel yourself cum, your pussy dripping. Dom stops thrusting his cock and just holds you as you shudder through your orgasm. The moment passes and he pushes your upper body forward and you find yourself bracing your hands on your knees for lack of support, mostly relying on Dom's hands on your hips. You feel his cock at the entrance to your cunt and you push backwards, trying to get your master to fuck you for real. He laughs at your eagerness, saying, 'I'm not sure why you still have a dick but that's something we can fix later!' With that, he slides his dick in with one stroke.";
 					WaitLineBreak;
 				else:
-					say "     He reaches down to your pussy and begins fingerblasting you, while starting to fuck between your thighs again. As he fingers you, [if Cunt Length of Player < 16]you feel your cunt expanding, a needy void growing deep within your body[else]you gasp as he finds the right spots with each pump of his hand[end if] and the sensation overwhelms you. Dom's rough handling pulls a powerful orgasm from you and you soak your master's hand with your femcum. Dom stops thrusting his cock and just holds you as you shudder through your orgasm. The moment passes and he pushes your upper body forward and you find yourself bracing your hands on your knees for lack of support, mostly relying on Dom's hands on your hips. You feel his cock at the entrance to your cunt and you push backwards, trying to get your master to fuck you for real. He laughs at your eagerness, sliding his dick in with one stroke.";
+					say "     He reaches down to your pussy and begins fingerblasting you, while starting to fuck between your thighs again. As he fingers you, [if Cunt Depth of Player < 16]you feel your cunt expanding, a needy void growing deep within your body[else]you gasp as he finds the right spots with each pump of his hand[end if] and the sensation overwhelms you. Dom's rough handling pulls a powerful orgasm from you and you soak your master's hand with your femcum. Dom stops thrusting his cock and just holds you as you shudder through your orgasm. The moment passes and he pushes your upper body forward and you find yourself bracing your hands on your knees for lack of support, mostly relying on Dom's hands on your hips. You feel his cock at the entrance to your cunt and you push backwards, trying to get your master to fuck you for real. He laughs at your eagerness, sliding his dick in with one stroke.";
 					WaitLineBreak;
 			else:
 				say "     Your master humps against you, his dick forcing your legs apart. With his strong hands holding you in place, he continues to fuck himself between your thighs, his massive rod coming into view below your far less impressive dicklet. You find yourself reaching down to run your fingers along his length each time it comes back. It's slick, with large globs of precum intermittently spurting from the tip as you caress it. If only, you think, it could be in you, rather than this glorified masturbation. You turn to ask Dom to fuck you, only to have him chuckle in response. 'Relax and enjoy the ride, slut. You'll get fucked soon enough.' Frustrated by your master's denial and feeling defiant, you try to jack yourself off. Unfortunately your frustration only grows as you can't seem to get hard no matter what you do. Dom's hand knock yours away as he growls into your ear, 'Aw, the bitch doesn't know how to get herself off. Let me help you with that.'";
@@ -1012,7 +1012,7 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 					say "     He reaches down to your cocklet and begins circling it with his fingers, once again pumping away between your legs. As his fingers play with your little dick, it seems like he's having trouble finding it. It's almost as though all thought ceases as Dom's fingers enter your cunt and the sensation overwhelms you. You moan as each push seems to expand your snatch until you feel yourself cum, and you watch your dicklet disappear into your body as your pussy drips. Dom stops thrusting his cock and just holds you as you shudder through your last orgasm as a herm. The moment passes and he pushes your upper body forward and you find yourself bracing your hands on your knees for lack of support, mostly relying on Dom's hands on your hips. You feel his cock at the entrance to your cunt and you push backwards, trying to get your master to fuck you for real. He laughs at your eagerness, sliding his dick in with one stroke.";
 					WaitLineBreak;
 				else:
-					say "     He reaches down to your pussy and begins fingerblasting you, while starting to fuck between your thighs again. As he fingers you, [if Cunt Length of Player < 16]you feel your cunt expanding, a needy void growing deep within your body[else]you gasp as he finds the right spots with each pump of his hand[end if] and the sensation overwhelms you. Dom's rough handling pulls a powerful orgasm from you and you soak your master's hand with your femcum. Dom stops thrusting his cock and just holds you as you shudder through your orgasm. The moment passes and he pushes your upper body forward and you find yourself bracing your hands on your knees for lack of support, mostly relying on Dom's hands on your hips. You feel his cock at the entrance to your cunt and you push backwards, trying to get your master to fuck you for real. He laughs at your eagerness, sliding his dick in with one stroke.";
+					say "     He reaches down to your pussy and begins fingerblasting you, while starting to fuck between your thighs again. As he fingers you, [if Cunt Depth of Player < 16]you feel your cunt expanding, a needy void growing deep within your body[else]you gasp as he finds the right spots with each pump of his hand[end if] and the sensation overwhelms you. Dom's rough handling pulls a powerful orgasm from you and you soak your master's hand with your femcum. Dom stops thrusting his cock and just holds you as you shudder through your orgasm. The moment passes and he pushes your upper body forward and you find yourself bracing your hands on your knees for lack of support, mostly relying on Dom's hands on your hips. You feel his cock at the entrance to your cunt and you push backwards, trying to get your master to fuck you for real. He laughs at your eagerness, sliding his dick in with one stroke.";
 					WaitLineBreak;
 			else:
 				say "     Your master humps against you, his dick forcing your legs apart. With his strong hands holding you in place, he continues to fuck himself between your thighs, his massive rod coming into view below your far less impressive dicklet. You find yourself reaching down to run your fingers along his length each time it comes back. It's slick, with large globs of precum intermittently spurting from the tip as you caress it. If only, you think, it could be in you, rather than this glorified masturbation. You turn to ask Dom to fuck you, only to have him chuckle in response. 'Relax and enjoy the ride, slut. You'll get fucked soon enough.' Frustrated by your master's denial and feeling defiant, you try to jack yourself off. Unfortunately your frustration only grows as you can't seem to get hard no matter what you do. Dom's hand knock yours away as he growls into your ear, 'Aw, the bitch doesn't know how to get herself off. Let me help you with that.'";
@@ -1023,8 +1023,8 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 			SanLoss 5;
 			now lastfuck of Dominick is turns;
 			now HP of Dominick is 42;
-			now facename of Player is "Breederslut";
-			now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+			now FaceName of Player is "Breederslut";
+			now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
 			now Cock Count of Player is 0;
 			now Cunt Count of Player is 1;
 			now ForcedBreederslutTF is 1;
@@ -1059,9 +1059,9 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 				now HP of Dominick is 33;
 			else if HP of Dominick is 42:
 				now HP of Dominick is 43;
-			now skinname of Player is "Breederslut";
-			now skin of Player is "golden brown and snowy white fur-covered";
-			now tailname of Player is "Breederslut";
+			now SkinName of Player is "Breederslut";
+			now Skin of Player is "golden brown and snowy white fur-covered";
+			now TailName of Player is "Breederslut";
 			now tail of Player is "You have a short, fluffy tail that curls up cutely.";
 			now Nipple Count of Player is 2;
 			now Breast Size of Player is 12;
@@ -1083,8 +1083,8 @@ to say ForcedSubToDomSex4:			[Step by step Beta TF sequence]
 			now HP of Dominick is 34;
 		else if HP of Dominick is 43:
 			now HP of Dominick is 44;
-		now bodyname of Player is "Breederslut";
-		now body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
+		now BodyName of Player is "Breederslut";
+		now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
 		now scalevalue of Player is 2;
 		fimpregchance;
 		now ForcedBreederslutTF is 3;
@@ -1105,8 +1105,8 @@ to say ForcedSubToDomSex5:			[Step by step Omega TF sequence]
 		SanLoss 5;
 		now lastfuck of Dominick is turns;
 		now HP of Dominick is 52;
-		now facename of Player is "Breederslut";
-		now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+		now FaceName of Player is "Breederslut";
+		now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
 		now Cock Count of Player is 1;
 		now Cunt Count of Player is 0;
 		now ForcedBreederslutBoyTF is 1;
@@ -1131,9 +1131,9 @@ to say ForcedSubToDomSex5:			[Step by step Omega TF sequence]
 		increase Libido of Player by 5;
 		now lastfuck of Dominick is turns;
 		now HP of Dominick is 53;
-		now skinname of Player is "Breederslut";
-		now skin of Player is "golden brown and snowy white fur-covered";
-		now tailname of Player is "Breederslut";
+		now SkinName of Player is "Breederslut";
+		now Skin of Player is "golden brown and snowy white fur-covered";
+		now TailName of Player is "Breederslut";
 		now tail of Player is "You have a short, fluffy tail that curls up cutely.";
 		now Nipple Count of Player is 2;
 		if "Breasts" is listed in feats of Player:
@@ -1155,8 +1155,8 @@ to say ForcedSubToDomSex5:			[Step by step Omega TF sequence]
 		increase Libido of Player by 5;
 		now lastfuck of Dominick is turns;
 		now HP of Dominick is 54;
-		now bodyname of Player is "Breederslut";
-		now body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
+		now BodyName of Player is "Breederslut";
+		now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
 		now scalevalue of Player is 2;
 		mimpregchance;
 		now ForcedBreederslutBoyTF is 3;
@@ -1191,7 +1191,7 @@ to say ForcedSubToDomSex7:			[Dom fucks your snatch doggy style.]
 	say "     Feeling the aching need to have him buried inside your cunt, you drop onto all fours and present yourself to him. Grabbing your ass with both paws, he presses his muzzle to your muff and gives you a long, slow lick up your pussy[if anallevel > 1], taint and asshole[end if]. This sends shivers through you, prompting you to push back against his slobbery tongue.";
 	say "     'I appreciate your eagerness, my little slut, but you need to work on your stance if you want to be a proper pedigree bitch of mine,' he says. His paws roam over your body, adjusting your stance into a more naturally canine one. A little press at your shoulders, a repositioning of your head and neck, an adjustment of your hips to better raise your rear for to him - all making you a little closer to a perfect show doggy. And as he's making these little shifts, his fingers find their way to your snatch, fingering your juicy pussy as a reward to encourage you to be a good doggy girl for him.";
 	WaitLineBreak;
-	say "     Once he's done [if bodyname of Player is listed in infections of Caninelist]adjusting you a little closer to pedigree standards[else]adjusting your posture to best display your sexy ass[end if], he moves in to mount you. 'Mmm... take that big doggy cock, my pet,' he pants in your ear as his cock slides into your slick slit. 'You [if Player is male]wannabe [end if]bitches are nothing but cock sluts in need of a good fucking.' His canine manhood pushes its way into your [cunt size desc of Player] cunt, every inch of it feeling wonderful as it goes in[if HP of Dominick < 4]. He takes his time at first, savoring his new fucktoy pet[else]. He savors the initial penetration as he mounts you anew[end if].";
+	say "     Once he's done [if BodyName of Player is listed in infections of Caninelist]adjusting you a little closer to pedigree standards[else]adjusting your posture to best display your sexy ass[end if], he moves in to mount you. 'Mmm... take that big doggy cock, my pet,' he pants in your ear as his cock slides into your slick slit. 'You [if Player is male]wannabe [end if]bitches are nothing but cock sluts in need of a good fucking.' His canine manhood pushes its way into your [cunt size desc of Player] cunt, every inch of it feeling wonderful as it goes in[if HP of Dominick < 4]. He takes his time at first, savoring his new fucktoy pet[else]. He savors the initial penetration as he mounts you anew[end if].";
 	if Player is breederslutbodied and a random chance of 3 in 5 succeeds:
 		say "     'Such a cute little girl [if Player is pure]you've turned[else]you're turning[end if] out to be,' he says, running his paws over your smaller shiba inu form. 'My dick's nearly as big as your whole body. You must feel so deliciously full,' he says in your ear, rubbing your stuffed belly. And while he might exaggerate how small you are, he's quite right that his cock's comparatively huge, making a bit of a bulge in your delightfully stuffed tummy.";
 		WaitLineBreak;
@@ -1216,33 +1216,33 @@ An everyturn rule:
 		increase score by 0;  [do nothing statement]
 	else:
 		if ForcedBreederslutTF >= 1:
-			if facename of Player is not "Breederslut":
+			if FaceName of Player is not "Breederslut":
 				say "     Something seems wrong to you for a minute, making you whine and whimper as you try to work out the problem. You can feel the pressure inside your head building, until finally something seems to snap, and you let out a loud low moan of pleasure as your face begins to reshape itself. Your moaning cry soon transforms into a howl, as you happily greet the return of the cute face your master gave you.";
-				now facename of Player is "Breederslut";
-				now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+				now FaceName of Player is "Breederslut";
+				now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
 			if Cunt Count of Player < 1:
 				now Cunt Count of Player is 1;
-				now Cunt Length of Player is 16;
+				now Cunt Depth of Player is 16;
 				now Cunt Tightness of Player is 12;
 			if Player is male:
 				now Cock Count of Player is 0;
 		if ForcedBreederslutTF >= 2:
-			if skinname of Player is not "Breederslut":
+			if SkinName of Player is not "Breederslut":
 				say "     Your skin seems to writhe and twitch, as if something were fighting underneath the surface. Soon you can see patches of tan and white fur sprouting all over your body. The fur continues to spread in a pleasurable wave as the other infection is conquered, until finally your entire body is covered in its sandy softness once again.";
-				now skinname of Player is "Breederslut";
-				now skin of Player is "golden brown and snowy white fur-covered";
-			if tailname of Player is not "Breederslut":
+				now SkinName of Player is "Breederslut";
+				now Skin of Player is "golden brown and snowy white fur-covered";
+			if TailName of Player is not "Breederslut":
 				say "     Your ass tingles as it shifts and changes while you watch, your master's influence obviously still strongly affecting your body. It doesn't take long for your curled tail to reform. Its fluffy presence behind you proves that your desire to serve Dom is stronger than a normal infection can handle.";
-				now tailname of Player is "Breederslut";
+				now TailName of Player is "Breederslut";
 				now tail of Player is "You have a short, fluffy tail that curls up cutely.";
 			if Nipple Count of Player is not 2:
 				now Nipple Count of Player is 2;
 				now Breast Size of Player is 12;
 		if ForcedBreederslutTF >= 3:
-			if bodyname of Player is not "Breederslut":
+			if BodyName of Player is not "Breederslut":
 				say "     Your body seems to twist and warp, making you convulse as its fights off the intrusive new infection. Soon you can see your form slimming back down into the soft, round lines of the Shiba Inu your master likes so much. The sight fills you with relief, as you shake off the last vestiges of the other infection. After all, you wouldn't want to make your master unhappy by being anything less than the lovely submissive bitch he made you.";
-				now bodyname of Player is "Breederslut";
-				now body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
+				now BodyName of Player is "Breederslut";
+				now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
 			if scalevalue of Player is not 2:
 				now scalevalue of Player is 2;
 
@@ -1251,36 +1251,36 @@ An everyturn rule:
 		increase score by 0;  [do nothing statement]
 	else:
 		if ForcedBreederslutBoyTF >= 1:
-			if facename of Player is not "Breederslut":
+			if FaceName of Player is not "Breederslut":
 				say "     Something seems wrong to you for a minute, making you whine and whimper as you try to work out the problem. You can feel the pressure inside your head building, until finally something seems to snap, and you let out a loud low moan of pleasure as your face begins to reshape itself. Your moaning cry soon transforms into a howl, as you happily greet the return of the cute face your master gave you.";
-				now facename of Player is "Breederslut";
-				now face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
+				now FaceName of Player is "Breederslut";
+				now Face of Player is "that of a cute doggy with a mid-length muzzle, pointed ears and a happy if vapid expression";
 			if Player is female:
 				now Cunt Count of Player is 0;
 			if Cock Count of Player < 1:
 				now Cock Count of Player is 1;
 				now Cock Length of Player is 3;
 				now Ball Size of Player is 6;
-			if cockname of Player is not "Breederslut":
-				now cockname of Player is "Breederslut";
-				now cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
+			if CockName of Player is not "Breederslut":
+				now CockName of Player is "Breederslut";
+				now Cock of Player is "[one of]canine[or]knotted[or]doggy[at random]";
 		if ForcedBreederslutBoyTF >= 2:
-			if skinname of Player is not "Breederslut":
+			if SkinName of Player is not "Breederslut":
 				say "     Your skin seems to writhe and twitch, as if something were fighting underneath the surface. Soon you can see patches of tan and white fur sprouting all over your body. The fur continues to spread in a pleasurable wave as the other infection is conquered, until finally your entire body is covered in its sandy softness once again.";
-				now skinname of Player is "Breederslut";
-				now skin of Player is "golden brown and snowy white fur-covered";
-			if bodyname of Player is not "Breederslut":
+				now SkinName of Player is "Breederslut";
+				now Skin of Player is "golden brown and snowy white fur-covered";
+			if BodyName of Player is not "Breederslut":
 				say "     Your body seems to twist and warp, making you convulse as its fights off the intrusive new infection. Soon you can see your form slimming back down into the soft, round lines of the Shiba Inu your master likes so much. The sight fills you with relief, as you shake off the last vestiges of the other infection. After all, you wouldn't want to make your master unhappy by being anything less than the lovely submissive bitch he made you.";
-				now bodyname of Player is "Breederslut";
-				now body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
+				now BodyName of Player is "Breederslut";
+				now Body of Player is "quite short, not even five feet tall, and with a cute, feminine build. As a Shiba Inu, you've got an overall canine frame and, while bipedal, are quite comfortable moving down onto all fours (for presenting yourself). Your limbs are short and end in partially paw-like hands. Just above your crotch, you have the word [']fucktoy['] tattooed there, always showing through any fur you might have";
 			if Nipple Count of Player is not 2:
 				now Nipple Count of Player is 2;
 			if "Breasts" is not listed in feats of Player:
 				now Breast Size of Player is 0;
 		if ForcedBreederslutBoyTF >= 3:
-			if tailname of Player is not "Breederslut":
+			if TailName of Player is not "Breederslut":
 				say "     Your ass tingles as it shifts and changes while you watch, your master's influence obviously still strongly affecting your body. It doesn't take long for your curled tail to reform. Its fluffy presence behind you proves that your desire to serve Dom is stronger than a normal infection can handle.";
-				now tailname of Player is "Breederslut";
+				now TailName of Player is "Breederslut";
 				now tail of Player is "You have a short, fluffy tail that curls up cutely.";
 			if scalevalue of Player is not 2:
 				now scalevalue of Player is 2;

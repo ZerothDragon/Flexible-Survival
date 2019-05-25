@@ -32,8 +32,8 @@ to say losetoelk:
 		say "Standing overtop of you, he grabs your head roughly and presses your face to his strong chest, forcing you to breathe in his powerful scent. The musky odor of the elk fills your senses, making you lose focus and grow increasingly aroused. You become eager to submit to the rutting male's needs.";
 		increase Libido of Player by 5;
 	if Player is female and a random chance of 3 in 4 succeeds:
-		say "     In a daze, you don't resist as the strong male pushes you onto all fours and hikes up your ass. With a firm thrust, he drives his thick rod into your [if Cunt Tightness of Player < 4]tight [end if]pussy[if Cunt Length of Player < 12]. It is difficult to take his enlarged shaft at first, but you press back onto it regardless[else]. Your [cunt size desc of Player] cunt has little difficulty taking the cervine's shaft and you push back into his thrusts[end if], your body lusting for the musky elk. His hands grope and fondle you roughly as he fucks you, focused on his own satisfaction rather than your own, but even that turns you on all the more in your present state. Anything to get the virile male off so you can be seeded and bred by him, your horny body demands.";
-		say "     And eventually you get just that as he drives hard into you and unleashes his hot seed[if Cunt Length of Player < 16]. With his animalistic cock pressed as deep into you as it can go, his seed splashes against your cervix, fluid pressure quickly building until it pushes past that final barrier and pours thickly into your womb[else]. With his animalistic cock buried fully inside you, his seed sprays into you, pooling against your cervix to be drawn into your womb[end if] [if the player is impreg_able]in an attempt to breed you[else]in a failed attempt to breed you[end if]. You moan and cry out, cumming as you feel the rutting male staking his claim on your uterus. Once his balls are drained, he pulls out, [one of]wipes his sticky cock across your ass[or]has you lick it clean[or]smears his sticky cock across your face[at random] and then drives you off before looking for another female to mate.[fimpregchance]";
+		say "     In a daze, you don't resist as the strong male pushes you onto all fours and hikes up your ass. With a firm thrust, he drives his thick rod into your [if Cunt Tightness of Player < 4]tight [end if]pussy[if Cunt Depth of Player < 12]. It is difficult to take his enlarged shaft at first, but you press back onto it regardless[else]. Your [cunt size desc of Player] cunt has little difficulty taking the cervine's shaft and you push back into his thrusts[end if], your body lusting for the musky elk. His hands grope and fondle you roughly as he fucks you, focused on his own satisfaction rather than your own, but even that turns you on all the more in your present state. Anything to get the virile male off so you can be seeded and bred by him, your horny body demands.";
+		say "     And eventually you get just that as he drives hard into you and unleashes his hot seed[if Cunt Depth of Player < 16]. With his animalistic cock pressed as deep into you as it can go, his seed splashes against your cervix, fluid pressure quickly building until it pushes past that final barrier and pours thickly into your womb[else]. With his animalistic cock buried fully inside you, his seed sprays into you, pooling against your cervix to be drawn into your womb[end if] [if the player is impreg_able]in an attempt to breed you[else]in a failed attempt to breed you[end if]. You moan and cry out, cumming as you feel the rutting male staking his claim on your uterus. Once his balls are drained, he pulls out, [one of]wipes his sticky cock across your ass[or]has you lick it clean[or]smears his sticky cock across your face[at random] and then drives you off before looking for another female to mate.[fimpregchance]";
 	else if Player is not female and anallevel > 1 and a random chance of anallevel in 5 succeeds:
 		say "     In a daze, you don't resist as the strong male pushes you onto all fours and hikes up your ass. Lacking a pussy for him to breed, the victorious male will be claiming your ass of his would-be rival. With a firm thrust, he drives his thick rod into your [if scalevalue of Player < 3]smaller [end if]body, forcing your puckered hole to spread open for him. In your lustful daze, you press back onto it despite the initial difficulty in taking the cervine shaft. Your body, lusting for the musky elk, submits to the stronger, and therefore more virile, male. His hands grope and fondle you roughly as he fucks you, focused on his own satisfaction rather than your own, but even that turns you on all the more in your present state. Anything to get the virile male off so you can be rutted and seeded by him, your horny body demands.";
 		say "     And eventually you get just that as he drives hard into you and unleashes his hot seed. With his animalistic cock buried fully inside your clenching ass, his seed sprays into you, pooling inside your bowels and filling your rear with the heat of his rut[if the player is mpreg_able]. Your fecund ass milks the stud's cock for all it can give, your sex-addled body and mind longing to be bred[end if][if Player is male]. You moan and cry out, cumming as you feel the rutting male staking his claim in your rump with his virile load. Once his balls are drained, he pulls out, [one of]wipes his sticky cock across your ass[or]has you lick it clean[or]smears his sticky cock across your face[at random] and then drives off his defeated rival before looking for a proper female to mate.[mimpregchance]";
@@ -98,14 +98,14 @@ to say beattheelk_1:	[fuck him]
 	now noelksex is 0;
 	say "     Keeping the defeated elk pinned down, you grab that raised ass of his with one hand and kick his legs apart. He gives a soft bleating sound but does not resist, even flagging his tail up for you. Unsurprised given the circumstances, you grin and give his rump a firm swat as you grind your manhood against it. Feeling that soft pelt squeezed around you by his firm rear gets you even harder. You line yourself up with that pucker and thrust into him, enjoying the lustful low he gives as he's mounted.";
 	say "     His big cock sways beneath him as you pound away at his ass, drooling precum onto the ground as you rut with him. His anal walls slide smoothly across your cock, clenching and squeezing around you. It's clear that he's done this before, probably after having lost against other males of the rutting elk herd. Feeling there's little point in keeping him pinned, you release his antlers, leaving your hands free to wander across his sexy body before eventually settling on his groin. The scent of rut hangs heavy in the air as you stroke his fifteen inch cock and those bulging balls of his.";
-	say "     When your climax comes, you drive your [cock size desc of Player] [cock of Player] penis deep inside him and unleash your [Cum Load Size of Player] load into him. He gives a lustful cry as he's rutted and cums as well, splattering large gobs of musky semen onto the ground. You keep going until your balls are drained, at least for the moment[if anallevel is 3 and thirst of Player < 30 and a random chance of 2 in 5 succeeds]. Suddenly feeling the urge to drain something else, you pull out but keep your cock aimed at his creamy asshole. With a chuckle, you piss over the ass you've just finished claiming, adding your musky scent to his. His short tail wags excitedly at this treatment and he makes no attempt to move away even though you're not even touching him anymore[else]. You pull your spent shaft from his creamy ass and then wipe the last traces of your semen onto his rump, adding your musky scent to his[end if]. That done, you give his messy rump a swat and send him on his way.";
+	say "     When your climax comes, you drive your [cock size desc of Player] [Cock of Player] penis deep inside him and unleash your [Cum Load Size of Player] load into him. He gives a lustful cry as he's rutted and cums as well, splattering large gobs of musky semen onto the ground. You keep going until your balls are drained, at least for the moment[if anallevel is 3 and thirst of Player < 30 and a random chance of 2 in 5 succeeds]. Suddenly feeling the urge to drain something else, you pull out but keep your cock aimed at his creamy asshole. With a chuckle, you piss over the ass you've just finished claiming, adding your musky scent to his. His short tail wags excitedly at this treatment and he makes no attempt to move away even though you're not even touching him anymore[else]. You pull your spent shaft from his creamy ass and then wipe the last traces of your semen onto his rump, adding your musky scent to his[end if]. That done, you give his messy rump a swat and send him on his way.";
 
 
 to say beattheelk_2:	[ride him - vaginal]
 	now noelksex is 0;
 	say "     With a firm grip on his antlers, you twist him back around, forcing him over onto his back. He gives a soft bleating sound but does not resist, his erection still hard and dribbling as you eye it with obvious hunger. Taking it in hand, you climb overtop the defeated cervine and aim his enlarged manhood at your cunt. You grind your pussy against it a few times to tantalize yourself before lowering down onto it, enjoying the lustful low he gives as you start to ride him.";
-	say "     His big cock pulses and throbs inside you[if Cunt Tightness of Player < 4]. Being a tight fit, you have to take it slow at first, but your body soon adapts enough to cope[end if][if Cunt Length of Player < 12]. While you can't get it all in despite your best efforts, you have a great time ride as much of it as you can force into your needy cunt[else]. Your [cunt size desc of Player] cunt has little difficulty taking his cervine shaft into you, allowing you to glide up and down its considerable length[end if]. You both end up moaning in pleasure as your vaginal walls squeeze and milk at his impressive rod. The scent of rut hangs heavy in the air and you run your fingers through the thick fur of his chest.";
-	say "     When your climax comes, you push yourself down until his animalistic cock [if Cunt Length of Player < 16]presses as deep into you as it can go. Milked by your cunt to orgasm, his seed splashes against your cervix, fluid pressure building until it pushes past that final barrier and splatters up into your womb[else]is buried fully inside you. Milked by your cunt to orgasm, his seed sprays up and splashes against your cervix to be drawn into your womb[end if] [if the player is impreg_able]in an attempt to breed you[else]in a failed attempt to breed you[end if]. You moan and cry out as the rutting male releases a bugling call, riding him for all he's worth. Once his balls are drained and your own orgasm ends, you pull off his cock and send him on his way, having taken what you need from him.";
+	say "     His big cock pulses and throbs inside you[if Cunt Tightness of Player < 4]. Being a tight fit, you have to take it slow at first, but your body soon adapts enough to cope[end if][if Cunt Depth of Player < 12]. While you can't get it all in despite your best efforts, you have a great time ride as much of it as you can force into your needy cunt[else]. Your [cunt size desc of Player] cunt has little difficulty taking his cervine shaft into you, allowing you to glide up and down its considerable length[end if]. You both end up moaning in pleasure as your vaginal walls squeeze and milk at his impressive rod. The scent of rut hangs heavy in the air and you run your fingers through the thick fur of his chest.";
+	say "     When your climax comes, you push yourself down until his animalistic cock [if Cunt Depth of Player < 16]presses as deep into you as it can go. Milked by your cunt to orgasm, his seed splashes against your cervix, fluid pressure building until it pushes past that final barrier and splatters up into your womb[else]is buried fully inside you. Milked by your cunt to orgasm, his seed sprays up and splashes against your cervix to be drawn into your womb[end if] [if the player is impreg_able]in an attempt to breed you[else]in a failed attempt to breed you[end if]. You moan and cry out as the rutting male releases a bugling call, riding him for all he's worth. Once his balls are drained and your own orgasm ends, you pull off his cock and send him on his way, having taken what you need from him.";
 
 
 to say beattheelk_3:	[ride him - anal]
@@ -126,12 +126,13 @@ to say beattheelk_4:
 Section 2 - Creature Insertion
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
+	now Species Name entry is "";
 	now Name entry is "Elk"; [ Infection/Creature name. Capitalized. ]
 	now enemy title entry is "";
 	now enemy Name entry is "";
@@ -168,7 +169,7 @@ When Play begins:
 	now Breast Size entry is 4; [ Size of breasts the infection will try to attain (corresponds to letter cup size). ]
 	now Male Breast Size entry is 0; [ Breast size for if Sex="Male", usually zero. ]
 	now Cunt Count entry is 1; [ The number of cunts the infection will try to cause if sex entry is 'Female' or 'Both'. ]
-	now Cunt Length entry is 15;
+	now Cunt Depth entry is 15;
 	now Cunt Tightness entry is 6;
 	now libido entry is 100; [ Target libido the infection will rise towards. ]
 	now loot entry is "elk antler"; [ Dropped item, blank for none. Case sensitive. ]
@@ -185,11 +186,12 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
+	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -197,28 +199,31 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
+	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
+	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3;
+	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
+	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -229,28 +234,33 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
-	now Asshole Depth entry is 7; [inches deep for anal fucking;]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Asshole Depth entry is 7; [inches deep for anal fucking]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3;
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
+	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Count entry is 0;
 	now Cock Girth entry is 0; [thickness 1-5, generates the Cock Girth Adjective]
@@ -265,8 +275,8 @@ When Play begins:
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
 	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Length entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
+	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
@@ -280,7 +290,7 @@ When Play begins:
 Section 3 - Definitions
 
 Definition: a person is elkfaced:
-	if facename of Player is "Elk", yes;
+	if FaceName of Player is "Elk", yes;
 	no;
 
 Section 4 - Elk Antler
@@ -312,7 +322,7 @@ Section 5 - Endings
 
 [
 when play ends:
-	if bodyname of Player is "Elk":
+	if BodyName of Player is "Elk":
 		if humanity of Player < 10:
 			say "     You succumb to your elk infection.";
 		else:

@@ -29,7 +29,7 @@ to say sierradesc:
 		now sex entry is "Male";
 	else:
 		now sex entry is "Both";
-	if bodyname of Player is "Sierrasaur" and player is pure: [purity check shorthand]
+	if BodyName of Player is "Sierrasaur" and player is pure: [purity check shorthand]
 		now sierrapure is true;
 	else:
 		now sierrapure is false;
@@ -94,7 +94,7 @@ to sierrabind:
 	while Trixieexit is 0:
 		if HP of Player > 0 or humanity of Player < 50:
 			now obliging is true;
-		if bodyname of Player is "Sierrasaur" and player is pure:
+		if BodyName of Player is "Sierrasaur" and player is pure:
 			now sierrapure is true;
 		else:
 			now sierrapure is false;
@@ -126,16 +126,16 @@ to sierrabind:
 				if Name entry is "Sierrasaur":
 					now MonsterID is y;
 					break;
-			now bodyname of Player is "Sierrasaur";
-			now facename of Player is "Sierrasaur";
-			now tailname of Player is "Sierrasaur";
-			now skinname of Player is "Sierrasaur";
-			now cockname of Player is "Sierrasaur";
+			now BodyName of Player is "Sierrasaur";
+			now FaceName of Player is "Sierrasaur";
+			now TailName of Player is "Sierrasaur";
+			now SkinName of Player is "Sierrasaur";
+			now CockName of Player is "Sierrasaur";
 			now tail of Player is tail entry;
-			now face of Player is face entry;
-			now skin of Player is skin entry;
-			now body of Player is body entry;
-			now cock of Player is cock entry;
+			now Face of Player is face entry;
+			now Skin of Player is skin entry;
+			now Body of Player is body entry;
+			now Cock of Player is cock entry;
 			now voreloss is true;
 			now Trixieexit is 1;
 			end the story saying "You lost your mind while bound!";
@@ -155,26 +155,26 @@ to sierrabind:
 					say "     [one of]You start a bit of a ruckus inside[or]You writhe about and push around[or]You quickly and forcibly make known your protest from within[at random] [one of]this fleshy prison[or]these firm confines[at random], forcing the beast to groan. [if struggleatt is 1]It seems less annoyed and more confused by your disapproval[else]It becomes increasingly difficult for the beast to keep you down. At this rate, it might not see you as worth the trouble[end if].[line break]";
 					if bsextimer > 5 and a random chance of bsextimer in 18 succeeds or (hunger of Player > 59 or thirst of Player > 59):
 						sierrasex;
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
 							infect;
 						now bsextimer is 2;
-						if bodyname of Player is "Sierrasaur", decrease humanity of Player by 1;
-						if facename of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
+						if BodyName of Player is "Sierrasaur", decrease humanity of Player by 1;
+						if FaceName of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
 						decrease humanity of Player by 3 + psycheadjust;
 						WaitLineBreak;
 					else:
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
 							infect;
 						increase lustatt by 7 + (lustadjust * 2);
 						increase bsextimer by 2;
-						if bodyname of Player is "Sierrasaur", decrease humanity of Player by 1;
-						if facename of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
+						if BodyName of Player is "Sierrasaur", decrease humanity of Player by 1;
+						if FaceName of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
 						decrease humanity of Player by 3 + psycheadjust;
 						WaitLineBreak;
 				else:
@@ -191,14 +191,14 @@ to sierrabind:
 					if bsextimer > 5 and a random chance of bsextimer in 18 succeeds or (hunger of Player > 59 or thirst of Player > 59):
 						increase lustatt by 7 + (lustadjust * 2);
 						sierrasex;
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
 							infect;
 						now bsextimer is 0;
 					else:
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
@@ -210,21 +210,21 @@ to sierrabind:
 					LineBreak;
 					if bsextimer > 5 and a random chance of bsextimer in 18 succeeds or (hunger of Player > 59 or thirst of Player > 59):
 						sierrasex;
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
 							infect;
 						now bsextimer is 0;
 					else:
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
 							infect;
 						increase lustatt by 7 + (lustadjust * 2);
-				if bodyname of Player is "Sierrasaur", decrease humanity of Player by 1;
-				if facename of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
+				if BodyName of Player is "Sierrasaur", decrease humanity of Player by 1;
+				if FaceName of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
 				decrease humanity of Player by 3 + psycheadjust;
 				increase bsextimer by 1;
 				WaitLineBreak;
@@ -237,7 +237,7 @@ to sierrabind:
 					LineBreak;
 					if bsextimer > 5 and a random chance of bsextimer in 18 succeeds or (hunger of Player > 59 or thirst of Player > 59):
 						sierrasex;
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
@@ -245,7 +245,7 @@ to sierrabind:
 						now bsextimer is 0;
 						SanBoost 3;
 					else:
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
@@ -259,22 +259,22 @@ to sierrabind:
 					LineBreak;
 					if bsextimer > 5 and a random chance of bsextimer in 18 succeeds or (hunger of Player > 59 or thirst of Player > 59):
 						sierrasex;
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
 							infect;
 						now bsextimer is 0;
-						if bodyname of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
+						if BodyName of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
 						decrease humanity of Player by 2 + psycheadjust;
 					else:
-						if bodyname of Player is "Sierrasaur" and player is pure:
+						if BodyName of Player is "Sierrasaur" and player is pure:
 							if a random chance of 1 in 5 succeeds:
 								infect;
 						else if a random chance of 2 in 3 succeeds:
 							infect;
 						increase lustatt by 5 + (lustadjust * 2);
-						if bodyname of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
+						if BodyName of Player is "Sierrasaur" and "Strong Psyche" is not listed in feats of Player, decrease humanity of Player by 1;
 						decrease humanity of Player by 2 + psycheadjust;
 				increase bsextimer by 1;
 				WaitLineBreak;
@@ -287,7 +287,7 @@ to sierrasex:
 	if sierramem is 1:
 		say "     Having a clearer view of the reptile's underside, [if sierramale is true]you're exposed to their previously obscured genitalia[else]it appears to be some manner of hermaphrodite[end if]. Large, blunt-headed and fairly rounded cock bobbing subtly before you, you quickly get the impression that this tool is never not hard, even as you don't get the impression it's particularly aroused at this moment. Its base acts as the starting point to a fairly defined, taut cleft, appearing to be a firm and unyielding [if sierramale is true]anal cloaca[else]bestial vent of a cunt[end if].";
 		now sierramem is 2;
-	if Player is female and Cunt Length of Player > 5 and ((boundstate is true and a random chance of 1 in 8 succeeds) or (boundstate is false and a random chance of 1 in 6 succeeds)):
+	if Player is female and Cunt Depth of Player > 5 and ((boundstate is true and a random chance of 1 in 8 succeeds) or (boundstate is false and a random chance of 1 in 6 succeeds)):
 		say "     Not particularly graceful in its motion, it shamelessly prods your exposed cunt with its rock-hard dick. [if HP of Player < 1]Not particularly inclined to be on the receiving end of it, you deliberately make it difficult for the creature to progress, which only forces it to lay on top of you, pinning you down before shoving[else]Once it gets its aim right, it shoves[end if] its tool past your supple folds. [if sierrapure is true]While the organ is fairly rough, your similar strain is resilient enough to only make it more pleasurable for you[else]Considering how rough and unyielding the organ is, this is a fairly uncomfortable ordeal until it's eventually lubricated by its copious precum[end if][if Player is male], cock[smn] soon driven to attention as well[else if Cunt Count of Player > 2], unattended cunts soon aching with need as well[else if Cunt Count of Player is 2], unattended cunt soon aching with need as well[end if], forcing a moan free from your lips.";
 		increase lustatt by 45 + (lustadjust * 10);
 		say "     Its initial thrusts are slow and ponderous, though this is only slightly assuaging since it plows you with its entire length with each motion. As it gradually picks up pace, you visibly begin to rock against the beast's motion, the air filling with the sounds of wet, irreverent slapping as it pounds your hole with a deliberate pace. It clearly finds bliss when that same motion briefly becomes erratic and opts to conclude by hilting the organ one last time";
@@ -350,7 +350,7 @@ to sierrasex:
 		if sierramem is 2, now sierramem is 3;
 	else: [Oral - Should be most prominent]
 		say "     Climbing on top of you with a clear lack of expedience, it shows no restraint in prodding your face with its perpetually hard dick[if boundstate is true and sierrapure is true], the reptile eager to feed its juvenile kin through its[else if boundstate is true]. You get the impression that the reptile feels it needs to compensate for draining you by forcing you to feed from its[else]. Clearly, it expects you to satisfy the reptile's[end if] lewd pipe. [if HP of Player < 1]You try to resist, at first, but this only compels it to be more insistent in pinning you down firmly until you cry out in obligation, your maw enveloping[else]Only briefly reluctant, your maw envelops[end if] the tool's blunt head. Quite firm against your lips, it nonetheless oozes precum almost immediately, even your brief affection amplifying the release of these fluids with considerable expedience.";
-		if facename of Player is "Sierrasaur":
+		if FaceName of Player is "Sierrasaur":
 			say "     The creature insists on forcing it deeper into you - not that your wide-set maw can't handle it -";
 		else:
 			say "     The creature insisting on forcing it deeper into you, your ability to breathe is considerably limited,";
@@ -399,12 +399,13 @@ to say beathesierra:
 Section 2 - Creature Insertion
 
 Table of Random Critters (continued)
-NewTypeInfection (truth state)	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Length	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
+NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Type	Attack	Defeated	Victory	Desc	Face	Body	Skin	Tail	Cock	Face Change	Body Change	Skin Change	Ass Change	Cock Change	str	dex	sta	per	int	cha	sex	HP	lev	wdam	area	Cock Count	Cock Length	Ball Size	Nipple Count	Breast Size	Male Breast Size	Cunt Count	Cunt Depth	Cunt Tightness	Libido	Loot	Lootchance	Scale (number)	Body Descriptor (text)	Type (text)	Magic (truth state)	Resbypass (truth state)	non-infectious (truth state)	Cross-Infection (text)	DayCycle	Altcombat (text)	BannedStatus (truth state)
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
+	now Species Name entry is "";
 	now Name entry is "Sierrasaur";
 	now enemy title entry is "";
 	now enemy Name entry is "";
@@ -441,7 +442,7 @@ When Play begins:
 	now Breast Size entry is 0;
 	now Male Breast Size entry is 0;
 	now Cunt Count entry is 1;
-	now Cunt Length entry is 12;
+	now Cunt Depth entry is 12;
 	now Cunt Tightness entry is 10;
 	now libido entry is 10;
 	now loot entry is "earthen seed";
@@ -458,11 +459,12 @@ When Play begins:
 	now BannedStatus entry is false;
 
 Table of New Infection Parts (continued)
-Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Arms Change	Arms Description	Arms Skin Adjective	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Ass Change	Ass Description	Ass Skin Adjective	Ass Width	Tail Change	Tail Description	tail skin adjective	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Length	Cunt Tightness	Clit Size
---	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
+Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
+--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
+	now Species Name entry is "";
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -470,28 +472,31 @@ When Play begins:
 	now Androginity entry is 5; [1-9 scale of hypermasculine to hyperfeminine]
 	[Gender Adjective is generated out of androginity 1-9: hypermasculine/masculine/effeminate/somewhat effeminate/androgynous/feminine butch/tomboyish/feminine/hyperfeminine]
 	now Head Change entry is ""; [partial sentence that fits in: "Your head and face [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [head change entry]."]
-	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [head description of Player] with [eye color of Player], [eye type of Player] eyes and an overall [gender appearance of Player] appearance."]
+	now Head Description entry is ""; [partial sentence that fits in "Your face and head resemble that of [Head Description of Player]. You have [Eye Adjective of Player], [Eye Color of Player] eyes and an overall [Gender Adjective of Player] appearance."]
 	now Head Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Head Skin Adjective entry is ""; [one word descriptive adjective]
-	now Head Adornments entry is ""; [partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
+	now Head Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Head Adornments entry is "";[partial sentence that fits in "Before moving on from your head, you give your [head adornments of Player] a proud glance followed by a light caress."]
 	now Hair Length entry is 2; [hair length in inches]
 	now Hair Shape entry is ""; [one word shape descriptor (curly/straight/...)]
 	now Hair Color entry is ""; [one word color descriptor]
-	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...)]
+	now Hair Style entry is ""; [one word style descriptor (ponytail/mohawk/buzzcut/...) to fit "On top of your head you have [Hair Length of Player] inch long, [Hair Shape of Player] [Hair Color of Player] hair in the [Hair Style of Player] style."]
+	now Beard Style entry is ""; [short beard style (goatee/3-day stubble beard/porn stache/mutton chops beard/...) to go into "You have a [Hair Color of Player] [Beard Style of Player]."]
+	now Body Hair Length entry is 0; [numerical value, 0-4 (no body hair/light/moderate/heavy/furry) - only set to > 0 if the infection does not have fur/scales/etc. !]
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
 	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Mouth Circumference entry is 3;
+	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [torso description of Player]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
-	now Torso Skin Adjective entry is ""; [one word descriptive adjective (furry/scaled/...)]
+	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Torso Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Torso Pattern entry is ""; [single word color adjective for the dominant pattern of the skin/fur/feathers/scales]
 	now Breast Adjective entry is ""; [adjective(s) example: round, pointy, perky, saggy, bouncy. This would serve as either a general appearance of a infections breasts or possibly something that may be effected by a item or NPC.]
@@ -502,28 +507,33 @@ When Play begins:
 	now Nipple Shape entry is ""; [shape example: any shape will do as long as it has a baseline with a current infection or item]
 	now Back Change entry is ""; [partial sentence that fits in: "Your back [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Back Change entry]."]
 	now Back Adornments entry is ""; [partial sentence to fit: "Your back tickles with the feeling of movement caused by [back adornments of Player]."]
-	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Back Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Back Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	[Limbs Adjective is generated by a function and can be used in scenes too - "rail-thin, slender, sinewy, average, firm, muscular, flabby, meaty, rippling"]
 	now Arms Change entry is ""; [partial sentence that fits in: "Your arms [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Arms Change entry]."]
 	now Arms Description entry is ""; [partial sentence to fit: "Your [Limbs Adjective of Player] arms are [Arms Description of Player]."]
-	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
-	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/serpentine/sliding)]
+	now Arms Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Arms Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Locomotion entry is ""; [one word adjective: (bipedal/quadrupedal/octapedal/serpentine/sliding)]
 	now Legs Change entry is ""; [partial sentence that fits in: "Your legs [one of]tingle[or]go flush[or]vibrate with odd pleasure[or]go cold[or]feel oily[at random] as [Legs Change entry]."]
 	now Legs Description entry is ""; [partial sentence to fit: "As your inspection goes even lower, you come to the two [Body Adjective of Player] legs supporting you. They are [legs description of Player]."]
-	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
+	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [ass description of Player]."]
-	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...)]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
+	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
 	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
-	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...)]
-	now Asshole Depth entry is 7; [inches deep for anal fucking;]
+	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
+	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
+	now Asshole Depth entry is 7; [inches deep for anal fucking]
 	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
-	now Asshole Tightness entry is 3;
-	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "tiny, small, tight, wide, gaping"]
+	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
+	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
 	now Cock Count entry is 0;
 	now Cock Girth entry is 0; [thickness 1-5, generates the Cock Girth Adjective]
@@ -538,8 +548,8 @@ When Play begins:
 	[Ball Size Adjective is generated by a function and can be used in scenes too]
 	now Ball Description entry is ""; [partial sentence to fit: "Underneath it hangs a pair of [Ball Size Adjective of Player] [ball description of Player]."]
 	now Cunt Count entry is 0;
-	now Cunt Length entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
-	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/well-used/open/gaping]
+	now Cunt Depth entry is 0; [penetratable length in inches; some minor stretching allowed, or more with Twisted Capacity]
+	now Cunt Tightness entry is 0; [size 1-5, generates adjectives of extremely tight/tight/receptive/open/gaping]
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
@@ -580,7 +590,7 @@ to say usesierraseed:		[only alters sizes, not gender]
 Section 4 - Endings
 
 when play ends:
-	if bodyname of Player is "Sierrasaur":
+	if BodyName of Player is "Sierrasaur":
 		if humanity of Player < 10:
 			if voreloss is true:
 				say "     Succumbing from inside the reptile, you eventually grow obsessively fond of these twisted confines. Though you never grow to full size, you nonetheless remain ever tended to by your parental kin, leaving your new home only to be fed ";
