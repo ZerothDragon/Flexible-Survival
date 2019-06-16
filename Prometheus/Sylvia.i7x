@@ -555,7 +555,7 @@ The level of Despairing Biologist is 0.
 The sarea of Despairing Biologist is "Campus".
 
 when play begins:
-	add Despairing Biologist to badspots of furry;
+	add Despairing Biologist to BadSpots of FurryList;
 
 instead of going to College Walkway East while (Despairing Biologist is active and Despairing Biologist is not resolved and a random chance of 1 in 2 succeeds and LastCampusWalkin - turns > 2):
 	move player to College Walkway East;
@@ -1116,6 +1116,25 @@ to BadmintonOneEvent: [Game of badminton]
 	say "     While walking down the path, you look over the lawn at the various students doing everyday activities such as studying, talking with friends, and jogging. In the middle, a net strung between two poles catches your eye, as well as the people playing what appears to be badminton. You recognize Sylvia and Julian, who seem to be playing against two near identical cats. Despite this being a casual game, a small gathering of people is spectating, noises of admiration and encouragement bubbling from them as they watch. The feline twins work in coordination with each other, never going for the shuttlecock at the same time nor getting in each other's way. The collie seems to be letting Julian take the lead, her skill meaning that she is capable of covering for any mistakes he makes while still keeping the game fairly even, allowing them all to have fun.";
 	say "     You approach the game, the crowd shuffling around to allow you a clear view. More than a few eyes are admiring the players more than the game, several bulges or damp patches showing through clothing. The game continues for quite a while longer, the rallies continuing for minutes as no one makes any effort to force their opponent to error. In fact, as they continue, the players begin acting theatrically, making some hits look dramatic or flipping their racquets. The cats intermittently somersault acrobatically while Sylvia twirls around and does trick shots, much to the applause of the spectators. The game is brought to a close when the wolf, out of canine instinct, catches the shuttlecock in his mouth, causing everyone to burst into laughter. A few people joke that if he likes cock that much, perhaps he should follow them to their rooms. Further amusement is brought about by Sylvia telling him to drop it, before patting him and saying what a good boy he is. The game finished, you continue through the college.";
 	now Badminton One is resolved;
+	now LastCampusWalkin is turns;
+
+College Canine Lovers is a situation.
+Prereq1 of College Canine Lovers is Unnatural Heat.
+Prereq1Resolution of College Canine Lovers is { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 }.
+The level of College Canine Lovers is 0.
+The sarea of College Canine Lovers is "Campus".
+
+instead of going to College Walkway East while (College Canine Lovers is PrereqComplete and College Canine Lovers is not resolved and (hp of Sylvia > 3 or hpM of Sylvia > 2 or hpF of Sylvia > 2) and daytimer is day and a random chance of 1 in 4 succeeds and LastCampusWalkin - turns > 2):
+	move player to College Walkway East;
+	CollegeCanineLoversEvent;
+
+Instead of resolving College Canine Lovers:
+	CollegeCanineLoversEvent;
+
+to CollegeCanineLoversEvent:
+	say "     A sight off to your left attracts your attention as you walk along one of the many pathways around the college. Two people are standing face to face beneath the branches of a tree, and it doesn't take you long to recognize them as Sylvia and Julian, the two science students that you have met a few times. The sunlight almost trickles through the boughs and leaves above them to spill over their shoulders as they meet in embrace, the wolf's larger form making the collie look frail in comparison, though she looks to be hugging him pretty tightly. As they seperate, they intertwine their fingers together, white fur among black as they hold hands and begin to walk away, and a feeling of satisfaction influences you to follow them at a distance, unused to seeing mere hand-holding in the city much anymore. The two canines stroll along at a very sedate pace, arms slightly swaying back and forth between them in time with their steps.";
+	say "     Their destination appears to be an out-of-the-way fountain unsoiled by the fluids of feral creatures, its water softly gurgling as it bubbles discreetly in the center of the stone bowl. Sylvia and Julian sit down together on the lip and gaze into each other's eyes, paws clasped together between them as they lean in for an intimate kiss, one longer than etiquette would dictate, but not as long as the hedonistic making-out seen between lust-driven students at parties. They part with almost a sigh, the wolf brushing the collie girl's cheek tenderly before she leans in and lightly licks his nose. While you doubt that they would be too scandalized at you watching, you decide that you should give them some privacy from your partially unintentional voyeurism. As you leave, their lips meet again, cupping the side of the other's face, making you smile to yourself at how serene their affection is compared to the activities in the city.";
+	now College Canine Lovers is resolved;
 	now LastCampusWalkin is turns;
 
 [Gender Preference Events]

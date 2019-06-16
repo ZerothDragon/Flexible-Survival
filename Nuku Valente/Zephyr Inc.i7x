@@ -264,7 +264,7 @@ Instead of resolving a Beach Detector Site:
 		if a random chance of 1 in 2 succeeds:
 			challenge "feral sea dragon";
 		else if a random chance of 1 in 2 succeeds:
-			challenge "Hermaphrodite Dolphin";
+			challenge "Dolphin Herm";
 		else:
 			challenge "feral sea dragoness";
 		if lost is 1:
@@ -281,7 +281,7 @@ Instead of resolving a Beach Detector Site:
 				say "You manage to make it partway to the top on your first attempt, but slip as a large wave crashes against the spire and sends chilling water slamming against you. You are bashed against the stone pillar and sent tumbling back down into the water. You are scratched and bruised when you finally make it to the top on your second attempt.";
 				decrease HP of Player by 20;
 			say "     Tearing open the bags, you pull out the device and place it on a smooth surface at the top of the spire. Activating it, there is a whirring accompanied by a grinding sound as the screw bolts dig into the rock, locking it into place. Given the height and the fresh sea breeze, you're quite confident the detector will get unobstructed readings of... whatever for Zephyr. Your descent is thankfully easier, choosing to make an exhilarating dive from the fifty foot spire into the water and swimming back to shore.";
-			remove "Beach" from ndmlist;
+			remove "Beach" from ndmList;
 			now Resolution of Beach Detector Site is 1; [detector placed]
 			now Beach Detector Site is resolved;
 			say "[onelessndm]";
@@ -307,13 +307,13 @@ Instead of resolving a Red Light Detector Site:
 		SanLoss 5;
 		WaitLineBreak;
 		say "     Reaching the building's roof, you find that you are not alone. There is a large, latex vixen here who seems to be lustfully enjoying sounds coming from the building below. You try to slip around her quietly, but her eyes lock on you and she grins.";
-		challenge "Hermaphrodite Latex Vixen";
+		challenge "Latex Vixen Herm";
 		if lost is 1:
 			say "     Defeated, the hermaphrodite vixen banishes you from her rooftop, forcing you to return another time to try and place the detector after you've recovered.";
 			now Resolution of Red Light Detector Site is 2; [detector not placed, lost fight]
 		else:
 			say "     Having dealt with the cherry red vixen, you let her flee down the fire escape and head over to the sign. Looking it over, you are happy to find there's a few sets of maintenance rungs installed on the back so it can be scaled. Climbing up carefully, you find a good spot near the top of the sign, affixing the device against the black back of the sign, helping to hide it. When you turn it on, there is a whirr as the screws drill themselves into the surface, locking the box securely in place. Pleased with your accomplishment, you head back down and get some distance between you and the highly active group of creatures around here.";
-			remove "Red Light District" from ndmlist;
+			remove "Red Light District" from ndmList;
 			now Resolution of Red Light Detector Site is 1; [detector placed]
 			now Red Light Detector Site is resolved;
 			say "[onelessndm]";
@@ -348,7 +348,7 @@ Instead of resolving a High Rise Detector Site:
 		else if T is 3:
 			say ", but are surprised as a creature leaps out from behind a partially open door. Having heard you coming, it must have lain in wait until you moved past. His surprise blow is uncoordinated, but does make you stumble on the steps. You take [special-style-2]8[roman type] damage.";
 			now ndmhigh is 1;
-			challenge "Zebra";
+			challenge "Zebra Stallion";
 			now ndmhigh is 0;
 		else if T is 4:
 			say ", but manage to make it to the top without incident.";
@@ -363,7 +363,7 @@ Instead of resolving a High Rise Detector Site:
 			say "     Heading over to the central spire, you place the black box against a flat spot and turn it on. There is a whirr as the screws drill into the smooth stone and secure the detector in place. You are about to congratulate yourself on a job well done when you hear the shifting of stone nearby. Looking around, you notice that one of the decorative gargoyles lining the building's edge doesn't match the others and has begun to move. Aroused from its nap by the sound of the device locking itself into place, the huge creature takes to the air and swoops around, coming in to attack you.";
 			challenge "Gargoyle";
 			say "     Your battle the with creature completed, you stagger back down to the street level, sore, tired and exhausted, but one step of this job completed at least.";
-			remove "High Rise District" from ndmlist;
+			remove "High Rise District" from ndmList;
 			now Resolution of High Rise Detector Site is 1; [detector placed]
 			now High Rise Detector Site is resolved;
 			say "[onelessndm]";
@@ -392,7 +392,7 @@ Instead of resolving a Park Detector Site:
 		else:
 			say "     Having beaten the dragon, you drive it off for the moment, but you decide it would be best not to tarry too long. It may have friends and given how fast those creatures fly, they could be here soon. You enter the observatory, most of the building being taken up by the one, large dome housing the telescope. From the torn suit and the excessive amounts of dragon cum around, you wonder if perhaps one of the people working here became that creature.";
 			say "     Setting such musings aside, you look around and quickly find a set of ladder rungs leading up to the shutter for the dome as well as an old manual crank for opening it. With some effort, you manage to get the gate over the telescope, letting the [if daytimer is day]sunlight[else]starlight[end if] in and climb up to the dome. Taking an uncomfortable seat at the edge, you take a quick moment to scan around for any sign of the returning dragon before placing the device against the dome's outer wall and turning it on. There is a sharp whine from the screws as the work to dig into the thick metal, eventually boring their way in and securing the device. You climb back down, close the shutter to hide what you've done and make a run for it back down the hill, taking cover in the trees as you spot more of those dragons flying back to the observatory. Finding you gone, the dragons quickly descend into lustfully mating to vent their frustrations at your escape.";
-			remove "Park" from ndmlist;
+			remove "Park" from ndmList;
 			now Resolution of Park Detector Site is 1; [detector placed]
 			now Park Detector Site is resolved;
 			say "[onelessndm]";
@@ -412,18 +412,18 @@ instead of entering the Confession Booth while "Beach" is listed in ndmlist and 
 		say "     As he moves to head back down the hatch, you move in close to the red panda and slide your arms around his waist, running your hands over his tummy and down to his groin. You whisper in his ear that you'd like to really thank him for all his help. He moans softly and mumbles something about not giving into baser urges, so you slip up the front of his robe and fondle his sheath directly, pleased to see that his cock's slipped further from it. You tell him that you think he's very cute and that you only want to show how much you appreciate his help, all while sliding your fingertips across his stiffening member. He releases a soft [']wah['] of pleasure and pulls his robe up further, blushing redder under his fur.";
 		if Player is female:
 			say "     Eager to get that cock inside you, you guide him to lay back on the dusty floor and climb atop him. His paws run over your body as you hold his penis in position and sink your pussy down around it. The red panda releases a wah of pleasure as your cunt envelops his maleness and you start riding up and down it. Despite his small stature, he's got an impressive eight inch cock that pulses and throbs inside of you as you fuck. His nimble paws caress your breasts and tease your nipples as the russet furred fellow squirms in delight beneath you. You moan in pleasure as he releases another, louder wah and cums hard, blasting his thick seed into your pussy and up into your womb.";
-			[ TODO: Make Red Panda Infection for Impregnation]
+			CreatureSexAftermath "Player" receives "PussyFuck" from "Red Panda";
 		else if Player is male and scalevalue of Player > 1:
 			say "     Being [if scalevalue of Player is 2]the same size as him[else]larger than him[end if], you decide to mount the sexy male. Without removing your hand from his cock, you guide the red panda onto all fours, smiling at how his tail arches up and twitches as he presents himself. Deciding not to tarry too long in case someone comes to check on you both, you line up your cock with his tight pucker and slowly sink into him[if Cock Length of Player > 16]. He slaps both paws over his muzzle to muffle a long, pleasured wah as you slowly push your massive meat into him, bulging his furry tummy outwards to accommodate it[else if Cock Length of Player > 8]. He slaps a paw over his muzzle to muffle a pleasured wah as you slowly push your large meat into him, stuffing the little fellow full[else], the red panda releasing another wah of pleasure as you slowly push your meat into him[end if]. Peter's shaft throbs in your hand, dribbling precum onto the dusty floor while you fuck him. You pound his gripping ass until you can't hold back any longer and blast your [Cum Load Size of Player] load into his depths, your release driving him to a shuddering orgasm that stains the ground with his seed.";
 		else if Player is male and scalevalue of Player is 1:
 			say "     Being smaller than the red panda, he guides you down onto all fours and climbs atop you. You stifle a moan as he moves his cock into position at your back door, sinking himself slowly into your tight rear. His stiff cock spreads you open gently, and he starts to thrust while a paw moves around to stroke your shaft[smn]. His soft fur rubs against your back as his pudgy belly rests atop you and his plump balls slap against you with each thrust. You go at this for several minutes until the red panda presses his muzzle against your neck and releases a muffled wah of pleasure, cumming hard inside you. You can feel his hot seed filling your ass and your climax hits as well, blasting your hot seed across the dusty floor.";
-			[ TODO: Make Red Panda Infection for Impregnation]
+			CreatureSexAftermath "Player" receives "AssFuck" from "Red Panda";
 		else:
 			say "     Lacking any sexual organs of your own, you drop to your knees in front of the red panda and stuff his cock into your mouth. You tease your tongue across his leaking shaft and eagerly start sucking him off. He rubs a paw over your head as the other covers his muzzle to muffle a wah of pleasure. You work his penis with your mouth, tongue, and lips until he finally can't take any more and releases another muffled wah as he cums hard, flooding your mouth with his tasty load.";
 		say "     Your quick fun over, he gives you a kiss and nuzzles you before leading you back down into the church. As he descends, he tries his best to wipe his dusty robe clean. Once downstairs, he gives you another quick kiss before dashing off to the confessional.";
 	else:
 		say "     You decide to just speak your thanks to the red panda and follow him back down the steps, pleased with yourself at your ingenuity in placing it here.";
-	remove "Beach" from ndmlist;
+	remove "Beach" from ndmList;
 	now Beach Detector Site is resolved;
 	say "[onelessndm]";
 
@@ -435,7 +435,7 @@ instead of conversing the Lisa while "Red Light District" is listed in ndmlist a
 
 instead of conversing Alex while "High Rise District" is listed in ndmlist and nanite density monitor is owned:
 	say "     Looking around Alex's high rise condo, you decide to ask him if it would be alright to install the device from Zephyr on his balcony. 'Hmmm... Zephyr? Aren't they some kind of R&D company? Are they looking into this problem? Sure! It'll be good to know we're helping to fix this mess. So, what does it do?' he asks in a spurt of manic energy. You do your best to explain what little you know as you head out with him onto the balcony and find a suitable spot next to his now-useless air conditioner. Activating the device, there is a whirr as the screws drill into the concrete, securing it in place. You head back inside, thanking the ferrety lawyer for his help.";
-	remove "High Rise District" from ndmlist;
+	remove "High Rise District" from ndmList;
 	now High Rise Detector Site is resolved;
 	say "[onelessndm]";
 

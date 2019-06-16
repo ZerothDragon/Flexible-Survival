@@ -10,9 +10,9 @@ The sarea of One flew into the Cuckoos Nest is "Forest".
 CuckooWatched is a number that varies.
 
 when play begins:
-	add One flew into the Cuckoos Nest to badspots of humorous;
-	add One flew into the Cuckoos Nest to badspots of guy;
-	add One flew into the Cuckoos Nest to badspots of girl;
+	add One flew into the Cuckoos Nest to badspots of HumorousList;
+	add One flew into the Cuckoos Nest to BadSpots of MaleList;
+	add One flew into the Cuckoos Nest to BadSpots of FemaleList;
 
 Instead of resolving a One flew into the Cuckoos Nest:
 	now battleground is "void"; [prevents a random fight, as these are replacement random fights]
@@ -47,9 +47,9 @@ The Prereq1Resolution of Two Crash into the Cuckoos Nest is { 1, 2 }.
 The sarea of Two crash into the Cuckoos Nest is "Forest".
 
 when play begins:
-	add Two crash into the Cuckoos Nest to badspots of humorous;
-	add Two crash into the Cuckoos Nest to badspots of guy;
-	add Two crash into the Cuckoos Nest to badspots of girl;
+	add Two crash into the Cuckoos Nest to badspots of HumorousList;
+	add Two crash into the Cuckoos Nest to BadSpots of MaleList;
+	add Two crash into the Cuckoos Nest to BadSpots of FemaleList;
 
 Instead of resolving a Two crash into the Cuckoos Nest:
 	now battleground is "void"; [prevents a random fight, as these are replacement random fights]
@@ -104,15 +104,15 @@ The Prereq1Resolution of Avian Tent is { 1, 2 }.
 The sarea of Avian Tent is "Forest";
 
 when play begins:
-	add Avian Tent to badspots of guy;
-	add Avian Tent to badspots of girl;
+	add Avian Tent to BadSpots of MaleList;
+	add Avian Tent to BadSpots of FemaleList;
 
 Instead of resolving a Avian Tent:
 	say "     As you are making your way through the forest you come across Izzy, the female member of the cuckoo couple you've met before. She is strolling down a path not too far from your own, heading deeper into the woods away from you. Based on the clothing she is wearing and only carrying a metal bar for self-defense it seems like she's on the 'hunt' for something besides supplies. The sexy avian wears a low cut white blouse which has been tied off to show her slender waist, combined with a skimpy tartan miniskirt that hardly conceals anything. As she bends down to get past a low-hanging branch you see that she doesn't have any panties on either.";
 	say "     Curious about whom the adventurous avian will bring back to her tent this time, you do stealthily tail her for a while, soon seeing her approach the wreckage of an air force jet. There are deep scratches all along the fuselage - seems like this thing had a run-in with a wyvern or something similar. Nearby to the wreck is a makeshift shelter made using a parachute as a canopy. Under that sits a large anthro osprey, busy sharpening his combat knife by using a whetstone. This must have been the pilot. The fabric on his air-force jumpsuit is visibly strained by his enlarged form. Eyeing this fine example of masculinity, the cuckooess straightens her feathers for a moment and chuckles softly.";
 	WaitLineBreak;
 	say "     Swaying her hips as she walks up to the transformed pilot, Izzy says in a flirtatious tone 'Hey there fly-boy, welcome to the neighborhood.' He grasps his knife tightly for a second, ready to defend himself, but soon relents as it becomes obvious that his visitor doesn't seem intent on forcing herself on him. Happy to have some non-hostile contact in the city, the man begins to chat with the slutty woman. After a while of sharing tales about who they are and what is going on, Izzy offers, 'I can show you the community I live in. We're always ready to welcome new people that are still alright in the head, you know. And a person with your skills and physique would be greatly appreciated...' She emphasizes this point by stroking his bicep. The bird of prey shrugs and says, 'Better than sitting around here and watching the wreck rust, I guess. So sure, lead on.' A happy grin on her face, the cuckooess takes his hand and leads him back towards the camp.";
-	say "     Coming back down the same trail you followed her on, the two of them spot you before you can react - resulting in a friendly nod by Izzy as she leads her newfound piece of man-candy past you a moment later. She doesn't seem surprised to see you... could it be that the avian spotted you before and enjoyed being observed on her 'hunt?'. No matter which, as you go on to walk after them in a little distance, the would-be seductress intentionally bends over at certain narrow parts of the trail so that the osprey's gaze quickly gets focused on her shapely booty and the absence of underwear on her person. It doesn't take long before a noticeable bulge in the crotch area can be seen on the pilot's jumpsuit.";
+	say "     Coming back down the same trail you followed her on, the two of them spot you before you can react - resulting in a friendly nod by Izzy as she leads her newfound piece of man-candy past you a moment later. She doesn't seem surprised to see you... could it be that the avian spotted you before and enjoyed being observed on her 'hunt'? No matter which, as you go on to walk after them in a little distance, the would-be seductress intentionally bends over at certain narrow parts of the trail so that the osprey's gaze quickly gets focused on her shapely booty and the absence of underwear on her person. It doesn't take long before a noticeable bulge in the crotch area can be seen on the pilot's jumpsuit.";
 	WaitLineBreak;
 	say "     Upon reaching the campground a couple of the infected walk up and begin to greet the new person. With more and more of the camp's inhabitants checking out the newcomer, it becomes obvious to you that Gray, the cuckooess's partner, isn't among the crowd. The osprey pilot talks to a couple of people, but eventually Izzy gets a bit impatient, leaning in against him and guiding one of his hands to caresses her ass. Getting the hint about what is going to happen next, the other inhabitants of the community soon do go back to what they had been doing previously - not without exchanging some grins and chuckles of course. Once done showing her guest the amenities of the small community, the pair arrive at the final destination of Izzy's tent.";
 	say "     The promiscuous cuckoo asks, 'So what do you think of our humble little community Ace? Any interest in moving in?' The hunky osprey smiles and responds, 'It looks pretty good... but I might need a little more convincing.' The sultry avian femme leans in close to him and whispers 'Let me show you just how convincing I can be.' Then she begins to eagerly make out with the handsome raptor. By this point the bulge in the male's jumpsuit is at full mast. Breaking off from the oral fun a moment later, Izzy grabs the man's hand and pulls open the entrance of the tent. Inside, you can see Gray kneeling on the floor in one corner. He has been blindfolded and has his arms are tied behind his back.";
@@ -187,8 +187,8 @@ The sarea of Thief's Punishment is "Forest".
 BridgetPowellEventVar is a number that varies. BridgetPowellEventVar is usually 0.
 
 when play begins:
-	add Thief's Punishment to badspots of guy;
-	add Thief's Punishment to badspots of girl;
+	add Thief's Punishment to BadSpots of MaleList;
+	add Thief's Punishment to BadSpots of FemaleList;
 
 instead of resolving Thief's Punishment:
 	now battleground is "void"; [prevents a random fight, as these are replacement random fights]
@@ -233,8 +233,8 @@ The Prereq1Resolution of Thief's Reformation is { 1, 2 }.
 The sarea of Thief's Reformation is "Forest".
 
 when play begins:
-	add Thief's Reformation to badspots of guy;
-	add Thief's Reformation to badspots of girl;
+	add Thief's Reformation to BadSpots of MaleList;
+	add Thief's Reformation to BadSpots of FemaleList;
 
 instead of resolving Thief's Reformation:
 	now battleground is "void"; [prevents a random fight, as these are replacement random fights]

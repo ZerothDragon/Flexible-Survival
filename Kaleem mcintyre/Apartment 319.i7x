@@ -12,14 +12,14 @@ AptAid is a number that varies.
 
 The sarea of Apartment 319 is "High".
 When play begins:
-	Add Apartment 319 to badspots of hellspawn;
-	Add Apartment 319 to badspots of furry;
-	Add Apartment 319 to badspots of guy;
+	Add Apartment 319 to badspots of DemonList;
+	Add Apartment 319 to BadSpots of FurryList;
+	Add Apartment 319 to BadSpots of MaleList;
 
 Instead of resolving a Apartment 319:
 	if AptAid is 0:
 		say "     Briskly walking through the streets of the high rise, you come across a man jogging down the streets. Not thinking much of him you step out of his way, being that he's going in the opposite direction of you. It's only when he's shot passed you that you realize that there is something strange about the other. But not being able to place it at the moment, you simply shrug and go off about your way.";
-	If AptAid is 1 and ( guy is banned or hellspawn is banned or furry is banned or hermaphrodite is banned ):
+	If AptAid is 1 and ( MaleList is banned or DemonList is banned or FurryList is banned or HermList is banned ):
 		say "     Jogging down the side of the streets of the high rise district, you end up bumping into someone. Not being able to stop yourself, you flail around wildly to collect your balance only to end up collapsing on the other in spite of your attempts. Luckily, whoever is in front of you is able to catch your weight before you end up dragging the both of you down to the pavement. 'Whoa there, are you okay stranger?' The person holding you up, who just so happens to be a Dalmatian, asks with their dark brown eyes shining at you somewhat playfully.";
 		say "     Nodding to the other, you pull yourself away from them to stand on your own two feet and then, on a whim, look down to inspect the shirt the Dal is wearing, an oddity in this town with almost everyone running around half naked. What you see makes your senses slightly spark and you quickly tip your head up to ask the Dal if he is from Station 86. 'Y-yes, I am. Who are you though?' The man wearing the blue, firefighter-embroidered shirt takes a step back from you, yet in spite of this you give the Dalmatian the rundown of what's happening and who you just so happen to be. Watching the other's face go through a multitude of expression before stilling on surprise, you can bet that he never imagined hearing this information when he woke up today.";
 		WaitLineBreak;
@@ -72,11 +72,11 @@ Instead of resolving a Apartment 319:
 		if Player consents:
 			LineBreak;
 			say "     Telling the unknown man where he can shove it, you let him know that he'll be the one to get out, preferably with a foot in his ass if any of his thugs harms Dagaz any more. 'Really? Well, you got some moxie about you, whoever you are, but do you have anything to back it up?' A snap of fingers has the hyenas moving towards you.";
-			challenge "Herm Hyena";
+			challenge "Hyena Herm";
 			if fightoutcome >= 10 and fightoutcome <= 19:
-				challenge "Herm Hyena";
+				challenge "Hyena Herm";
 				if fightoutcome >= 10 and fightoutcome <= 19:
-					challenge "Herm Hyena";
+					challenge "Hyena Herm";
 					if fightoutcome >= 10 and fightoutcome <= 19:
 						say "     'Now I'm impressed.' The unknown mutant claps his hands while looking down at the defeated hyenas. 'But how do you handle demons?' Another snap of fingers, and the two demon brutes are coming your way.";
 						challenge "Demon Brute";
@@ -91,7 +91,7 @@ Instead of resolving a Apartment 319:
 									WaitLineBreak;
 									say "     'I can tell you don't care so I'll be moving along now.' The mutant turns towards the bound Dalmatian and then hisses at him. 'Next time you make a contract...[italic type]tell your friends[roman type] before they show up to trounce my guys! My company is not in the habit of dealing with domestic disturbances and little happenings like this will get you banned from our patron's list if this should ever happen again, understand?' Dagaz can only moan as he nod his head while seeming to slip in and out of consciousness. 'Ugh... the things I have to go through.' The mutant shakes his head before moving past you on his way out the door. When you call him back to ask about the sling...";
 									say "     'It came with the Dalmatian so I'll leave you to figure out how to get him down.' And then the other is gone. Not sure what to do next in this situation, you go over to the whimpering Dalmatian and then have a look at him. From what you can see, other than some fur ripped out of place and some marks littered along his pinkish skin, the firefighter is just fine. Maybe you got here before the real action could begin?";
-									say "     Patting the Dalmatian on the cheek to get his attention, you try and ask Dagaz how to get him down from this weird thing. 'Please... just leave me alone. Gods, this is so embarrassing!' Obviously, the other is more than just a little okay if he can grumble and bemoan the way he is doing right now. Trying to tell him that you don't care about his strange hobbies and  you just wanted to make sure he is alright, you find the Dalmatian whimpering up at you in complete shame. 'Please... just go away. Can't you see that you ruined everything? Those guys were just about to...' A shudder halts whatever Dagaz was about to say as the Dalmatian unexpectedly lets out a carnal snarl of both want and need.";
+									say "     Patting the Dalmatian on the cheek to get his attention, you try and ask Dagaz how to get him down from this weird thing. 'Please... just leave me alone. Gods, this is so embarrassing!' Obviously, the other is more than just a little okay if he can grumble and bemoan the way he is doing right now. Trying to tell him that you don't care about his strange hobbies and you just wanted to make sure he is alright, you find the Dalmatian whimpering up at you in complete shame. 'Please... just go away. Can't you see that you ruined everything? Those guys were just about to...' A shudder halts whatever Dagaz was about to say as the Dalmatian unexpectedly lets out a carnal snarl of both want and need.";
 									WaitLineBreak;
 									say "     Looking down at the other, your eyes widen just a tick as you look over Dagaz's ten inch red rocket poking completely out of his sheath. From the bubbles of pre at the head of the tapered tip, it would seem that the Dalmatian is but seconds away from popping his load. Seeing this and looking around the room at the paddles and whips that had been left behind on the floor, you wonder if you should try and finish up what the others started?";
 									say "     [bold type]It would definitely be kinky as hell and would serve as a mild apology to the other man.[roman type][line break]";

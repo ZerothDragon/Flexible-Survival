@@ -4904,7 +4904,7 @@ Every turn while a person (called victim) is stuck to a pentagram (called pentie
 				end the story saying "";
 				stop the action;
 			else:
-				say "She looks you over and give a loud laugh, 'One of my future girls, who still clings to some tiny shred of purity.' She steps up to you, grabbing at your new breasts, claws pinching at your teats, sending waves of pleasure through your demonic form, 'Oh, so precious. I don't usually get to play with you until after you're entirely damned.' she whispers, stroking over you as she pushes you back, licking at her lips. 'As much as I would like to simply fuck your little brains out until you were begging to be mine forever, I feel there's a better possibility, if I wait. You still have a small bit of your old, male, self in there. Let me show you'. She grabs you between the legs then, rubbing firmly across your distended vulva, stroking as she gazes into your eyes.";
+				say "She looks you over and give a loud laugh, 'One of my future girls, who still clings to some tiny shred of purity.' She steps up to you, grabbing at your new breasts, claws pinching at your teats, sending waves of pleasure through your demonic form, 'Oh, so precious. I don't usually get to play with you until after you're entirely damned.' she whispers, stroking over you as she pushes you back, licking at her lips. 'As much as I would like to simply fuck your little brains out until you were begging to be mine forever, I feel there's a better possibility, if I wait. You still have a small bit of your old, male, self in there. Let me show you.' She grabs you between the legs then, rubbing firmly across your distended vulva, stroking as she gazes into your eyes.";
 				grow mouse cock from pelvis;
 				say "'Now that is much better. This a gift, girl of mine. While we have played, the city has succumbed to mortal disease of human creation. Go forth, bring my influence to them with your new toy.' She emphasizes her words by squeezing at your new cock, slowly stroking, 'Work quickly enough, and you will be rewarded thoroughly.'";
 				Judgement in 20 turns from now;
@@ -6625,8 +6625,8 @@ Cheating is an action applying to nothing. Understand "cheat" as cheating.
 Carry out cheating:
 	let cheatcount be 0;
 	let cheatlist be the list of on-stage not fixed in place not scenery things;
-	remove the list of backdrops from cheatlist;
-	remove the list of people from cheatlist;
+	remove the list of backdrops from cheatList;
+	remove the list of people from cheatList;
 	repeat with cheatitem running through cheatlist:
 		if cheatitem is not carried by the player and cheatitem is not part of something and cheatitem is not in the holdingpen and (cheatitem is not enclosed by someone or cheatitem is in a container) and cheatitem is cheatable:
 			move cheatitem to the player;

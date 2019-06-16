@@ -2,6 +2,7 @@ Version 5 of Medical Checkups by Stripes begins here.
 [ Version 4.0 - Main Storyline tie-in - Stripes]
 [ Version 5.0 - Added cunt pills - Kurainyx]
 [ Version 5.1 - Easier cunt pill access for males - Kurainyx]
+[ Version 5.2 - Added Black Wasp parasite removal - Kurainyx]
 [- Originally Authored By: Hellerhound -]
 
 Section 1 - Pediatrics Lobby
@@ -319,11 +320,17 @@ to say Medeaadjustments:
 			now sortorder entry is 9;
 			now description entry is "Talk to her about her pills";
 		[]
-		else if Medeapill is true:
+		if Medeapill is true:
 			choose a blank row in table of fucking options;
 			now title entry is "Cunt Pills";
 			now sortorder entry is 9;
 			now description entry is "Trade for her cunt pills";
+		[]
+		if insectlarva is true:
+			choose a blank row in table of fucking options;
+			now title entry is "Parasite";
+			now sortorder entry is 10;
+			now description entry is "See if Medea can do anything about the parasite inside of you";
 	sort the table of fucking options in sortorder order;
 	repeat with y running from 1 to number of filled rows in table of fucking options:
 		choose row y from the table of fucking options;
@@ -501,7 +508,7 @@ to say Medeaadjustments:
 					say "     Soon she's working her [if Cunt Depth of Player < 12]whole hand[else if Cunt Depth of Player < 24]forearm[else]whole arm[end if] into your squeezing, tugging cunt and smearing the slick goo at your very depths. As your cervix starts to relax, she pushes another handful of the body-altering cream right into your womb. It takes a lot of effort from her to be able to pull her arm free after that, grunting with the effort to resist the strong inward motion of your vaginal muscles.";
 					WaitLineBreak;
 					say "     As the cream inside your uterus starts to react, you become increasingly aware of the empty feeling of your unfertilized womb and you want to do something about it. Noticing your attention focusing on her, the reptilian doctor stops fingering herself and rushes you outside, that sense of emptiness to be filled growing with every step. Catching sight of another creature wandering nearby, she pushes you off in its direction and moves back to observe the results, her medical ethics forgotten in her desire to observe your altered reproductive system in action.";
-					if girl is not banned:
+					if FemaleList is not banned:
 						setmonster "Husky Bitch";
 						say "     As you approach the rummaging creature, part of you can't help but be pleased to see that it is a female husky. That small part of you which is still able to reason can't help but think it appropriate. Given how your first meal was also one of these cute girls, there is a certain symmetry to that. She seems pleased to see you as well, smelling your arousal and sniffing her way towards your crotch. Making no effort to dissuade her, you seem like a willing playmate and she approaches with eager caution.";
 						say "     When she brings her muzzle in to lick at your leaking pussy, your body is struck with another throbbing sense of the void inside you. You look down at the cute husky with new, maternally longing instincts, feeling that she'd be perfect to fill it. Before you can even think about it, you grab the husky by the head and yank it forward, driving her muzzle into your hot, needy cunny. Your pussy stretches as you continue to pull her in, stretching around her canine head with an orgasmic effort that has you moaning. Your juices soak her head and shoulders, making it easier for your tugging inner walls to start pulling them in as well.";
@@ -524,6 +531,7 @@ to say Medeaadjustments:
 						now LegsSpeciesName of Child is "Husky";
 						now AssSpeciesName of Child is "Husky";
 						now TailSpeciesName of Child is "Husky";
+						now ubpreg is "Husky Bitch";
 					else:
 						say "     As you approach the rummaging creature, part of you can't help but be pleased to see that it is a latex fox. That small part of you which is still able to reason can't help but think it appropriate. Given how your first meal was also one of these rubbery guys, there is a certain symmetry to that. He seems pleased to see you as well, smelling your arousal and sniffing his way towards your crotch. Making no effort to dissuade him, you seem like a willing playmate and he approaches with eager caution.";
 						say "     When he brings his muzzle in to lick at your leaking pussy, your body is struck with another throbbing sense of the void inside you. You look down at the cute fox with new, maternally longing instincts, feeling that he'd be perfect to fill it. Before you can even think about it, you grab the fox by the head and yank it forward, driving his muzzle into your hot, needy cunny. Your pussy stretches as you continue to pull him in, stretching around his vulpine head with an orgasmic effort that has you moaning. Your juices soak his head and shoulders, making it easier for your tugging inner walls to start pulling them in as well.";
@@ -547,13 +555,13 @@ to say Medeaadjustments:
 						now LegsSpeciesName of Child is "Latex Fox";
 						now AssSpeciesName of Child is "Latex Fox";
 						now TailSpeciesName of Child is "Latex Fox";
+						now ubpreg is "Latex Fox";
 					now playercanub is true;
 					add "UB Pred" to feats of Player;
 					now ubcount is 1;
 					decrease humanity of Player by 3;
 					say "     You have the [bold type]UB Predator[roman type] feat, granting you the ability to unbirth fallen foes. If you're not pregnant, there is a chance your body will want to use your enemy to fill your womb. You may adjust some vore related settings via the [bold type]vore menu[roman type].";
-					now gestation of Child is a random number between 8 and 16;
-					now ubpreg is Name entry;
+					now Gestation of Child is a random number between 8 and 16;
 					now pregtype is 1;
 					if "Safe Appetite" is not listed in feats of Player:
 						now researchbypass is 1;
@@ -597,14 +605,14 @@ to say Medeaadjustments:
 							now sextablerun is 1;
 							if nam is "Trade medkit":
 								if carried of medkit > 0:
-									say "You take out a medkit from your bag and hand it over to Medea. The lizard doctor takes your offered item and takes it into a nearby room. She comes back to you a moment later and places a pink capsule into your hand. 'A pleasure doing business with you,' Medea says with a smile. 'I'm sure that you'll put that to good use.'";
+									say "     You take out a medkit from your bag and hand it over to Medea. The lizard doctor takes your offered item and takes it into a nearby room. She comes back to you a moment later and places a pink capsule into your hand. 'A pleasure doing business with you,' Medea says with a smile. 'I'm sure that you'll put that to good use.'";
 									decrease carried of medkit by 1;
 									increase carried of cunt pill by 1;
 								else:
 									say "     You shake your head, stating that you don't have any of them on you. The lizard doctor sighs in disappointment and says, 'I'm sorry then, but I'm afraid that I cannot give you any of my pills then. Perhaps next time.'";
 							if nam is "Trade healing booster":
 								if carried of healing booster > 0:
-									say "You take out a healing booster from your bag and hand it over to Medea. The lizard doctor takes your offered item and takes it into a nearby room. She comes back to you a moment later and places a pink capsule into your hand. 'A pleasure doing business with you,' Medea says with a smile. 'I'm sure that you'll put that to good use.'";
+									say "     You take out a healing booster from your bag and hand it over to Medea. The lizard doctor takes your offered item and takes it into a nearby room. She comes back to you a moment later and places a pink capsule into your hand. 'A pleasure doing business with you,' Medea says with a smile. 'I'm sure that you'll put that to good use.'";
 									decrease carried of healing booster by 1;
 									increase carried of cunt pill by 1;
 								else:
@@ -617,6 +625,37 @@ to say Medeaadjustments:
 						else:
 							say "Invalid Option. Pick between 1 and [the number of filled rows in the table of fucking options].";
 					clear the screen and hyperlink list;
+				else if nam is "Parasite":
+					say "     Medea's face contorts into one of disgust when you tell her about your encounter with the black wasps and the parasite they put inside of you. 'Yes, I know about those vile creatures,' the lizard doctor says disdainfully. 'They turn their victims into hapless egg-layers that are unable to experience the wonders of a natural birth, and I'm afraid that you have succumbed to their dreadful influence. Fortunately, I have been developing a concoction that will kill the parasite that dwells within you. All I need is a medkit to make you a dose.";
+					if carried of medkit > 0:
+						say "     [bold type]Do you want to give Medea a medkit so that she can remove the parasite within you?[roman type][line break]";
+						LineBreak;
+						say "     ([link]Y[as]y[end link]) - Trade your medkit to get rid of the parasite.";
+						say "     ([link]N[as]n[end link]) - Turn down the offer and try to deal with the problem yourself.";
+						if Player consents:
+							LineBreak;
+							say "     Medea quickly takes your offered medkit over to a counter and begins tinkering with it, along with a number of other medical equipment. It only takes a few moments for the lizard doctor to come back with a needle and syringe filled with a green liquid. 'This will kill the parasite, allowing you to expel the nasty bug. I must warn you though: this will hurt,' Medea explains. She gives you a moment to steel yourself before she injects the concoction directly into your stomach. It only takes a moment for the parasite within you to violently react to Medea's treatment, and you keel over from the intense pain in your belly.";
+							say "     Thankfully, the parasite's movements and the pain dies down after a few moments. With Medea's assistance, you manage to push out a puddle of thick goo, followed by the parasite itself. It is a pale creature, looking much like a bloated, insect larva with several tiny legs and a phallic back end from which you suspect it released the [if larvalaid < 2]slimy goo[else]egg slime[end if] into you. 'Good riddance,' Medea says, glaring at the mess with scorn. She then turns to you with a cheerful smile. 'Congratulations, the treatment was a success.'";
+							decrease carried of medkit by 1;
+							now insectlarva is false;
+							now preghijack is false;
+							now mpreghijack is false;
+							now larvacounter is 0;
+							now larvaegg is 0;
+							SanBoost 10;
+							now Libido of Player is Libido of Player / 2;
+							repeat with y running from 1 to number of filled rows in Table of Random Critters:
+								choose row y in Table of Random Critters;
+								if Name entry is "Black Wasp":
+									now area entry is "Nowhere";
+									now non-infectious entry is true; [Wasps locked again]
+									break;
+						else:
+							say "     You say that you don't have a medkit to give to Medea. The lizard doctor sighs in disappointment and says, 'Then, I'm afraid that I have nothing else to help you with your parasite problem. Do please reconsider my offer if you have trouble ridding yourself of the disgusting thing.'";
+						wait for any key;
+					else:
+						say "     You say that you don't have a medkit to give to Medea. The lizard doctor sighs in disappointment and says, 'Then, I'm afraid that I have nothing else to help you with your parasite problem. Do please reconsider my offer if you have trouble ridding yourself of the disgusting thing.'";
+						wait for any key;
 				else if nam is "Doctor Matt's request" or nam is "Doctor Mouse's demand":
 					say "[Medeaassistance_plot]";
 
@@ -790,7 +829,7 @@ instead of resolving Obstetrics Department:
 	let playernum be a random number between 0 and ( 200 + humanity of Player - Libido of Player );
 	say "     [special-style-1][playernum][roman type] vs [special-style-2]120[roman type]: ";
 	if Playernum >= 120:
-		if furry is banned:
+		if FurryList is banned:
 			say "You manage to block out the smell, at least for the moment, and start searching through the Obstetrics Department for the items that Dr. Medea described. You gather up the specialized equipment that she's requested and leave as quickly as you can before your activity can draw the attention of one of the hospital's denizens.";
 			now HP of doctor Medea is 4;
 			now Resolution of Obstetrics Department is 1; [got Medea's stuff (all monsters banned)]

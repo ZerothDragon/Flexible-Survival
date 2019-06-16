@@ -170,8 +170,8 @@ Staff Lounge	"Staff Lounge"
 Staff Lounge is a situation.
 The sarea of Staff Lounge is "Hospital".
 when play begins:
-	add Staff Lounge to badspots of guy;
-	add Staff Lounge to badspots of furry;
+	add Staff Lounge to BadSpots of MaleList;
+	add Staff Lounge to BadSpots of FurryList;
 
 Instead of resolving a Staff Lounge:
 	say "     In one corner of the hospital, you come across a lounge for the staff. Taking a glance inside, you find it unoccupied and go in to search. There are a few chairs and couches, but it seems like some of the staff have used them for [']recreation['] recently. Not wanting to run into a couple of them sneaking in here for more fun, you confine yourself to a quick search of the room. Without power, the food in the fridge has gone bad, but you do manage to find an unopened bottle of water.";
@@ -222,10 +222,10 @@ Radiology	"Radiology"
 Radiology is a situation. The level of Radiology is 5.
 The sarea of Radiology is "Hospital".
 when play begins:
-	add Radiology to badspots of girl;
-	add Radiology to badspots of guy;
-	add Radiology to badspots of hermaphrodite;
-	add Radiology to badspots of furry;
+	add Radiology to BadSpots of FemaleList;
+	add Radiology to BadSpots of MaleList;
+	add Radiology to badspots of HermList;
+	add Radiology to BadSpots of FurryList;
 
 Instead of resolving a Radiology:
 	say "     The radiology department, where the x-rays are taken, seems to have had recent use. There are several fresh x-rays showing images of the altered physiology of transformees. While some seem to have been taken during partial transformation, most are of completed changes. Many are arranged out on the illuminated viewers with annotations marked on. Most are circles or arrows marking key points with a red wax pencil, but others contain medical jargon about the bones or joints being changed. Briefly distracted by all this, you don't hear the sound of approaching footsteps until it's too late and one of the hospital's creatures steps in.";
@@ -254,7 +254,7 @@ to say hospfight1:		[staff fight]
 		else:
 			challenge "Enhanced Chimera";
 	if T is 7:
-		challenge "Jaguar";
+		challenge "Jaguar Male";
 
 
 to say hospfight2:		[prevents duplicate of raccoon, who is a unique individual]
@@ -269,7 +269,7 @@ to say hospfight2:		[prevents duplicate of raccoon, who is a unique individual]
 		else:
 			challenge "Enhanced Chimera";
 	if T is 5 or T is 6:
-		challenge "Jaguar";
+		challenge "Jaguar Male";
 
 
 to say hospfight3:		[no Raccoon, Psycho Weasel instead... generic fight]
@@ -286,24 +286,24 @@ to say hospfight3:		[no Raccoon, Psycho Weasel instead... generic fight]
 		else:
 			challenge "Enhanced Chimera";
 	if T is 7:
-		challenge "Jaguar";
+		challenge "Jaguar Male";
 
 
 to say hospfight4:		[no Raccoon, flags handled internally]
 	let T be a list of numbers;
-	if guy is not banned:
+	if MaleList is not banned:
 		add 1 to T; [Psycho Weasel]
 		add 2 to T; [Jaguar]
-	if girl is not banned:
+	if FemaleList is not banned:
 		add 3 to T; [Fluffy Owl]
 		add 4 to T; [Vixen Nurse]
 		add 4 to T; [Vixen Nurse]
-	if hermaphrodite is not banned:
+	if HermList is not banned:
 		add 5 to T; [Mismatched Chimera]
 		add 5 to T; [Mismatched Chimera]
 	sort T in random order;
 	if entry 1 of T is 1, challenge "Psycho Weasel";
-	if entry 1 of T is 2, challenge "Jaguar";
+	if entry 1 of T is 2, challenge "Jaguar Male";
 	if entry 1 of T is 3, challenge "Fluffy Owl";
 	if entry 1 of T is 4, challenge "Vixen Nurse";
 	if entry 1 of T is 5:
@@ -319,10 +319,10 @@ Pathology	"Pathology"
 Pathology is a situation. The level of Pathology is 5.
 The sarea of Pathology is "Hospital".
 when play begins:
-	add Pathology to badspots of girl;
-	add Pathology to badspots of guy;
-	add Pathology to badspots of hermaphrodite;
-	add Pathology to badspots of furry;
+	add Pathology to BadSpots of FemaleList;
+	add Pathology to BadSpots of MaleList;
+	add Pathology to badspots of HermList;
+	add Pathology to BadSpots of FurryList;
 
 Instead of resolving a Pathology:
 	say "     Hearing the sound of footsteps and talking approaching, you slip through a nearby door. Inside you find yourself in a medical lab. The room, unlike many of the others has been kept clean and seems largely undisturbed by the events which have struck the hospital. Curious, you are about to look around further when the door opens and in strides the two creatures. You seem to have inadvertently hidden yourself at their destination. The first charges at you while the other, laden with several test tubes and samples, moves to set its burden down first.";
@@ -376,10 +376,10 @@ Records Room	"Records Room"
 Records Room is a situation. The level of Records Room is 5.
 The sarea of Records Room is "Hospital".
 when play begins:
-	add Radiology to badspots of girl;
-	add Radiology to badspots of guy;
-	add Radiology to badspots of hermaphrodite;
-	add Radiology to badspots of furry;
+	add Radiology to BadSpots of FemaleList;
+	add Radiology to BadSpots of MaleList;
+	add Radiology to badspots of HermList;
+	add Radiology to BadSpots of FurryList;
 
 instead of resolving Records Room:
 	say "     You come across the hospital's records room, where all the patient files are stored. It is tightly packed with ceiling high filing cabinets and shelves. There are a few files set out that seem to have been recently updated to include post-infection data, making you wonder who's still performing medical tests at the hospital. Setting them aside, you move around the room, searching for anything of use and almost bump into a creature as it emerges from a door to another filing room.";
@@ -573,7 +573,7 @@ Instead of conversing the Doctor Mouse:
 			say "     'Yes! That is it,' Doctor Mouse says as he hops down from his stool to grab for it before thinking better of it. 'Uh, would you be so kind as to put it over there for me?' he asks, pointing to an open spot on the central work area.";
 			say "[hospquestpt2]";
 	if hospquest is 4:
-		if girl is banned or guy is banned or furry is banned or hermaphrodite is banned:
+		if FemaleList is banned or MaleList is banned or FurryList is banned or HermList is banned:
 			say "     'I had hoped to obtain some samples, but the creatures cannot be located. I don't have anything further for you,' the mouse says, shaking his head.";
 			say "     (Unable to proceed with current creature blocks. Girl, guy, herm and furry are all needed for subsequent segments.)";
 		else if DoctorMouseProgress minus turns < 8:
@@ -976,7 +976,7 @@ hospfight is a number that varies.
 to say hospbigfight1:
 	now hospfight is 1;
 	now inasituation is true;
-	challenge "Jaguar";
+	challenge "Jaguar Male";
 	now inasituation is false;
 	if fightoutcome is 30:
 		say "[hospranaway]";
@@ -986,7 +986,7 @@ to say hospbigfight1:
 		stop the action;
 	say "     The second jaguar moves around the worktables steps past his fallen comrade to attack you as well.";
 	now inasituation is true;
-	challenge "Jaguar";
+	challenge "Jaguar Male";
 	now inasituation is false;
 	if fightoutcome > 19 and fightoutcome < 30:
 		say "[hosploss]";
@@ -1066,16 +1066,16 @@ to say hosploss:
 	say "[hosptfscene]";
 	say "     Dr Mouse motions to the orderly attending to his procedure. 'Dump that trash on the steps along with its gear. It is of no further use to me.' With those coldly spoken words, the mouse turns his back on you entirely and walks out of the operating theater. The orderly calls forth several of his companions and they drag you, beaten and mutated, to the hospital steps. They toss you and your gear down onto them without a word and head back inside.";
 	waitlinebreak;
-	if BodyName of Player is "Tiger Cop":
-		now BodyName of Player is "Tigress Hooker";
-	if TailName of Player is "Tiger Cop":
-		now TailName of Player is "Tigress Hooker";
-	if FaceName of Player is "Tiger Cop":
-		now FaceName of Player is "Tigress Hooker";
-	if SkinName of Player is "Tiger Cop":
-		now SkinName of Player is "Tigress Hooker";
-	if CockName of Player is "Tiger Cop":
-		now CockName of Player is "Tigress Hooker";
+	if BodyName of Player is "Malayan Tiger Male":
+		now BodyName of Player is "Malayan Tiger Herm";
+	if TailName of Player is "Malayan Tiger Male":
+		now TailName of Player is "Malayan Tiger Herm";
+	if FaceName of Player is "Malayan Tiger Male":
+		now FaceName of Player is "Malayan Tiger Herm";
+	if SkinName of Player is "Malayan Tiger Male":
+		now SkinName of Player is "Malayan Tiger Herm";
+	if CockName of Player is "Malayan Tiger Male":
+		now CockName of Player is "Malayan Tiger Herm";
 	SanLoss 20;
 	increase Libido of Player by 20;
 	decrease score by 50;

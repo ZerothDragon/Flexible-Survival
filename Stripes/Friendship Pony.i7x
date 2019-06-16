@@ -33,13 +33,6 @@ rfpbmlist is a list of text that varies.[@Tag:NotSaved] rfpbmlist is usually { "
 ]
 
 
-when play begins:
-	add { "Friendship Pony" } to infections of girl;
-	add { "Friendship Pony" } to infections of furry;
-	add { "Friendship Pony" } to infections of humorous;
-	add { "Friendship Pony" } to infections of Equinelist; [list of equine infections]
-	add { "Friendship Pony" } to infections of Latexlist; [list of latex/rubber/PVC skin infections]
-
 to say fponydesc:
 	setmongender 4; [creature is female]
 	choose row MonsterID from Table of Random Critters;
@@ -56,7 +49,7 @@ to say fponydesc:
 	setrfpdesc;
 [	rotate rfpclist1;
 	rotate rfpclist2;
-	rotate rfpbmlist;
+	rotate rfpbmList;
 	now rfponycolor1 is "[entry 1 in rfpclist1]";
 	now rfponycolor2 is "[entry 1 in rfpclist2]";
 	now rfponybm is "[entry 1 in rfpbmlist]";]
@@ -338,15 +331,24 @@ NewTypeInfection (truth state)	Species Name	Name	Enemy Title	Enemy Name	Enemy Ty
 When Play begins:
 	Choose a blank row from Table of Random Critters;
 	now NewTypeInfection entry is false;
-	now Species Name entry is "";
+	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
+	add "Friendship Pony" to infections of EquineList;
+	add "Friendship Pony" to infections of FurryList;
+	add "Friendship Pony" to infections of HumorousList;
+	add "Friendship Pony" to infections of LatexList;
+	add "Friendship Pony" to infections of FemaleList;
+	add "Friendship Pony" to infections of BluntCockList;
+	add "Friendship Pony" to infections of SheathedCockList;
+	add "Friendship Pony" to infections of QuadrupedalList;
+	add "Friendship Pony" to infections of TailList;
 [	sort rfpclist1 in random order;
 	sort rfpclist2 in random order;]
 	sort pfpclist in random order;
 [	sort rfpbmlist in random order;]
 	now Name entry is "Friendship Pony"; [ Infection/Creature name. Capitalized. ]
-	now enemy title entry is "";
-	now enemy Name entry is "";
-	now enemy type entry is 0; [non-unique enemy]
+	now enemy title entry is ""; [name of the encountered creature at combat start - Example: "You run into a giant collie." instead of using "Smooth Collie Shemale" infection name]
+	now enemy Name entry is ""; [specific name of unique enemy]
+	now enemy type entry is 0; [0 = non unique enemy; 1 = unique (unknown name); 2 = unique (known name) | Used to disqualify unique enemies from Vore/UB and showing the enemy name in encounters]
 	now attack entry is "[fpattack]";
 	now defeated entry is "[beatthefpony]"; [ Text when monster loses. Change 'fpony' as above. ]
 	now victory entry is "[losetofpony]"; [ Text when monster wins. Change 'fpony' as above. ]
@@ -395,13 +397,14 @@ When Play begins:
 	now altcombat entry is "fpony"; [ Row used to designate any special combat features, "default" for standard combat. ]
 	now BannedStatus entry is false;
 
+[
 Table of New Infection Parts (continued)
 Species Name	Name	Body Weight	Body Definition	Androginity	Head Change	Head Description	Head Adjective	Head Skin Adjective	Head Color	Head Adornments	Hair Length	Hair Shape	Hair Color	Hair Style	Beard Style	Body Hair Length	Eye Color	Eye Adjective	Mouth Length	Mouth Circumference	Tongue Adjective	Tongue Color	Tongue Length	Torso Change	Torso Description	Torso Adjective	Torso Skin Adjective	Torso Adornments	Torso Color	Torso Pattern	Breast Adjective	Breast Size	Male Breast Size	Nipple Count	Nipple Color	Nipple Shape	Back Change	Back Adornments	Back Skin Adjective	Back Color	Arms Change	Arms Description	Arms Skin Adjective	Arms Color	Locomotion	Legs Change	Legs Description	Legs Skin Adjective	Legs Color	Ass Change	Ass Description	Ass Skin Adjective	Ass Color	Ass Width	Tail Change	Tail Description	tail skin adjective	Tail Color	Asshole Depth	Asshole Tightness	Asshole Color	Cock Change	Cock Description	Cock Adjective	Cock Color	Cock Count	Cock Girth	Cock Length	Ball Description	Ball Count	Ball Size	Cunt Change	Cunt Description	Cunt Adjective	Cunt Color	Cunt Count	Cunt Depth	Cunt Tightness	Clit Size
 --	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--	--;
 
 When Play begins:
 	Choose a blank row from Table of New Infection Parts;
-	now Species Name entry is "";
+	now Species Name entry is ""; [name of the overall species of the infection, used for children, ...]
 	now Name entry is ""; [matching infection name to Table of Random Critters]
 	now Body Weight entry is 5; [scale of 1-9 for body weight, grouped into low weight (1-3), mid weight (4-6) and high weight (7-9)]
 	now Body Definition entry is 5; [scale of 1-9 for body definition, grouped into low muscle (1-3), mid muscle (4-6), high muscle (7-9)]
@@ -423,14 +426,14 @@ When Play begins:
 	now Eye Color entry is ""; [one word color descriptor]
 	now Eye Adjective entry is ""; [one word descriptive adjective (slitted/round/...)]
 	now Mouth Length entry is 3; [inches deep for face fucking; maximum possible will be double this number (when deep throating)]
-	[Mouth Length Adjective  is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
+	[Mouth Length Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
 	now Mouth Circumference entry is 3; [mouth circumference 1-5, see Mouth Circumference Adjective]
 	[Mouth Circumference Adjective is generated by a function and can be used in scenes too - "tiny, small, normal, wide, gaping"]
 	now Tongue Adjective entry is ""; [one word descriptive adjective (wide/slobbery/...)]
 	now Tongue Color entry is ""; [one word color descriptor]
 	now Tongue Length entry is 3; [length in inches]
 	now Torso Change entry is ""; [partial sentence that fits in: "Your torso [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Torso Change entry]."]
-	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Body Adjective of Player], [Gender Adjective of Player] and your torso is [Torso Description of Player][if Body Hair Length of Player > 0], covered in [Body Hair Adjective of Player] [Hair Color of Player] chest hair[end if]."]
+	now Torso Description entry is ""; [partial sentence, fitting in "Looking down at yourself, you appear [Gender Adjective of Player] with a [Body Adjective of Player] build. Your torso is [Torso Description of Player][if Body Hair Length of Player > 1], covered in [Torso Color of Player] skin and [Body Hair Description of Player][else if Body Hair Length of Player is 1], covered in smooth, [Torso Color of Player] skin[end if]."]
 	now Torso Adjective entry is ""; [one word descriptive adjective (avian/canine/...)]
 	now Torso Adornments entry is ""; [(pouch/udders/...); partial sentence to fit: "You take a moment to feel your [torso adornments of Player]."]
 	now Torso Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
@@ -457,18 +460,18 @@ When Play begins:
 	now Legs Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Legs Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Change entry is ""; [partial sentence that fits in: "Your ass [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Ass Change entry]."]
-	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]"]
+	now Ass Description entry is ""; [partial sentence to fit: "Using your hands you feel your behind enjoying the sensation of your [Ass Width Adjective of Player], [Ass Shape Adjective of Player] [Ass Description of Player]." (For players with skin, instead of the period: ", covered in [Ass Color of Player] skin and [Body Hair Description of Player]"]
 	now Ass Skin Adjective entry is "";  [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Ass Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Ass Width entry is 3; [ass width from 1-5]
 	[Ass Width Adjective generated by function out of ass width: dainty/small/round/huge/enormous]
 	[Ass Adjective generated by function out of body definition and ass width]
-	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Tail Change entry]."]
+	now Tail Change entry is ""; [partial sentence that fits in: "Your rear [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [if HasTail of Player is true]your existing tail is changed into a [Tail Description entry][else][Tail Change entry][end if]."]
 	now Tail Description entry is ""; [partial sentence to fit: "Just below your lower back sprouts a [tail description of Player], which you move back and forth with glee."]
 	now Tail Skin Adjective entry is ""; [one word adjective (feathered/furred/scaly/...); EMPTY "" for creatures with just skin]
 	now Tail Color entry is ""; [single word color adjective for the dominant color of the skin/fur/feathers/scales]
 	now Asshole Depth entry is 7; [inches deep for anal fucking]
-	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite, shallow, average, deep, bottomless"]
+	[Asshole Depth Adjective is generated by a function and can be used in scenes too - "petite (< 3), shallow (< 5), average (< 9), deep (< 15), bottomless (15+)"]
 	now Asshole Tightness entry is 3; [asshole tightness 1-5, "extremely tight, tight, receptive, open, gaping"]
 	[Asshole Tightness Adjective is generated by a function and can be used in scenes too - "extremely tight, tight, receptive, open, gaping"]
 	now Asshole Color entry is ""; [one word color descriptor]
@@ -490,10 +493,11 @@ When Play begins:
 	[Cunt Tightness Adjective is generated by a function and can be used in scenes too: extremely tight/tight/well-used/open/gaping]
 	now Cunt Adjective entry is ""; [one word adjective: avian/canine/...]
 	now Cunt Change entry is ""; [partial sentence that fits in: "Your pussy [one of]tingles[or]goes flush[or]vibrates with odd pleasure[or]goes cold[or]feels oily[at random] as [Cunt change entry]."]
-	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that is [cunt description of Player]."]
+	now Cunt Description entry is ""; [partial sentence to fit: "You have a [Cunt Tightness Adjective of Player] [one of]cunt[or]pussy[or]vagina[or]cleft[at random] that [cunt description of Player]."]
 	now Cunt Color entry is ""; [one word color descriptor]
 	now Clit Size entry is 0; [size 1-5, see Clit Size Adjective]
 	[Clit Size Adjective is generated by a function and can be used in scenes: very small/small/average/large/very large]
+]
 
 
 Section 3 - Alt Combat
@@ -559,8 +563,8 @@ to ponystatuscheck:
 		else if pfptype is 4:
 			now pfptype is a random number between 1 and 3;
 	if Player is not fponytailed and player is not fponyfaced and player is not fponyskinned and player is not fponycocked:
-		rotate pfpclist;
-		let pfpc be entry 1 in pfpclist;
+		rotate pfpcList;
+		let pfpc be entry 1 in pfpcList;
 		if pfpc is 1:
 			now pfpskin is "baby blue";
 			now pfpcock is "blue";
@@ -596,42 +600,42 @@ to ponystatuscheck:
 
 to selectbootymark:
 	now pfpbmlist is {};
-	add {1, 2, 3, 4} to pfpbmlist;
-	if "Junk Food Junky" is listed in feats of Player, add 5 to pfpbmlist;
-	if "Male Preferred" is listed in feats of Player, add 6 to pfpbmlist;
-	if "Female Preferred" is listed in feats of Player, add 7 to pfpbmlist;
-	if "Herm Preferred" is listed in feats of Player, add 8 to pfpbmlist;
-	if Player is submissive, add 9 to pfpbmlist;
-	if "Cold Fish" is listed in feats of Player, add 10 to pfpbmlist;
-	if "Physical Booster" is listed in feats of Player, add 11 to pfpbmlist;
-	if "Mental Booster" is listed in feats of Player, add 12 to pfpbmlist;
-	if "Cuckold" is listed in feats of Player, add 13 to pfpbmlist;
-	if "Top Dog" is listed in feats of Player, add 14 to pfpbmlist;
-	if "Proud Parent" is listed in feats of Player, add 15 to pfpbmlist;
-	if "Black Belt" is listed in feats of Player, add 16 to pfpbmlist;
-	if "One Way" is listed in feats of Player, add 17 to pfpbmlist;
-	if anallevel is 3, add 18 to pfpbmlist;
-	if Player is kinky, add 19 to pfpbmlist;
-	if "Wary Watcher" is listed in feats of Player, add 20 to pfpbmlist;
-	if Player is mpreg_ok, add 21 to pfpbmlist;
+	add {1, 2, 3, 4} to pfpbmList;
+	if "Junk Food Junky" is listed in feats of Player, add 5 to pfpbmList;
+	if "Male Preferred" is listed in feats of Player, add 6 to pfpbmList;
+	if "Female Preferred" is listed in feats of Player, add 7 to pfpbmList;
+	if "Herm Preferred" is listed in feats of Player, add 8 to pfpbmList;
+	if Player is submissive, add 9 to pfpbmList;
+	if "Cold Fish" is listed in feats of Player, add 10 to pfpbmList;
+	if "Physical Booster" is listed in feats of Player, add 11 to pfpbmList;
+	if "Mental Booster" is listed in feats of Player, add 12 to pfpbmList;
+	if "Cuckold" is listed in feats of Player, add 13 to pfpbmList;
+	if "Top Dog" is listed in feats of Player, add 14 to pfpbmList;
+	if "Proud Parent" is listed in feats of Player, add 15 to pfpbmList;
+	if "Black Belt" is listed in feats of Player, add 16 to pfpbmList;
+	if "One Way" is listed in feats of Player, add 17 to pfpbmList;
+	if anallevel is 3, add 18 to pfpbmList;
+	if Player is kinky, add 19 to pfpbmList;
+	if "Wary Watcher" is listed in feats of Player, add 20 to pfpbmList;
+	if Player is mpreg_ok, add 21 to pfpbmList;
 	if "Sterile" is not listed in feats of Player:
 		if "Litter Bearer" is listed in feats of Player:
-			add 22 to pfpbmlist;
+			add 22 to pfpbmList;
 		else if "Fertile" is listed in feats of Player:
-			add 23 to pfpbmlist;
-	if "Roughing It" is listed in feats of Player, add 24 to pfpbmlist;
-	if "Breasts" is listed in feats of Player, add 25 to pfpbmlist;
-	if "Bad Luck" is listed in feats of Player, add 26 to pfpbmlist;
-	if "Curious" is listed in feats of Player, add 27 to pfpbmlist;
-	if "City Map" is listed in feats of Player or "Open World" is listed in feats of Player, add 28 to pfpbmlist;
-	if "Sterile" is listed in feats of Player, add 29 to pfpbmlist;
-	if "Expert Medic" is listed in feats of Player, add 30 to pfpbmlist;
-	if "Cock Slap" is listed in feats of Player, add 31 to pfpbmlist;
-	if "Ball Crush" is listed in feats of Player, add 32 to pfpbmlist;
-	if "Boob Smother" is listed in feats of Player, add 33 to pfpbmlist;
-	if "Microwaved" is listed in feats of Player, add 34 to pfpbmlist;
-	if lust of Sven is 2 or FangWS is 1 or WSlevel is 3, add 35 to pfpbmlist;
-	add 36 to pfpbmlist;
+			add 23 to pfpbmList;
+	if "Roughing It" is listed in feats of Player, add 24 to pfpbmList;
+	if "Breasts" is listed in feats of Player, add 25 to pfpbmList;
+	if "Bad Luck" is listed in feats of Player, add 26 to pfpbmList;
+	if "Curious" is listed in feats of Player, add 27 to pfpbmList;
+	if "City Map" is listed in feats of Player or "Open World" is listed in feats of Player, add 28 to pfpbmList;
+	if "Sterile" is listed in feats of Player, add 29 to pfpbmList;
+	if "Expert Medic" is listed in feats of Player, add 30 to pfpbmList;
+	if "Cock Slap" is listed in feats of Player, add 31 to pfpbmList;
+	if "Ball Crush" is listed in feats of Player, add 32 to pfpbmList;
+	if "Boob Smother" is listed in feats of Player, add 33 to pfpbmList;
+	if "Microwaved" is listed in feats of Player, add 34 to pfpbmList;
+	if lust of Sven is 2 or FangWS is 1 or WSlevel is 3, add 35 to pfpbmList;
+	add 36 to pfpbmList;
 	sort pfpbmlist in random order;
 	if entry 1 in pfpbmlist is:
 		-- 1:
@@ -709,43 +713,43 @@ to selectbootymark:
 
 [
 	now pfpbmlist is {};
-	add { "a black dildo", "a red vibrator", "a slice of cream pie", "a jar of cum" } to pfpbmlist;
-	if "Junk Food Junky" is listed in feats of Player, add "a soda can" to pfpbmlist;
-	if "Male Preferred" is listed in feats of Player, add "a blue male symbol" to pfpbmlist;
-	if "Female Preferred" is listed in feats of Player, add "a pink female symbol" to pfpbmlist;
-	if "Herm Preferred" is listed in feats of Player, add "a purple herm symbol" to pfpbmlist;
-	if Player is submissive, add "a leather collar" to pfpbmlist;
-	if "Cold Fish" is listed in feats of Player, add "a fish packed in ice" to pfpbmlist;
-	if "Physical Booster" is listed in feats of Player, add "a muscly arm" to pfpbmlist;
-	if "Mental Booster" is listed in feats of Player, add "a throbbing brain" to pfpbmlist;
-	if "Cuckold" is listed in feats of Player, add "a cuckoo chick in a nest" to pfpbmlist;
-	if "Top Dog" is listed in feats of Player, add "an alert doberman with a blue ribbon" to pfpbmlist;
-	if "Proud Parent" is listed in feats of Player, add "a collection of puppies" to pfpbmlist;
-	if "Black Belt" is listed in feats of Player, add "a gi and black belt" to pfpbmlist;
-	if "One Way" is listed in feats of Player, add "a one-way street sign" to pfpbmlist;
-	if anallevel is 3, add "a bottle of lube" to pfpbmlist;
-	if Player is kinky, add "a whip and chains" to pfpbmlist;
-	if "Wary Watcher" is listed in feats of Player, add "the all-seeing eye" to pfpbmlist;
-	if Player is mpreg_ok, add "an egg stamped with the male symbol" to pfpbmlist;
+	add { "a black dildo", "a red vibrator", "a slice of cream pie", "a jar of cum" } to pfpbmList;
+	if "Junk Food Junky" is listed in feats of Player, add "a soda can" to pfpbmList;
+	if "Male Preferred" is listed in feats of Player, add "a blue male symbol" to pfpbmList;
+	if "Female Preferred" is listed in feats of Player, add "a pink female symbol" to pfpbmList;
+	if "Herm Preferred" is listed in feats of Player, add "a purple herm symbol" to pfpbmList;
+	if Player is submissive, add "a leather collar" to pfpbmList;
+	if "Cold Fish" is listed in feats of Player, add "a fish packed in ice" to pfpbmList;
+	if "Physical Booster" is listed in feats of Player, add "a muscly arm" to pfpbmList;
+	if "Mental Booster" is listed in feats of Player, add "a throbbing brain" to pfpbmList;
+	if "Cuckold" is listed in feats of Player, add "a cuckoo chick in a nest" to pfpbmList;
+	if "Top Dog" is listed in feats of Player, add "an alert doberman with a blue ribbon" to pfpbmList;
+	if "Proud Parent" is listed in feats of Player, add "a collection of puppies" to pfpbmList;
+	if "Black Belt" is listed in feats of Player, add "a gi and black belt" to pfpbmList;
+	if "One Way" is listed in feats of Player, add "a one-way street sign" to pfpbmList;
+	if anallevel is 3, add "a bottle of lube" to pfpbmList;
+	if Player is kinky, add "a whip and chains" to pfpbmList;
+	if "Wary Watcher" is listed in feats of Player, add "the all-seeing eye" to pfpbmList;
+	if Player is mpreg_ok, add "an egg stamped with the male symbol" to pfpbmList;
 	if "Sterile" is not listed in feats of Player:
 		if "Litter Bearer" is listed in feats of Player:
-			add "several egg cells surrounded by sperm" to pfpbmlist;
+			add "several egg cells surrounded by sperm" to pfpbmList;
 		else if "Fertile" is listed in feats of Player:
-			add "an egg cell surrounded by sperm" to pfpbmlist;
-	if "Roughing It" is listed in feats of Player, add "a bedroll" to pfpbmlist;
-	if "Breasts" is listed in feats of Player, add "a pair of coconuts" to pfpbmlist;
-	if "Bad Luck" is listed in feats of Player, add "a broken mirror" to pfpbmlist;
-	if "Curious" is listed in feats of Player, add "a magnifying glass examining a sticky cumstain" to pfpbmlist;
-	if "City Map" is listed in feats of Player or "Open World" is listed in feats of Player, add "a map with pushpins in it" to pfpbmlist;
-	if "Sterile" is listed in feats of Player, add "a tied-off used condom" to pfpbmlist;
-	if "Expert Medic" is listed in feats of Player, add "a caduceus" to pfpbmlist;
-	if "Cock Slap" is listed in feats of Player, add "a meaty cock hitting something" to pfpbmlist;
-	if "Ball Crush" is listed in feats of Player, add "a hefty set of balls cracking the ground" to pfpbmlist;
-	if "Boob Smother" is listed in feats of Player, add "a giant set of tits around the silhouette of a head" to pfpbmlist;
-	if "Microwaved" is listed in feats of Player, add "a microwave oven" to pfpbmlist;
-	if lust of Sven is 2 or FangWS is 1 or WSlevel is 3, add "a pissing horsecock" to pfpbmlist;
+			add "an egg cell surrounded by sperm" to pfpbmList;
+	if "Roughing It" is listed in feats of Player, add "a bedroll" to pfpbmList;
+	if "Breasts" is listed in feats of Player, add "a pair of coconuts" to pfpbmList;
+	if "Bad Luck" is listed in feats of Player, add "a broken mirror" to pfpbmList;
+	if "Curious" is listed in feats of Player, add "a magnifying glass examining a sticky cumstain" to pfpbmList;
+	if "City Map" is listed in feats of Player or "Open World" is listed in feats of Player, add "a map with pushpins in it" to pfpbmList;
+	if "Sterile" is listed in feats of Player, add "a tied-off used condom" to pfpbmList;
+	if "Expert Medic" is listed in feats of Player, add "a caduceus" to pfpbmList;
+	if "Cock Slap" is listed in feats of Player, add "a meaty cock hitting something" to pfpbmList;
+	if "Ball Crush" is listed in feats of Player, add "a hefty set of balls cracking the ground" to pfpbmList;
+	if "Boob Smother" is listed in feats of Player, add "a giant set of tits around the silhouette of a head" to pfpbmList;
+	if "Microwaved" is listed in feats of Player, add "a microwave oven" to pfpbmList;
+	if lust of Sven is 2 or FangWS is 1 or WSlevel is 3, add "a pissing horsecock" to pfpbmList;
 	sort pfpbmlist in random order;
-	now pfpbootymark is entry 1 in pfpbmlist;
+	now pfpbootymark is entry 1 in pfpbmList;
 ]
 
 Section 5 - Pony Cider

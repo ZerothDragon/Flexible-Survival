@@ -37,9 +37,9 @@ Fall-O-the-Wisp is a situation.
 The sarea of Fall-O-the-Wisp is "Nowhere".
 
 when play begins:
-	add Fall-O-the-Wisp to badspots of girl;
-	add Fall-O-the-Wisp to badspots of guy;
-	add Fall-O-the-Wisp to badspots of furry;
+	add Fall-O-the-Wisp to BadSpots of FemaleList;
+	add Fall-O-the-Wisp to BadSpots of MaleList;
+	add Fall-O-the-Wisp to BadSpots of FurryList;
 
 instead of resolving Fall-O-the-Wisp:
 	WispFollow;
@@ -232,7 +232,7 @@ Avalon-Crossroads is west of Kobold Caves Gates.
 The description of Kobold Caves Gates is "[KoboldCavesGates desc]".
 
 to say KoboldCavesGates desc:
-	say "     Arriving once more at the cave entrance, the familiar and crudely crafted wall and gate blocks the view and path forwards. On top of the walls, two kobolds patrol with crossbows in hand. Upon noticing you, one of the guards calls out, 'Who goes there!' with enthusiasm.  You stand at attention and state your name rank and class, to which the guard nods and gestures to someone behind the wall. A few seconds pass before the doors start to creak, swinging wide to reveal the mouth of the Gildwing fortress to the west.";
+	say "     Arriving once more at the cave entrance, the familiar and crudely crafted wall and gate blocks the view and path forwards. On top of the walls, two kobolds patrol with crossbows in hand. Upon noticing you, one of the guards calls out, 'Who goes there!' with enthusiasm. You stand at attention and state your name rank and class, to which the guard nods and gestures to someone behind the wall. A few seconds pass before the doors start to creak, swinging wide to reveal the mouth of the Gildwing fortress to the west.";
 
 Section 3 - Random Encounters
 

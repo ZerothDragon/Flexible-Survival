@@ -49,6 +49,13 @@ ResidentialVisits is a number that varies.
 LastAtlantisCenterWalkin is a number that varies. LastAtlantisCenterWalkin is usually 10000.
 LastResidentialWalkin is a number that varies. LastResidentialWalkin is usually 10000.
 LastMarketWalkin is a number that varies. LastMarketWalkin is usually 10000.
+AtlantisRoomConnection is a number that varies.[@Tag:NotSaved]
+
+an everyturn rule: [bugfixing rules for players that import savegames]
+	if Lost Trident is resolved and Resolution of Lost Trident < 2 and AtlantisRoomConnection is 0: [event resolved the right way, room not connected yet]
+		change west exit of Sunken Ship to Atlantis City Entrance;
+		change east exit of Atlantis City Entrance to Sunken Ship;
+		now AtlantisRoomConnection is 1; [make sure that it connects the room only once]
 
 Section 1 - Poseidon's Trident?
 
@@ -60,8 +67,8 @@ Lost Trident is a situation. The level of Lost Trident is 9.
 
 The sarea of Lost Trident is "Beach".
 When play begins:
-	Add Lost Trident to badspots of furry;
-	Add Lost Trident to badspots of guy;
+	Add Lost Trident to BadSpots of FurryList;
+	Add Lost Trident to BadSpots of MaleList;
 
 Instead of resolving a Lost Trident:
 	say "     Walking along the beach you watch as the crashing waves of the sea bounce across the shore as the [if daytimer is day]sun rides along the sky[else]moon dances along the night skyline[end if] while listening to the soft intelligible sounds of marine life reverberate all around you. As the minutes pass by, the soothing sounds of the water lapping along the sands makes a sense of nostalgia surge up throughout you, mind lulling you almost to sleep. However, before you can become too lost in the all-encompassing feelings of sleep about to overtake you, you find your gaze drifting over to what looks like a bronze colored trident free-floating like an abandoned surfboard along the waterline.";
@@ -93,6 +100,7 @@ Instead of resolving a Lost Trident:
 						now PoseidonRelationship is 1;
 						change west exit of Sunken Ship to Atlantis City Entrance;
 						change east exit of Atlantis City Entrance to Sunken Ship;
+						now Resolution of Lost Trident is 1; [won]
 						now Lost Trident is resolved;
 		if fightoutcome >= 20:
 			say "     Having lost to one of the feral sea dragons you find yourself being stripped of your newfound weapon and then casually dumped onto the beach by the creature you had just been defeated by. Grunting in utter humiliation you rest on the muddy sands for a minute while lamenting your own weakness. Looks like you know truly understand the meaning about the [italic type]one that got away[roman type] as you listen to the chatter of the feral sea dragons as the reptiles dive back into the sea with your commandeered treasure. Better luck next time.";

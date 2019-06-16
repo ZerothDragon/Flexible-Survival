@@ -168,17 +168,17 @@ to say sexwithAndrew:
 		let male4c be "";
 		if HP of Andrew is 8, sort randomcolorlist in random order; [fresh randomized set]
 		if a random chance of 1 in 5 succeeds:
-			now male1c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male1c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 5 succeeds:
-			now male2c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male2c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 5 succeeds:
-			now male3c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male3c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 5 succeeds:
-			now male4c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male4c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 10 succeeds, sort randomcolorlist in random order; [10% chance to re-randomize each time]
 [		say "TEST:[line break]";
 		say "male1type: [male1type][line break]";
@@ -204,7 +204,7 @@ to say sexwithAndrew:
 		if HP of Andrew is 8, now HP of Andrew is 9;
 	else if HP of Andrew is 9 or ( HP of Andrew > 9 and a random chance of 1 in 4 succeeds ):
 		say "     'Up for more fun, are we? Hmmm... I'm pretty busy,' he says with some seriousness as he rises from his seat. 'But for you, I'm sure I can squeeze you into my tight schedule,' he adds with a grin as he slips down his cargo pants and bends over the messy table, putting his crinkled hole on tantalizing display. Reaching back, he slips a pair of digits into his back door and spreads it open with ease. 'See. I can be very accommodating,' he giggles teasingly.";
-		say "     With such an offer before you, your manhood gets harder still. Grabbing that offered ass, you run your fingers through its black fur as you get your cock lined up. As you start sliding into him, he moves his paw to instead [if CockName of Player is listed in infections of internallist]cup your balls[else]steady himself on the table[end if][if Cock Length of Player > 24]. Grunting a little at your sheer size, he snatches up a half-full stein of beer and downs it. 'Ahhh- that's better. A little extra libation to help me cope with that impressive piece of yours[else]. Releasing a satisfying moan as you penetrate him, he takes a half-finished beer and drains it in a few gulps. 'Ahhh- [one of]my two favorite vices - fine drink and fine men[or]I so enjoy the pleasure of fine drink while in the company of a fine gentleman[at random][end if].'";
+		say "     With such an offer before you, your manhood gets harder still. Grabbing that offered ass, you run your fingers through its black fur as you get your cock lined up. As you start sliding into him, he moves his paw to instead [if CockName of Player is listed in infections of InternalCockList]cup your balls[else]steady himself on the table[end if][if Cock Length of Player > 24]. Grunting a little at your sheer size, he snatches up a half-full stein of beer and downs it. 'Ahhh- that's better. A little extra libation to help me cope with that impressive piece of yours[else]. Releasing a satisfying moan as you penetrate him, he takes a half-finished beer and drains it in a few gulps. 'Ahhh- [one of]my two favorite vices - fine drink and fine men[or]I so enjoy the pleasure of fine drink while in the company of a fine gentleman[at random][end if].'";
 		say "     With your cock stuffed in the wolf's ass, you can feel his squeeze and tighten around you, milking at your cock now that it's adjusted to your presence. With a firm grip on his buttocks, you thrust firmly, drawing a soft moan from the lustful gay lupine. Knowing he can take it, you increase your pace, drilling harder and deeper into him. And true to form, he raises his ass a little higher and pushes back into every thrust.";
 		say "     As the sticky sounds and moans of your fucking increase, the attention of the neighboring booths is drawn. Soon you have a few spectators admiring the show. Even while getting fucked hard and deep, the wolf is able to negotiate rendezvous with a few of the horny guys asking for a shot at his ass next. You get a few offers as well, which is quite tempting, but too much of your focus is on plowing the fine wolf you're buried in right now.";
 		say "     After a good, long pounding, you feel your climax approaching. Sensing this as well, Andrew works that experienced ass with firm squeezes on your already aching cock. This sends you past your peak and you cum hard and long into his welcoming bowels. You drain your balls into him, emptying a [Cum Load Size of Player] load into him while he moans in satisfaction.";
@@ -221,7 +221,7 @@ to say sexwithAndrew:
 		say "     ([link]N[as]n[end link]) - Get fucked.";
 		if Player consents:
 			say "     The wolf leans against the table and raises his tail, having gotten out of the cargo pants while you were deciding. His heavy balls and cock slap down onto the wood as he smiles back at you. His long tail swishes in slow invitation and you don't wait any longer. Moving in behind him, you grind your hard [Cock of Player] shaft against his rear and he moans playfully. 'Come on, honey. Show me what you can do.' Not wanting to disappoint, you line your glans up with his tight pucker and slowly sink into him. His asshole spreads with practiced ease, relaxing enough to take your [cock size desc of Player] cock into him, but staying tight enough to squeeze and tug at it nicely. He moans in pleasure as you penetrate him, then reach around to stroke his lupine cock.";
-			say "     As you fuck the wolf over the table, a few others around take notice for a little while but clearly aren't surprised or upset by it. Clearly a regular appearance, especially from the black wolf, they don't interrupt your fun together. A few other couples around do start up soon after though, adding to the experience. You pound him vigorously while stroking him off, your hand very slick from the copious amounts of precum running down his dick and pooling on the table. His inner walls rub over your sensitive shaft, moving and gripping around you to eventually drive you to a powerful orgasm that sends your hot seed deep into the gay wolf's asshole. Feeling your hot load filling him[if Ball Size of Player > 4] more and more as your oversized balls drain[else if Ball Size of Player > 3]  as your large balls drain[end if], he howls in pleasure and cums hard, shooting his sticky load across the table and the back of the booth in another messy display. As his last shots are firing, he starts lapping up a big puddle of it within reach. After you pull out, he gives you a slobbery kiss that's rich with the taste of his semen and pats your ass in thanks for the nice fuck.";
+			say "     As you fuck the wolf over the table, a few others around take notice for a little while but clearly aren't surprised or upset by it. Clearly a regular appearance, especially from the black wolf, they don't interrupt your fun together. A few other couples around do start up soon after though, adding to the experience. You pound him vigorously while stroking him off, your hand very slick from the copious amounts of precum running down his dick and pooling on the table. His inner walls rub over your sensitive shaft, moving and gripping around you to eventually drive you to a powerful orgasm that sends your hot seed deep into the gay wolf's asshole. Feeling your hot load filling him[if Ball Size of Player > 4] more and more as your oversized balls drain[else if Ball Size of Player > 3] as your large balls drain[end if], he howls in pleasure and cums hard, shooting his sticky load across the table and the back of the booth in another messy display. As his last shots are firing, he starts lapping up a big puddle of it within reach. After you pull out, he gives you a slobbery kiss that's rich with the taste of his semen and pats your ass in thanks for the nice fuck.";
 			now lastfuck of Andrew is turns;
 			andrewinfect;
 		else:
@@ -252,11 +252,11 @@ to say andrewdemonshow: [evil Brutus + Andrew]
 		let male2c be "";
 		sort randomcolorlist in random order; [fresh randomized set]
 		if a random chance of 1 in 5 succeeds:
-			now male1c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male1c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 5 succeeds:
-			now male2c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male2c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 [		say "TEST:[line break]";
 		say "male1c: [male1c] / male1type: [male1type][line break]";
 		say "male2c: [male2c] / male2type: [male2type][line break][line break]";]
@@ -301,11 +301,11 @@ to say AndrewBrutusShow: [cleansed Brutus + Andrew]
 	let male2c be "";
 	sort randomcolorlist in random order; [fresh randomized set]
 	if a random chance of 1 in 5 succeeds:
-		now male1c is entry 1 of randomcolorlist;
-		rotate randomcolorlist;
+		now male1c is entry 1 of randomcolorList;
+		rotate randomcolorList;
 	if a random chance of 1 in 5 succeeds:
-		now male2c is entry 1 of randomcolorlist;
-		rotate randomcolorlist;
+		now male2c is entry 1 of randomcolorList;
+		rotate randomcolorList;
 	say "     With you still standing on the edge of the stage, you get approached by a naked [male1c][male1type] who pulls you into his arms, giving you a wet, sticky kiss that's heavily flavored by the cum of the guy he just finished blowing. You're treated to a slick mouthful of semen as his tongue pushes past your lips to play with yours.";
 	LineBreak;
 	say "     Do you want to stay in the middle of this little orgy on the stage, or extricate yourself from the grasp of this pretty randy guy and join crowd to just watch the show?";
@@ -370,17 +370,17 @@ carry out andrewtesting:
 		let male4c be "";
 		if HP of Andrew is 8, sort randomcolorlist in random order; [fresh randomized set]
 		if a random chance of 1 in 5 succeeds:
-			now male1c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male1c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 5 succeeds:
-			now male2c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male2c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 5 succeeds:
-			now male3c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male3c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 5 succeeds:
-			now male4c is entry 1 of randomcolorlist;
-			rotate randomcolorlist;
+			now male4c is entry 1 of randomcolorList;
+			rotate randomcolorList;
 		if a random chance of 1 in 10 succeeds, sort randomcolorlist in random order; [10% chance to re-randomize each time]
 		say "TEST:[line break]";
 		say "male1type: [male1type][line break]";
